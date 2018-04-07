@@ -1,9 +1,0 @@
-.btn{
-	display: inline-block;
-}
-
-.btn.default-btn{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
