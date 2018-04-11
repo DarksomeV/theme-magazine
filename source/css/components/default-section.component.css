@@ -1,0 +1,11 @@
+.default-section{
+    padding: 120px 0;
+}
+.search-section{
+    padding: 60px 0;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
