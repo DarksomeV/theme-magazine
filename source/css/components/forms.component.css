@@ -1,5 +1,10 @@
 
-.form-search{
+select{
+    outline: none;
+    border:none;
+}
+
+.form-control-search{
     width: 100%;
     background-color: #fff;
     border-radius: 3px;
@@ -27,16 +32,15 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-.form-search,
 .form-control:focus,
-.form-login-green:focus {
+.form-control-login:focus {
     border-color: #111;
+    box-shadow: none;
 }
 textarea {
-    resize: vertical;
     min-height: 150px;
 }
-.form-login-green{
+.form-control-login{
     width: 400px;
     background-color: #76ae36;
     color: #fff;
@@ -48,7 +52,8 @@ textarea {
     padding: 0 18px;
     display: block;
 }
-input{
+.form-elements input,
+.form-elements select{
     margin: 10px 0;
 }
 .form-control.disabled,
