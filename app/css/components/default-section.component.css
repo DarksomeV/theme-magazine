@@ -1,10 +1,15 @@
-.default-section{
+.default-section {
     padding: 120px 0;
 }
-.search-section-main{
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+.search-section-main {
     padding-top: 155px;
     padding-bottom: 175px;
 }
-.search-section{
+.search-section {
     padding: 60px 0;
 }
