@@ -13,12 +13,32 @@
 .top-header .header-help-text {
     font-weight: 400;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 20px;
     margin-right: 25px;
 }
 
 .top-header .header-help-text span:first-child{
     color:#e74c3c;
+}
+
+.top-header .header-user{
+    margin-left: 20px;
+}
+
+.top-header .header-user .header-user-info{
+    margin-left: 15px ;
+    margin-right: 9px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.top-header .header-user .header-user-info span{
+    display: block;
+}
+
+.top-header .header-user-info .user-cash{
+    color: #8bc34a;
 }
 
 .bottom-header {
@@ -36,3 +56,4 @@
 .bottom-header .header-nav a + a{
     margin-left: 43px;
 }
+
