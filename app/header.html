@@ -34,14 +34,14 @@
             <!--list drop-->
             <ul class="header-dropdown-list">
                 <li class="dropdown show d-flex m-auto">
-                    <a class="dropdown-toggle dropdown-notification" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="dropdown-toggle dropdown-notification" href="#" role="button" id="dropdownMenuLinkBasket" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-shopping-cart"></i>
                         <div class="count basket-color-count d-flex">
                             <span>8</span>
                         </div>
                     </a>
 
-                    <div class="dropdown-menu dropdown-notification dropdown-basket" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu dropdown-notification dropdown-basket dropdown-menu-right" aria-labelledby="dropdownMenuLinkBasket">
                         <div class="dropdown-item d-flex align-items-center">
                             <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
                             <div class="item-content">
@@ -75,7 +75,7 @@
                             <a href="#">Go to Checkout</a>
                         </div>
                     </div>
-                 </li>
+                </li>
             </ul>
             <!-- /.header-dropdown-list -->
             <div class="go-checkout">
@@ -129,7 +129,7 @@
                         </div>
                     </a>
 
-                    <div class="dropdown-menu dropdown-notification dropdown-notice" aria-labelledby="dropdownMenuLinkNotice">
+                    <div class="dropdown-menu dropdown-notification dropdown-notice dropdown-menu-right" aria-labelledby="dropdownMenuLinkNotice">
                         <div class="dropdown-item d-flex align-items-center">
                             <a href="#"><img src="img/dropdown-notification-img.jpg" alt=""></a>
                             <div class="item-content mr-auto">
@@ -173,7 +173,7 @@
                         </div>
                     </a>
 
-                    <div class="dropdown-menu dropdown-notification dropdown-message" aria-labelledby="dropdownMenuLinkMessage">
+                    <div class="dropdown-menu dropdown-notification dropdown-message dropdown-menu-right" aria-labelledby="dropdownMenuLinkMessage">
                         <div class="dropdown-item d-flex align-items-center">
                             <a href="#"><img src="img/dropdown-notification-img.jpg" alt=""></a>
                             <div class="item-content mr-auto">
@@ -220,7 +220,7 @@
                         </div>
                     </a>
 
-                    <div class="dropdown-menu dropdown-notification dropdown-basket" aria-labelledby="dropdownMenuLinkBasket">
+                    <div class="dropdown-menu dropdown-notification dropdown-basket dropdown-menu-right" aria-labelledby="dropdownMenuLinkBasket">
                         <div class="dropdown-item d-flex align-items-center">
                             <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
                             <div class="item-content">
@@ -257,6 +257,7 @@
                 </li>
             </ul>
             <!-- /.header-dropdown-list -->
+
             <div class="header-user d-flex align-items-center">
                 <a href="#"><img src="img/header-user-img.png" alt=""></a>
                 <div class="header-user-info">
@@ -264,12 +265,17 @@
                     <span class="user-cash">$171.00</span>
                 </div>
                 <!-- /.header-user-info -->
-                <div class="dropdown show">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLinkUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                <!--/dropdown-show-->
+            </div>
+            <!-- /.header-user -->
+            <ul class="header-dropdown-list">
+                <li class="dropdown show d-flex m-auto">
+                    <a class="dropdown-toggle dropdown-user" href="#" role="button" id="dropdownMenuLinkUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-chevron-down"></i>
                     </a>
 
-                    <div class="dropdown-menu dropdown-user" aria-labelledby="dropdownMenuLinkUser">
+                    <div class="dropdown-menu dropdown-user dropdown-menu-right" aria-labelledby="dropdownMenuLinkUser">
                         <a href="#"><i class="fa fa-chevron-right"></i><span>Profile Page</span></a>
                         <a href="#"><i class="fa fa-chevron-right"></i><span>Downloads</span></a>
                         <a href="#"><i class="fa fa-chevron-right"></i><span>Wishlist</span></a>
@@ -277,10 +283,10 @@
                         <a href="#"><i class="fa fa-chevron-right"></i><span>Statement</span></a>
                         <a href="#"><i class="fa fa-chevron-right"></i><span>Withdraws</span></a>
                     </div>
-                </div>
-                <!--/dropdown-show-->
-            </div>
-            <!-- /.header-user -->
+                </li>
+            </ul>
+            <!--./header-dropdown-list-->
+
             <div class="go-checkout">
                 <a href="#">Logout</a>
             </div>

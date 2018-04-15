@@ -23,6 +23,7 @@
 
 .top-header .header-user{
     margin-left: 20px;
+    position: relative;
 }
 
 .top-header .header-user .header-user-info{
@@ -30,7 +31,7 @@
     margin-right: 9px;
     font-size: 14px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 17px;
 }
 
 .top-header .header-user .header-user-info span{

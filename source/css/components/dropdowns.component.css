@@ -2,6 +2,12 @@
     margin-left: 15px;
 }
 
+.dropdown-menu{
+    margin:0;
+    top: 85% !important; /*Костыль */
+    border-radius: 0;
+}
+
 .dropdown-menu.dropdown-notification.dropdown-message,  .dropdown-menu.dropdown-notification.dropdown-notice{
     padding-bottom: 0;
     padding-top: 0;
@@ -114,6 +120,11 @@
     position: relative;
     width: 34px;
     height: 34px;
+}
+
+.dropdown-toggle.dropdown-user{
+    position: relative;
+    padding: 10px 0 9px;
 }
 
 .dropdown-toggle .count{
