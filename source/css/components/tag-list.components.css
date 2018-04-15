@@ -6,13 +6,12 @@
     text-align: center;
 }
 .tag-list-item{
-    display: inline-block;
+    display: inline-table;
     font-family: Roboto;
     font-size: 14px;
     color: #000;
     background-color: #fff;
-    height:35px;
-    padding:7px 22px;
+    padding:11px 22px;
 }
 .tag-list .active{
     background-color: #da6e63;
@@ -22,4 +21,3 @@
     background-color: #da6e63;
     color: #ffffff;
 }
-

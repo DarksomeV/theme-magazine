@@ -15,6 +15,9 @@
     font-size: 14px;
     font-weight: 300 !important;
 }
+.table-striped tbody tr:nth-of-type(odd){
+    background-color: #fbfbfb;
+}
 .table .id{
     font-weight: 700;
 }
@@ -31,4 +34,13 @@
 }
 th{
     font-weight: 400;
+    line-height: 32px;
+}
+.table td, .table th{
+    vertical-align: middle;
+}
+.table th.position-count{
+    width: 45px;
+    text-align: right;
+    padding: .75rem 11px;
 }
