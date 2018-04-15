@@ -5,6 +5,9 @@ body{
     margin-bottom: 60px;
     margin-top: 60px;
 }
+.text-center{
+    text-align: center;
+}
 .tag-list-item{
     display: inline-block;
     font-family: Roboto;
@@ -22,6 +25,4 @@ body{
     background-color: #da6e63;
     color: #ffffff;
 }
-.text-center{
-    text-align: center;
-}
+
