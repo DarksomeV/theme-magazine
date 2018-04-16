@@ -13,8 +13,77 @@
 
 .card.large-card .card-info{
     padding: 25px 30px 15px;
+    font-weight: 500;
+    color: #263238;
+}
+
+.card.medium-card .card-info{
+    padding: 25px 20px;
+    font-weight: 500;
+    color: #263238;
 }
 
 .card.large-card .card-author{
-    padding: 20px 30px;
+    padding: 17px 30px 21px;
+}
+.card.medium-card .card-author{
+    padding: 15px 22px 20px;
+}
+
+.card.large-card .card-author .author-name{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color:#546e7a;
+}
+
+.card.medium-card .card-author .author-name{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color:#546e7a;
+}
+
+.card.large-card .card-author .card-roduct-rating{
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color:#ffa726;
+}
+
+.card.medium-card .card-author .card-roduct-rating{
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color:#ffa726;
+}
+
+.card.large-card .card-item-title{
+    font-size: 18px;
+}
+
+.card.medium-card .card-item-title{
+    font-size: 18px;
+}
+
+.card.large-card .card-item-category{
+    font-size: 14px;
+    color: #8bc34a;
+    margin-top: 10px;
+}
+
+.card.medium-card .card-item-category{
+    font-size: 14px;
+    color: #8bc34a;
+    margin-top: 10px;
+}
+
+.card.large-card .card-price{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card.medium-card .card-price{
+    font-weight: 700;
+    font-size: 20px;
 }
