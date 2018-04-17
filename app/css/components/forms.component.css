@@ -15,7 +15,7 @@ select{
     color: #707070;
     padding-left: 15px;
     padding-right: 15px;
-    /*border-radius: 0;*/
+    border-radius: 0;
 }
 .form-control:focus,
 .form-control-login:focus {
@@ -23,8 +23,56 @@ select{
     -webkit-box-shadow: none;
             box-shadow: none;
 }
+.form-control.upload-item {
+    max-width: 900px;
+}
 textarea {
     min-height: 150px;
+}
+.col-form-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #444;
+}
+.col-form-must {
+    font-size: 24px;
+    color: #8bc34a;
+}
+/*Select*/
+.jq-selectbox {
+    width: 100%;
+}
+.jq-selectbox__select {
+    height: 40px;
+    background: #f9f9f9;
+    border-color: #dedede;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0 40px 0 15px;
+    line-height: 40px;
+}
+.jq-selectbox__select:hover {
+    background: #f9f9f9;
+}
+.jq-selectbox__select-text {
+    font-size: 14px;
+    /*line-height: 2.1428;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #707070;
+}
+.jq-selectbox__trigger {
+    border-left: none;
+    width: 40px;
+}
+.jq-selectbox__trigger-arrow {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-top-color: #000000;
 }
 /*Search*/
 .form-control-search{
@@ -52,7 +100,7 @@ textarea {
             transform: translateY(-50%);
     right: 18px;
 }
-
+/*Login*/
 .form-login {
     max-width: 400px;
     margin-left: auto;

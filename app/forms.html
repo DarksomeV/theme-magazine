@@ -11,6 +11,10 @@
     <!--Font-Awesome-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
+    <!--Form Styler-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.theme.css">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Foxtar</title>
 </head>
@@ -31,6 +35,10 @@
             <input type="text" name="first-name" class="form-control">
             <!--Text Area-->
             <textarea name="message" class="form-control" placeholder="<h1> Type your text  here </h1/>"></textarea>
+            <div class="form-group row m-auto">
+                <label for="ProductName" class="col-form-label">Product Name<span class="col-form-must">*</span></label>
+                <input type="text" class="form-control upload-item m-auto" id="ProductName" value="Enter your product name here ...">
+            </div>
             <!--Select-->
             <div class="select">
                 <div class="row">
@@ -39,7 +47,7 @@
                         <div class="row form-group">
                             <label for="Selectcountry" class="col-sm-4 col-form-label">Country</label>
                             <div class="col-sm-8">
-                                <select  id="Selectcountry" name="selectCountry" class="form-control">
+                                <select  id="Selectcountry" name="selectCountry">
                                     <option>Select your country</option>
                                     <option value="USA">USA</option>
                                     <option value="Australia">Australia</option>
@@ -59,7 +67,7 @@
             <input type="text" name="name" class="form-control disabled" placeholder="DISABLED" disabled>
             <input type="text" name="select" class="form-control error" placeholder="">
             <div class="footer-form">
-                <input type="e-mail" name="sign-up" class="form-control-sign-up" placeholder="E-mail Adress">
+                <input type="email" name="sign-up" class="form-control-sign-up" placeholder="E-mail Adress">
                 <button>
                     <i class="fa fa-location-arrow"></i>
                 </button>
@@ -92,5 +100,9 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.js"></script>
+
+<!--Init plugins-->
+<script src="js/init.js"></script>
 </body>
 </html>
