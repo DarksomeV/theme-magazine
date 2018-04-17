@@ -16,6 +16,8 @@ footer .company-adress{
 }
 
 .footer-content .company-adress li{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
