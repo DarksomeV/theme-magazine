@@ -29,41 +29,6 @@
 ```
     .aside-section - стили боковых секций
     .aside-section .title - стиль заголовка боковых секций
+    /*Aside section - Categories*/- блок со стилями боковой секции с категориями товаров
+    /*Aside section - TOP 10 Sellers*/ - блок со стилями для боковой секции TOP 10 sellers
 ```
- <ul>
-               <li class="categories-item d-flex align-item-center">
-                  <a href="#" class="mr-auto">
-                      <i class="fa fa-chevron-right"></i>
-                      <span class="categories-name">WordPress</span>
-                  </a>
-                   <span class="categories-quantity">150</span>
-               </li>
-               <li class="categories-item d-flex align-item-center">
-                   <a href="#" class="mr-auto">
-                       <i class="fa fa-chevron-right"></i>
-                       <span class="categories-name">Joomla</span>
-                   </a>
-                   <span class="categories-quantity">100</span>
-               </li>
-               <li class="categories-item d-flex align-item-center">
-                   <a href="#" class="mr-auto">
-                       <i class="fa fa-chevron-right"></i>
-                       <span class="categories-name">PSD</span>
-                   </a>
-                   <span class="categories-quantity">50</span>
-               </li>
-               <li class="categories-item d-flex align-item-center">
-                   <a href="#" class="mr-auto">
-                       <i class="fa fa-chevron-right"></i>
-                       <span class="categories-name">Plugins</span>
-                   </a>
-                   <span class="categories-quantity">60</span>
-               </li>
-               <li class="categories-item d-flex align-item-center">
-                   <a href="#" class="mr-auto">
-                       <i class="fa fa-chevron-right"></i>
-                       <span class="categories-name">Components</span>
-                   </a>
-                   <span class="categories-quantity">40</span>
-               </li>
-           </ul>

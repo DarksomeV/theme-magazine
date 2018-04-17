@@ -10,6 +10,7 @@
     color: #263238;
     border-bottom: 1px solid #dde3e8;
 }
+с
 .categories-item {
     margin-top: 30px;
 }
@@ -33,7 +34,7 @@
 .categories-quantity::after {
     content:')'
 }
-
+/*Aside section - TOP 10 Sellers*/
 .aside-section .card.medium-card {
     border: none;
     box-shadow: none;

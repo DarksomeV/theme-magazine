@@ -69,6 +69,7 @@ blockquote {
     color: #263238;
     border-bottom: 1px solid #dde3e8;
 }
+с
 .categories-item {
     margin-top: 30px;
 }
@@ -92,7 +93,7 @@ blockquote {
 .categories-quantity::after {
     content:')'
 }
-
+/*Aside section - TOP 10 Sellers*/
 .aside-section .card.medium-card {
     border: none;
     -webkit-box-shadow: none;
@@ -235,23 +236,6 @@ select{
     outline: none;
     border:none;
 }
-
-.form-control-search{
-    width: 100%;
-    background-color: #fff;
-    border-radius: 3px;
-    -webkit-box-shadow: 1px 0 10px rgba(100, 100, 100, 0.75);
-            box-shadow: 1px 0 10px rgba(100, 100, 100, 0.75);
-    color: #90a4ae;
-    height: 56px;
-    font-size: 14px;
-    line-height: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    letter-spacing: .05em;
-    padding: 0 20px;
-    max-width: 670px;
-}
 .form-control {
     width: 100%;
     border: 1px solid #dcdcdc;
@@ -275,14 +259,44 @@ select{
 textarea {
     min-height: 150px;
 }
-.form-control-login {
+/*Search*/
+.form-control-search{
     width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 0 10px rgba(100, 100, 100, 0.75);
+            box-shadow: 1px 0 10px rgba(100, 100, 100, 0.75);
+    color: #90a4ae;
+    height: 56px;
+    font-size: 14px;
+    /*line-height: 30px;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: .05em;
+    padding: 21px 18px;
+    max-width: 670px;
+    position: relative;
+
+}
+.form-control-search i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 18px;
+}
+
+.form-login {
     max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-control-login {
     background-color: #76ae36;
     color: #fff;
     height: 45px;
     font-size: 14px;
-    line-height: 2.5714;
+    /*line-height: 2.5714;*/
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding: 0 18px;
@@ -292,7 +306,6 @@ textarea {
     height: 45px;
     margin-left: 10px;
 }
-
 .form-control-login input::-webkit-input-placeholder {color:#fff;}
 .form-control-login input ::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
 .form-control-login input :-moz-placeholder           {color:#fff;}/* Firefox 18- */
@@ -312,6 +325,33 @@ textarea {
             box-shadow: 2px 0 2px rgba(118, 174, 54, 0.75);
 }
 
+.footer-form {
+    max-width: 260px;
+    margin: auto;
+    background: #2f3c43;
+    border: 1px solid #000;
+    -o-border-image: linear-gradient(#000, #263238)1;
+       border-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238))1;
+       border-image: linear-gradient(#000, #263238)1;
+}
+
+.form-control-sign-up {
+    height: 38px;
+    color: #697378;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    padding: 0 0 0 15px;
+    background-color: transparent;
+    width: 211px;
+}
+.footer-form button {
+    width: 43px;
+    background-color: #729e4c;
+    color: #fff;
+    font-size: 20px;
+    height: 38px;
+}
 
 .form-control.disabled,
 .form-control [disabled] {
