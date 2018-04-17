@@ -50,6 +50,9 @@
 /* --- Background color end--- */
 
 /* --- Text color start--- */
+.default-text {
+    line-height: 1.6;
+}
 .text-d-grey {
     color:rgba(38,50, 56, 0.22);
 }
