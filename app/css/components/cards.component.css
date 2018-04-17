@@ -2,7 +2,7 @@
     border-radius:0 ;
     border-color: #d9e0e3;
     -webkit-box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
-            box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
 }
 
 .card .card-img img{
