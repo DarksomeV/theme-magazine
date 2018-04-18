@@ -1,0 +1,46 @@
+.title{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    vertical-align: middle;
+    line-height: 65px;
+}
+.title-section{
+    height:65px;
+}
+.table thead{
+    background-color: #455a64;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300 !important;
+}
+.table-striped tbody tr:nth-of-type(odd){
+    background-color: #fbfbfb;
+}
+.table .id{
+    font-weight: 700;
+}
+.total-sales{
+    margin-top: 90px;
+    margin-bottom: 77px;
+    color: #263238;
+    font-size: 30px;
+    font-family: Roboto;
+}
+.total-sales span{
+    font-weight: 700;
+    color: #8bc34a;
+}
+th{
+    font-weight: 400;
+    line-height: 32px;
+}
+.table td, .table th{
+    vertical-align: middle;
+}
+.table th.position-count{
+    width: 45px;
+    text-align: right;
+    padding: .75rem 11px;
+}

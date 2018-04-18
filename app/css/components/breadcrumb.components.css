@@ -1,0 +1,25 @@
+.breadcrumb{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    color: #b0bec5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 43px;
+    list-style: none;
+    background-color: transparent;
+}
+.breadcrumb > li + li:before {
+    color: #8bc34a;
+    content: "-";
+    padding: 0 5px;
+    margin: 9px;
+}
+.breadcrumb .active {
+    color: #263238;
+}
