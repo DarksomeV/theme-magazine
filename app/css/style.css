@@ -58,7 +58,6 @@ blockquote {
 }
 /* RESET END */
 /*ASIDE SECTION START*/
-
 .aside-section {
     padding: 5px 30px 30px 30px;
     border: 1px solid #dde3e8;
@@ -154,7 +153,7 @@ blockquote {
     color: #263238;
 }
 
-/*BREADCRUMBS START*/
+/*BREADCRUMBS END*/
 /* BUTTONS START */
 .btn {
     font-family: 'Roboto', sans-serif;
@@ -269,6 +268,127 @@ blockquote {
 }
 
 /* BUTTONS END*/
+=======
+/* Buttons */
+.btn {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0;
+}
+
+.btn.btn-default {
+    font-size: 14px;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.btn.btn-default i {
+    padding-right: 10px;
+}
+
+.btn.btn-lg {
+    padding: 15px 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn.btn-round {
+    border-radius: 4px;
+}
+
+.btn.btn-shadow {
+    -webkit-box-shadow: 2px 2px 2px rgba(204, 216, 228, .75);
+            box-shadow: 2px 2px 2px rgba(204, 216, 228, .75);
+}
+
+.btn.btn-darkgreen-shadow {
+    -webkit-box-shadow: 2px 2px 2px rgba(118, 174, 54, .75);
+            box-shadow: 2px 2px 2px rgba(118, 174, 54, .75);
+}
+
+.btn.btn-red {
+    background-color: #e74c3c;
+}
+
+.btn.btn-red:hover {
+    background-color: #fff;
+    border: solid 1px #e74c3c;
+    color: #e74c3c
+}
+
+.btn.btn-green {
+    background-color: #95c85a;
+}
+
+.btn.btn-green:hover {
+    background-color: #fff;
+    border: solid 1px #95c85a;
+    color: #95c85a;
+}
+
+.btn.btn-white {
+    background-color: #fff;
+    color: #263238;
+}
+
+.btn.btn-white:hover {
+    background-color: #f5f5f5;
+}
+
+.btn.btn-gray {
+    background-color: #455a64;
+}
+
+.btn.btn-gray:hover {
+    background-color: #fff;
+    color: #455a64;
+    border: solid 1px #455a64;
+}
+
+.btn.btn-blue {
+    background-color: #42a5f5;
+}
+
+.btn.btn-blue:hover {
+    background-color: #fff;
+    color: #42a5f5;
+    border: solid 1px #42a5f5;
+}
+
+.btn.btn-darckgreen {
+    background-color: #76ae36;
+}
+
+.btn.btn-darckgreen:hover {
+    background-color: #95c85a;
+}
+.btn-outline {
+    background-color: rgba(255, 255, 255, .0);
+    border: solid 2px #fff;
+}
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, .1);
+    border: solid 2px #fff;
+}
+/*Work background for file with buttons
+*/
+.bg-buttons-green-html {
+    background-color: #8bc34a;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.bg-buttons-light-html {
+    background-color: #eeeeee;
+    padding: 30px;
+}
+.btn.login {
+    padding: 10px 14px;
+    font-size: 12px;
+    font-weight: 400;
+    width: 72px;
+    height: 32px;
+}
+
 /*CARDS START*/
 
 .card{
@@ -1051,6 +1171,15 @@ textarea {
     color: #444;
     margin-bottom: 25px;
 }
+.text-center{
+    text-align:center; 
+}
+.text-right{
+    text-align:right; 
+}
+.text-left{
+    text-align:left; 
+}
 /* --- Туайтлы расположены с убывание размера шрифта --- */
 /* --- Title end --- */
 
@@ -1071,10 +1200,10 @@ textarea {
 
 /* --- Text color start--- */
 .text-d-grey {
-    color: #263238;
+    color:rgba(38,50, 56, 0.22);
 }
 .text-l-gray {
-    color: #444;
+    color:rgba(122,122,122,0.48);
 }
 .text-green {
     color: #8bc34a;
@@ -1086,12 +1215,22 @@ textarea {
     color: #70838d;
 }
 .text-l-cyan {
-    color: #b7c3c8;
+    color: rgba(183,195,200,0.78)
+}
+.text-wite{
+    color: #fff;
+}
+.text-main_serch{
+    color: rgba(144, 164, 174, 0.68)
+}
+.text-need-help{
+    color: rgba(231, 76, 60, 0.91);
 }
 /* --- l = light  d = dark --- */
 /* --- Text color end--- */
 
-/*TEXT AND TITLE END*/
+
+
 /*YOUR SALES STATEMENT START*/
 
 .title{
