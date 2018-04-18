@@ -1,3 +1,5 @@
+/*TEXT AND TITLE START*/
+
 /* --- Title start --- */
 .section-title {
     font-weight: 700;
@@ -62,8 +64,4 @@
 /* --- l = light  d = dark --- */
 /* --- Text color end--- */
 
-/* --- Исключительно для гайда (убрать до мерджа веток)--- */
-.container{
-    height: 100px;
-    width: 100px;
-}
+/*TEXT AND TITLE END*/

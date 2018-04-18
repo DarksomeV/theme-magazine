@@ -1,3 +1,4 @@
+/*FOOTER START*/
 footer{
     background-color: #263238;
 }
@@ -65,9 +66,11 @@ footer .categories-item .categories-name, .footer-description{
     z-index: 1;
 }
 
-.footer-form .footer-form-title{
+.form-for-footer .footer-form-title{
     font-size: 20px;
     line-height: 36px;
     color: #ffffff;
     font-weight: 400;
 }
+
+/*FOOTER END*/

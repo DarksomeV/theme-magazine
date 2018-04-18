@@ -1,3 +1,5 @@
+/*DROPDOWNS START*/
+
 .header-dropdown-list + .header-dropdown-list{
     margin-left: 15px;
 }
@@ -159,4 +161,6 @@
 .dropdown-toggle::after{
     display:none;
 }
+
+/*DROPDOWNS END*/
 

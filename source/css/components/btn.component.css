@@ -1,4 +1,4 @@
-/* Buttons */
+/* BUTTONS START */
 .btn {
     font-family: 'Roboto', sans-serif;
     border-radius: 0;
@@ -108,3 +108,5 @@
     background-color: #eeeeee;
     padding: 30px;
 }
+
+/* BUTTONS END*/

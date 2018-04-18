@@ -1,0 +1,67 @@
+/*TEXT AND TITLE START*/
+
+/* --- Title start --- */
+.section-title {
+    font-weight: 700;
+	font-size: 36px;
+    margin-bottom: 60px;
+    color: #263238;
+}
+.text-title {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 32px;
+    color: #263238;
+}
+.block-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #263238;
+}
+.title-md {
+    font-weight: 700;
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 25px;
+}
+/* --- Туайтлы расположены с убывание размера шрифта --- */
+/* --- Title end --- */
+
+/* --- Background color start--- */
+.bg-dark-grey {
+    background-color: #263238; 
+}
+.bg-grey {
+    background-color: #d4d4d4;
+}
+.bg-light-grey {
+    background-color: #f4f6f5;
+}
+.bg-green {
+    background-color: #8bc34a;
+}
+/* --- Background color end--- */
+
+/* --- Text color start--- */
+.text-d-grey {
+    color: #263238;
+}
+.text-l-gray {
+    color: #444;
+}
+.text-green {
+    color: #8bc34a;
+}
+.text-cadet-blue {
+    color: #546e7a;
+}
+.text-l-blue {
+    color: #70838d;
+}
+.text-l-cyan {
+    color: #b7c3c8;
+}
+/* --- l = light  d = dark --- */
+/* --- Text color end--- */
+
+/*TEXT AND TITLE END*/

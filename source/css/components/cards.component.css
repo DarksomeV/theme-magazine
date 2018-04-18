@@ -1,3 +1,5 @@
+/*CARDS START*/
+
 .card{
     border-radius:0 ;
     border-color: #d9e0e3;
@@ -89,3 +91,5 @@
     font-weight: 700;
     font-size: 20px;
 }
+
+/*CARDS END*/

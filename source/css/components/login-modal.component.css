@@ -1,3 +1,5 @@
+/*LOGIN-MODAL START*/
+
 #loginModal .modal-dialog{
     max-width: 730px;
 }
@@ -51,3 +53,5 @@
     left:18px;
     color: #ffffff;
 }
+
+/*LOGIN-MODAL END*/

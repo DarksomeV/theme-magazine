@@ -1,4 +1,4 @@
-
+/*FORMS START*/
 select{
     outline: none;
     border:none;
@@ -181,3 +181,5 @@ textarea {
 .form-control .form-control-search {
     margin: 10px 0;
 }
+
+/*FORMS END*/

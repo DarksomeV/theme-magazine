@@ -1,3 +1,4 @@
+/*ASIDE SECTION START*/
 .aside-section {
     padding: 5px 30px 30px 30px;
     border: 1px solid #dde3e8;
@@ -10,7 +11,7 @@
     color: #263238;
     border-bottom: 1px solid #dde3e8;
 }
-с
+
 .categories-item {
     margin-top: 30px;
 }
@@ -62,3 +63,5 @@
 .aside-section + .aside-section {
     margin-top: 30px;
 }
+
+/*ASIDE SECTION END*/
