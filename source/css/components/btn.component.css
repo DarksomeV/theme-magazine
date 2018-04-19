@@ -1,7 +1,7 @@
 /* Buttons */
 .btn {
-    font-family: 'Roboto', sans-serif;
-    border-radius: 0;
+    font-family: 'Roboto', sans-serif  !important ;
+    border-radius: 0  !important;
 }
 
 .btn.btn-default {
