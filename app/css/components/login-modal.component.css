@@ -1,0 +1,58 @@
+/*LOGIN-MODAL START*/
+
+#loginModal .modal-dialog{
+    max-width: 730px;
+}
+
+#loginModal .modal-content{
+    background-color: #8bc34a;
+    border-radius:0 ;
+    border: none;
+    padding: 90px 30px 110px;
+}
+
+#loginModal .login-title{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#loginModal form[name="login-form"]{
+    max-width: 400px;
+    margin: 40px auto 0;
+}
+
+.login-form-control::-webkit-input-placeholder {color:#ffffff;}
+.login-form-control::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+.login-form-control:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+.login-form-control:-ms-input-placeholder      {color:#ffffff;}
+
+#loginModal .login-form-control{
+    background-color: #76ae36;
+    height: 43px;
+    color:#ffffff;
+    font-size: 14px;
+    padding-left: 40px;
+    font-weight: 400;
+    width: 100%;
+}
+
+#loginModal .login-form-group{
+    position: relative;
+}
+
+#loginModal .login-form-group + .login-form-group{
+    margin-top: 8px;
+}
+
+#loginModal .login-form-group i{
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left:18px;
+    color: #ffffff;
+}
+
+/*LOGIN-MODAL END*/

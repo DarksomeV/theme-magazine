@@ -1,0 +1,63 @@
+/*HEADER START*/
+.top-header{
+    padding: 27px 0px;
+}
+
+.top-header .go-checkout a + a{
+    margin-left: 7px;
+}
+
+.top-header .go-checkout{
+    margin-left: 25px;
+}
+
+.top-header .header-help-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 25px;
+}
+
+.top-header .header-help-text span:first-child{
+    color:#e74c3c;
+}
+
+.top-header .header-user{
+    margin-left: 20px;
+    position: relative;
+}
+
+.top-header .header-user .header-user-info{
+    margin-left: 15px ;
+    margin-right: 9px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+.top-header .header-user .header-user-info span{
+    display: block;
+}
+
+.top-header .header-user-info .user-cash{
+    color: #8bc34a;
+}
+
+.bottom-header {
+    padding: 15px 0;
+    color: #ffffff;
+    background-color: #263238;
+}
+
+.bottom-header .header-nav{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.bottom-header .header-nav a + a{
+    margin-left: 43px;
+}
+
+/*HEADER END*/
+

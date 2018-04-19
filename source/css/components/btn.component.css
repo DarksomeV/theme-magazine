@@ -25,13 +25,11 @@
 }
 
 .btn.btn-shadow {
-    -webkit-box-shadow: 2px 2px 2px rgba(204, 216, 228, .75);
-            box-shadow: 2px 2px 2px rgba(204, 216, 228, .75);
+    box-shadow: 2px 2px 2px rgba(204, 216, 228, .75);
 }
 
 .btn.btn-darkgreen-shadow {
-    -webkit-box-shadow: 2px 2px 2px rgba(118, 174, 54, .75);
-            box-shadow: 2px 2px 2px rgba(118, 174, 54, .75);
+    box-shadow: 2px 2px 2px rgba(118, 174, 54, .75);
 }
 
 .btn.btn-red {
@@ -140,13 +138,11 @@
 }
 
 .btn.btn-shadow {
-    -webkit-box-shadow: 2px 2px 2px rgba(204, 216, 228, .75);
-            box-shadow: 2px 2px 2px rgba(204, 216, 228, .75);
+    box-shadow: 2px 2px 2px rgba(204, 216, 228, .75);
 }
 
 .btn.btn-darkgreen-shadow {
-    -webkit-box-shadow: 2px 2px 2px rgba(118, 174, 54, .75);
-            box-shadow: 2px 2px 2px rgba(118, 174, 54, .75);
+    box-shadow: 2px 2px 2px rgba(118, 174, 54, .75);
 }
 
 .btn.btn-red {

@@ -1,0 +1,35 @@
+/*PAGINATION START*/
+
+.pagination .page-item{
+    width: 40px;
+    height: 40px;
+}
+
+.pagination .page-item .page-link{
+    text-align: center;
+    font-size: 16px;
+    color: #263238;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+            box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    border:none;
+    border-radius: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.pagination .page-item .page-link:hover{
+    background-color: #b24a42;
+    color: #ffffff;
+}
+
+.pagination .page-item.selected .page-link{
+    background-color: #b24a42;
+    color: #ffffff;
+}
+
+.pagination .page-item + .page-item{
+    margin-left: 8px;
+}
+
+/*pagination end*/
