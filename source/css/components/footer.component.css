@@ -5,6 +5,7 @@ footer{
 
 .footer-content{
     padding: 110px 0 95px;
+    border-bottom: 1px solid #424d53;
 }
 
 .footer-content .footer-col-wrapper.links{
@@ -71,6 +72,16 @@ footer .categories-item .categories-name, .footer-description{
     line-height: 36px;
     color: #ffffff;
     font-weight: 400;
+}
+
+.copyright{
+    padding: 25px 0 30px;
+}
+
+.copyright p{
+    font-size: 15px;
+    line-height: 36px;
+    color:#919699;
 }
 
 /*FOOTER END*/

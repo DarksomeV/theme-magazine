@@ -1,7 +1,7 @@
 /*DROPDOWNS START*/
 
-.header-dropdown-list + .header-dropdown-list{
-    margin-left: 15px;
+.header-dropdown-list .dropdown + .dropdown{
+    margin-left: 15px !important;
 }
 
 .dropdown-menu{
