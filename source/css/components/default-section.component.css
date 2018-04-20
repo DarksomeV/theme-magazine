@@ -9,6 +9,7 @@
     margin: auto;
 }
 .search-section-main {
+    background: url(../img/search-section-bg-img.jpg) no-repeat center / cover;
     padding-top: 155px;
     padding-bottom: 175px;
 }

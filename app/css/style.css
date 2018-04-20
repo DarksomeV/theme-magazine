@@ -390,7 +390,9 @@ blockquote {
 }
 
 /*CARDS START*/
-
+.cards .row + .row{
+    margin-top:30px ;
+}
 .card{
     border-radius:0 ;
     border-color: #d9e0e3;
@@ -415,6 +417,15 @@ blockquote {
     padding: 25px 30px 15px;
     font-weight: 500;
     color: #263238;
+}
+
+.card .card-description .card-author a{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .card.medium-card .card-info{
@@ -442,6 +453,10 @@ blockquote {
     font-size: 14px;
     font-weight: 500;
     color:#546e7a;
+}
+
+.card .card-author .rating-count{
+    font-size: 12px;
 }
 
 .card.large-card .card-author .card-roduct-rating{
@@ -525,6 +540,7 @@ blockquote {
     margin: auto;
 }
 .search-section-main {
+    background: url(../img/search-section-bg-img.jpg) no-repeat center / cover;
     padding-top: 155px;
     padding-bottom: 175px;
 }
@@ -1187,6 +1203,24 @@ textarea {
     color: #444;
     margin-bottom: 25px;
 }
+
+.search-section-main-title{
+    margin-bottom: 50px;
+}
+
+.search-section-main-title span:first-child{
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.search-section-main-title span:nth-child(2){
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
 .text-center{
     text-align:center; 
 }
@@ -1297,3 +1331,10 @@ th{
 }
 
 /*YOUR-SALESSTATEMENT END*/
+.new-products .items-update-buttons{
+    margin-top: 75px;
+}
+
+.trending-products .trending-carousel .slick-slide{
+    padding: 0 15px;
+}
