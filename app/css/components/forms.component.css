@@ -75,7 +75,12 @@ textarea {
     border-top-color: #000000;
 }
 /*Search*/
-.form-control-search{
+.form-search {
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-control-search {
     width: 100%;
     background-color: #fff;
     border-radius: 3px;
@@ -83,15 +88,14 @@ textarea {
             box-shadow: 1px 0 10px rgba(100, 100, 100, 0.75);
     color: #90a4ae;
     height: 56px;
-    font-size: 14px;
-    /*line-height: 30px;*/
+    position: relative;
+}
+.form-control-search input {
+    padding: 19px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     letter-spacing: .05em;
-    padding: 21px 18px;
-    max-width: 670px;
-    position: relative;
-
+    font-size: 14px;
 }
 .form-control-search i {
     position: absolute;
@@ -105,6 +109,7 @@ textarea {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
 }
 .form-control-login {
     background-color: #76ae36;
@@ -115,6 +120,7 @@ textarea {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding: 0 18px;
+    width: 100%;
 }
 .form-control-login input {
     background-color: #76ae36;

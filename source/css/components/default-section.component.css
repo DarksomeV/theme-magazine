@@ -14,6 +14,14 @@
 }
 .search-section {
     padding: 60px 0;
+    background: url('../img/search-section-background.jpg') no-repeat center/cover;
+    height: 228px;
+}
+.search-section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 28px;
 }
 
 

@@ -28,7 +28,7 @@
 3. Стили боковых блоков
 ```
     .aside-section - стили боковых секций
-    .aside-section .title - стиль заголовка боковых секций
+    .aside-section .aside-title - стиль заголовка боковых секций
     /*Aside section - Categories*/- блок со стилями боковой секции с категориями товаров
     /*Aside section - TOP 10 Sellers*/ - блок со стилями для боковой секции TOP 10 sellers
 ```
