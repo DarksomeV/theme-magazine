@@ -72,22 +72,26 @@ textarea {
     border-top-color: #000000;
 }
 /*Search*/
-.form-control-search{
+.form-search {
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-control-search {
     width: 100%;
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 1px 0 10px rgba(100, 100, 100, 0.75);
     color: #90a4ae;
     height: 56px;
-    font-size: 14px;
-    /*line-height: 30px;*/
+    position: relative;
+}
+.form-control-search input {
+    padding: 19px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     letter-spacing: .05em;
-    padding: 21px 18px;
-    max-width: 670px;
-    position: relative;
-
+    font-size: 14px;
 }
 .form-control-search i {
     position: absolute;
@@ -96,44 +100,69 @@ textarea {
     right: 18px;
 }
 /*Login*/
-.form-login {
+.login-form {
+    background-color: #8bc34a;
+    border-radius: 0;
+    border: none;
+    padding: 90px 30px 110px;
+}
+
+/*#loginModal */
+.login-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+form[name="login-form"] {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
 }
-.form-control-login {
+.login-form-control::-webkit-input-placeholder {color:#fff;}
+.login-form-control::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.login-form-control:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.login-form-control:-ms-input-placeholder      {color:#fff;}
+
+.login-form-control {
     background-color: #76ae36;
+    height: 43px;
     color: #fff;
-    height: 45px;
     font-size: 14px;
-    /*line-height: 2.5714;*/
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    padding: 0 18px;
+    padding-left: 40px;
+    width: 100%;
 }
-.form-control-login input {
-    background-color: #76ae36;
-    height: 45px;
+.login-form-group {
+    position: relative;
+}
+.login-form-group + .login-form-group {
+    margin-top: 8px;
+}
+.login-form-group i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 18px;
+    color: #fff;
+}
+.login-btn-group {
+    margin-top: 20px;
+    position: relative;
+}
+.login-btn-group button {
+    width: 138px;
+}
+
+.login-btn-group .btn + .btn {
     margin-left: 10px;
 }
-.form-control-login input::-webkit-input-placeholder {color:#fff;}
-.form-control-login input ::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
-.form-control-login input :-moz-placeholder           {color:#fff;}/* Firefox 18- */
-.form-control-login input:-ms-input-placeholder      {color:#fff;}
-
-.btn-login {
-    background-color: #fff;
-    font-weight: 700;
-    line-height: 2.14;
-    color: #000;
-    font-size: 14px;
-    text-transform: uppercase;
-    max-width: 140px;
-    width: 100%;
-    height: 50px;
-    box-shadow: 2px 0 2px rgba(118, 174, 54, 0.75);
+.login-btn-group a {
+    width: 248px;
 }
-
+/*Footer - form*/
 .footer-form {
     max-width: 260px;
     margin: auto;
@@ -141,7 +170,7 @@ textarea {
     border: 1px solid #000;
     border-image: linear-gradient(#000, #263238)1;
 }
-
+/*Footer form*/
 .form-control-sign-up {
     height: 38px;
     color: #697378;
@@ -159,7 +188,7 @@ textarea {
     font-size: 20px;
     height: 38px;
 }
-
+/*Special buttons*/
 .form-control.disabled,
 .form-control [disabled] {
     cursor: not-allowed;

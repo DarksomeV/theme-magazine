@@ -61,12 +61,13 @@ blockquote {
 .aside-section {
     padding: 5px 30px 30px 30px;
     border: 1px solid #dde3e8;
+    background-color: #fff;
 }
-.aside-section .title {
+.aside-section .aside-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: 3;
+    padding: 20px 0;
     color: #263238;
     border-bottom: 1px solid #dde3e8;
 }
@@ -117,8 +118,12 @@ blockquote {
     font-size: 16px;
 }
 .aside-section .card.medium-card .card-author {
-    padding: 0 0 20px 0;
+    padding: 0 0 27px 0;
     border-bottom: 1px solid #dde3e8;
+}
+.aside-section .card.medium-card:last-of-type .card-author {
+    border-bottom: none;
+    margin-bottom: 16px;
 }
 .aside-section + .aside-section {
     margin-top: 30px;
@@ -126,7 +131,9 @@ blockquote {
 
 /*ASIDE SECTION END*/
 /*BREADCRUMBS START*/
-
+.breadcrumbs {
+    padding: 48px 0 42px 0;
+}
 .breadcrumb{
     font-family: Roboto;
     font-size: 15px;
@@ -139,7 +146,7 @@ blockquote {
         flex-wrap: wrap;
     padding: 0;
     margin-left: 0;
-    margin-bottom: 43px;
+    margin-bottom: 0;
     list-style: none;
     background-color: transparent;
 }
@@ -266,9 +273,8 @@ blockquote {
     background-color: #eeeeee;
     padding: 30px;
 }
-
 /* BUTTONS END*/
-=======
+
 /* Buttons */
 .btn {
     font-family: 'Roboto', sans-serif;
@@ -279,6 +285,7 @@ blockquote {
     font-size: 14px;
     padding: 10px 15px;
     color: #fff;
+    text-align: center;
 }
 
 .btn.btn-default i {
@@ -289,6 +296,7 @@ blockquote {
     padding: 15px 30px;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1;
 }
 
 .btn.btn-round {
@@ -546,6 +554,14 @@ blockquote {
 }
 .search-section {
     padding: 60px 0;
+    background: url('../img/search-section-background.jpg') no-repeat center/cover;
+    height: 228px;
+}
+.search-section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 28px;
 }
 
 
@@ -884,7 +900,12 @@ textarea {
     border-top-color: #000000;
 }
 /*Search*/
-.form-control-search{
+.form-search {
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-control-search {
     width: 100%;
     background-color: #fff;
     border-radius: 3px;
@@ -892,15 +913,14 @@ textarea {
             box-shadow: 1px 0 10px rgba(100, 100, 100, 0.75);
     color: #90a4ae;
     height: 56px;
-    font-size: 14px;
-    /*line-height: 30px;*/
+    position: relative;
+}
+.form-control-search input {
+    padding: 19px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     letter-spacing: .05em;
-    padding: 21px 18px;
-    max-width: 670px;
-    position: relative;
-
+    font-size: 14px;
 }
 .form-control-search i {
     position: absolute;
@@ -910,45 +930,69 @@ textarea {
     right: 18px;
 }
 /*Login*/
-.form-login {
+.login-form {
+    background-color: #8bc34a;
+    border-radius: 0;
+    border: none;
+    padding: 90px 30px 110px;
+}
+
+/*#loginModal */
+.login-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+form[name="login-form"] {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
 }
-.form-control-login {
+.login-form-control::-webkit-input-placeholder {color:#fff;}
+.login-form-control::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.login-form-control:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.login-form-control:-ms-input-placeholder      {color:#fff;}
+
+.login-form-control {
     background-color: #76ae36;
+    height: 43px;
     color: #fff;
-    height: 45px;
     font-size: 14px;
-    /*line-height: 2.5714;*/
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    padding: 0 18px;
+    padding-left: 40px;
+    width: 100%;
 }
-.form-control-login input {
-    background-color: #76ae36;
-    height: 45px;
+.login-form-group {
+    position: relative;
+}
+.login-form-group + .login-form-group {
+    margin-top: 8px;
+}
+.login-form-group i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 18px;
+    color: #fff;
+}
+.login-btn-group {
+    margin-top: 20px;
+    position: relative;
+}
+.login-btn-group button {
+    width: 138px;
+}
+
+.login-btn-group .btn + .btn {
     margin-left: 10px;
 }
-.form-control-login input::-webkit-input-placeholder {color:#fff;}
-.form-control-login input ::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
-.form-control-login input :-moz-placeholder           {color:#fff;}/* Firefox 18- */
-.form-control-login input:-ms-input-placeholder      {color:#fff;}
-
-.btn-login {
-    background-color: #fff;
-    font-weight: 700;
-    line-height: 2.14;
-    color: #000;
-    font-size: 14px;
-    text-transform: uppercase;
-    max-width: 140px;
-    width: 100%;
-    height: 50px;
-    -webkit-box-shadow: 2px 0 2px rgba(118, 174, 54, 0.75);
-            box-shadow: 2px 0 2px rgba(118, 174, 54, 0.75);
+.login-btn-group a {
+    width: 248px;
 }
-
+/*Footer - form*/
 .footer-form {
     max-width: 260px;
     margin: auto;
@@ -958,7 +1002,7 @@ textarea {
        border-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238))1;
        border-image: linear-gradient(#000, #263238)1;
 }
-
+/*Footer form*/
 .form-control-sign-up {
     height: 38px;
     color: #697378;
@@ -976,7 +1020,7 @@ textarea {
     font-size: 20px;
     height: 38px;
 }
-
+/*Special buttons*/
 .form-control.disabled,
 .form-control [disabled] {
     cursor: not-allowed;
@@ -1149,6 +1193,7 @@ textarea {
 }
 
 /*pagination end*/
+
 
 /*TAGS START*/
 
@@ -1331,6 +1376,7 @@ th{
 }
 
 /*YOUR-SALESSTATEMENT END*/
+
 .new-products .items-update-buttons{
     margin-top: 75px;
 }
@@ -1338,3 +1384,47 @@ th{
 .trending-products .trending-carousel .slick-slide{
     padding: 0 15px;
 }
+
+ .all-products-wrapper {
+     background-color: #f4f6f5;
+     padding-bottom: 110px;
+ }
+ /*Price Ranger*/
+ .ui-widget.ui-widget-content {
+     height: 5px;
+     border: none;
+     background-color: #f2f5f8;
+     border-radius: 5px;
+     margin-bottom: 62px;
+ }
+
+ .ui-slider .ui-slider-range {
+     background-color: #37474f;
+ }
+
+ .ui-slider .min-value,
+ .ui-slider .max-value{
+     position: absolute;
+     top: 28px;
+     color: #78909c;
+     font-size: 15px;
+     -webkit-transform: translateX(-50%);
+             transform: translateX(-50%);
+     left: 50%;
+ }
+
+ .ui-slider .ui-state-default.ui-slider-handle {
+     width: 16px;
+     height: 16px;
+     border-radius: 50%;
+     border: 3px solid #8bc34a;
+     background-color: #fff;
+ }
+
+ .sort-controls {
+     border: 1px solid #dcdcdc;
+     background-color: #fff;
+     padding: 20px;
+     margin-bottom: 30px;
+ }
+

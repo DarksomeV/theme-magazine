@@ -110,9 +110,8 @@
     background-color: #eeeeee;
     padding: 30px;
 }
-
 /* BUTTONS END*/
-=======
+
 /* Buttons */
 .btn {
     font-family: 'Roboto', sans-serif;
@@ -123,6 +122,7 @@
     font-size: 14px;
     padding: 10px 15px;
     color: #fff;
+    text-align: center;
 }
 
 .btn.btn-default i {
@@ -133,6 +133,7 @@
     padding: 15px 30px;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1;
 }
 
 .btn.btn-round {

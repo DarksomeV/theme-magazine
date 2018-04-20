@@ -2,12 +2,13 @@
 .aside-section {
     padding: 5px 30px 30px 30px;
     border: 1px solid #dde3e8;
+    background-color: #fff;
 }
-.aside-section .title {
+.aside-section .aside-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: 3;
+    padding: 20px 0;
     color: #263238;
     border-bottom: 1px solid #dde3e8;
 }
@@ -57,8 +58,12 @@
     font-size: 16px;
 }
 .aside-section .card.medium-card .card-author {
-    padding: 0 0 20px 0;
+    padding: 0 0 27px 0;
     border-bottom: 1px solid #dde3e8;
+}
+.aside-section .card.medium-card:last-of-type .card-author {
+    border-bottom: none;
+    margin-bottom: 16px;
 }
 .aside-section + .aside-section {
     margin-top: 30px;
