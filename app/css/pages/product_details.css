@@ -1,0 +1,21 @@
+.breadcrumb{
+    padding-top :46px;
+}
+.product-details-img{
+    padding: 19px;
+    border: 1px solid;
+    border-color: #dedede;
+    margin: 40px 0;
+}
+.product_title{
+    margin-bottom: 36px;
+}
+.btn-social-wrapp{
+    margin: 50px 0 56px 0;
+}
+.btn-social-wrapp a+a{
+    margin-left: 20px;
+}
+.product-details-wrapp ul.socials li + li {
+    margin-left:3px;
+}
