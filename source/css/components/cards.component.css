@@ -53,10 +53,14 @@
 }
 
 .card.medium-card .card-author .author-name{
-    margin-left: 10px;
     font-size: 14px;
     font-weight: 500;
     color:#546e7a;
+    width: 90px;
+    padding: 0px 5px 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .card .card-author .rating-count{
@@ -74,9 +78,19 @@
     margin-right: 10px;
     font-size: 12px;
     font-weight: 400;
-    color:#ffa726;
+    color: #ffa726;
 }
-
+.card.medium-card .card-author .card-roduct-rating li{
+    padding: 0 1px;
+}
+.card-author .rating-count::before{
+    content: "( ";
+    color: #b0bec5;
+}
+.card-author .rating-count::after{
+    content: " )";
+    color: #b0bec5;
+}
 .card.large-card .card-item-title{
     font-size: 18px;
 }
@@ -108,3 +122,76 @@
 }
 
 /*CARDS END*/
+/*CARD ROW START*/
+.card .card-text-info,
+.card .feed-back{
+    display: none;
+}
+.cards .row .card.row-card + .row {
+    margin-top: 0;
+}
+.card.row-card {
+    /*margin-bottom: 30px;*/
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+.card.row-card .card-img {
+    flex: 3;
+}
+.card.row-card .card-img img {
+    height: 100%;
+}
+.card.row-card .card-description {
+    flex: 8;
+}
+.card.row-card .card-info {
+    padding: 22px 35px 20px;
+}
+.card.row-card .card-info .card-item-title {
+    font-size: 16px;
+}
+.card.row-card .card-info .card-price {
+    font-size: 30px;
+    font-weight: 700;
+}
+.card.row-card .card-text-info {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    color: #70838d;
+    margin-top: 20px;
+}
+.card.row-card .card-text-info .sales{
+    color: #aeb4bb;
+    font-size: 13px;
+}
+
+.card.row-card .card-text-info .sales-count::before {
+    content:' ( ';
+}
+.card.row-card .card-text-info .sales-count::after {
+    content:' )';
+}
+.card.row-card .card-author {
+    padding: 15px 30px 15px;
+}
+.card.row-card .feed-back {
+    display: flex;
+    border-left: 1px solid #aeb4bb;
+    padding: 0 0 0 18px;
+    font-size: 12px;
+    margin-left: 30px;
+}
+.card.row-card .feed-back i {
+    color: #8bc34a;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.card.row-card .feed-back-count::before {
+    content:'( ';
+}
+.card.row-card .feed-back-count::after {
+    content:' )';
+}
+/*CARD ROW END*/
