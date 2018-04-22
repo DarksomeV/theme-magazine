@@ -1594,3 +1594,25 @@ th{
 .trending-products .trending-carousel .slick-slide{
     padding: 0 15px;
 }
+
+.why-choose-foxtar .advantages .advantage .block-title{
+    margin: 30px 0;
+}
+
+.why-choose-foxtar .advantages .advantage .block-title span:hover{
+    color:#8bc34a;
+}
+
+.why-choose-foxtar .advantages .advantage p{
+    color:#b0bec5;
+}
+
+.why-choose-foxtar .advantages .advantage img{
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+}
+
+.why-choose-foxtar .advantages .advantage img:hover{
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+}

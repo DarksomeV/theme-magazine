@@ -9,7 +9,6 @@ $('.trending-carousel').slick({
 });
 // Slick carousel init
 $('.trending-carousel').slick({
-
     arrows:false,
     dots: true,
     infinite: true,
