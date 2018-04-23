@@ -57,6 +57,10 @@ blockquote {
     margin: 0;
 }
 /* RESET END */
+
+.icon {
+    display: inline-block;
+}
 /*ASIDE SECTION START*/
 .aside-section {
     padding: 5px 30px 30px 30px;
@@ -1315,6 +1319,55 @@ form[name="login-form"] {
 
 /*pagination end*/
 
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-fb {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 28px;
+  height: 28px;
+}
+.icon-linkedin {
+  background-image: url(../img/sprite.png);
+  background-position: -28px 0px;
+  width: 28px;
+  height: 28px;
+}
+.icon-pinterest {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -28px;
+  width: 28px;
+  height: 28px;
+}
+.icon-tw {
+  background-image: url(../img/sprite.png);
+  background-position: -28px -28px;
+  width: 28px;
+  height: 28px;
+}
+.icon-youtube {
+  background-image: url(../img/sprite.png);
+  background-position: -56px 0px;
+  width: 28px;
+  height: 28px;
+}
+
 
 /*TAGS START*/
 
@@ -1657,4 +1710,16 @@ th{
 .be-author .become-author button{
     margin-left: 40px;
     font-size: 18px;
+}
+
+.tutorials{
+    background: #fff;
+}
+
+.tutorials .tutorial .tutorial-title{
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f8f8f8;
+    padding: 40px 0;
+
 }
