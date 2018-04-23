@@ -246,13 +246,18 @@
 <section class="bg-light-grey ">
     <div class="container">
         <div class="row">
+            <div class="col-12">
+                 <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Word Press</a></li>
+                    <li class="active">GT Builder Construction</li>
+                </ol>
+            </div>
+             <!-- / breadcrumb -->
+        </div>
+        <div class="row">
             <div class="col-9">
                <div class="product-details-wrapp">
-                    <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Word Press</a></li>
-                        <li class="active">GT Builder Construction</li>
-                    </ol>
                     <div class="product-details-img">
                         <img src="img/product-details.jpg" alt="">
                     </div>
@@ -287,11 +292,123 @@
                         <!-- / socials -->
                     </div>
                     <!-- / btn-social-wrapp -->
+                    <section class="tabs-section">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="features-tab" data-toggle="tab" href="#features" role="tab" aria-controls="features" aria-selected="true">Item Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">Comments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="support-tab" data-toggle="tab" href="#support" role="tab" aria-controls="support" aria-selected="false">Support</a>
+                            </li>
+                        </ul>
+                        <!-- / nav-tabs -->
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="features" role="tabpanel" aria-labelledby="features-tab">
+                                <div class="content-wrapper-body d-flex justify-content-start">
+                                    <ul class="list-arrows">
+                                        <li><i class="fa fa-angle-right"></i><a href="#">Printing and typesetting industry</a></li>
+                                        <li><i class="fa fa-angle-right"></i><a href="#">Bhen an unknown printe</a></li>
+                                        <li><i class="fa fa-angle-right"></i><a href="#">Handard dummy text</a></li>
+                                        <li><i class="fa fa-angle-right"></i><a href="#">Desktop publishing software</a></li>
+                                        <li><i class="fa fa-angle-right"></i><a href="#">Bhen an unknown printe</a></li>
+                                    </ul>
+                                    <!-- / list-arrows -->
+                                    <ul class="list-arrows">
+                                        <li><i class="fa fa-angle-right"></i><a href="#">Printing and typesetting industry</a></li>
+                                        <li><i class="fa fa-angle-right"></i><a href="#">Bhen an unknown printe</a></li>
+                                        <li><i class="fa fa-angle-right"></i><a href="#">Handard dummy text</a></li>
+                                    </ul>
+                                    <!-- / list-arrows -->
+                                </div>
+                                <!-- /.content-wrapper-body -->
+                            </div>
+                            <!-- / features tab-->
+                            <div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">Comments</div>
+                            <!-- / comments tab-->
+                            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">Reviews</div>
+                            <!-- / reviews tab -->
+                            <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">Support</div>
+                            <!-- / support tab -->
+                        </div>
+                        <!-- / tab-content -->
+                    </section>
+                    <!-- / tabs-section -->
                </div>
             </div>
             <div class="col-3">
-
-            </div>
+                <div class="aside-section">
+                    <div class="aside-title">
+                        <span>
+                            Product Price
+                        </span>
+                    </div>
+                    <div class="product-price-wrapp d-flex align-items-center justify-content-between">
+                        <span class="product-price text-need-help block-title">$59.00</span>
+                        <!-- пока не изменил на дропдаун -->
+                        <div class="dropdown-price d-flex align-items-center">
+                            <span>Regular</span>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                         <!-- / dropdown-price -->
+                    </div>
+                    <!-- / product-price-wrapp -->
+                    <button class="btn btn-default btn-lg btn-green btn-shadow col col-12"><i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                    <button class="btn btn-default btn-lg btn-blue btn-shadow col col-12"><i class="fa fa-heart-o"></i>Add To Favourites</button>
+                    <button class="btn btn-default btn-lg btn-gray btn-shadow col col-12">Buy Now</button>
+                </div>
+                <!-- / aside-section -->
+                <div class="aside-section">
+                    <div class="aside-title">
+                        <span >
+                            Product Author
+                        </span>
+                    </div>
+                    <div class="product-price-wrapp d-flex align-items-center justify-content-between">  
+                        <div class="col-4">
+                            <img src="#" alt="#">
+                        </div>
+                        <div class="col-8">
+                            <div class="aside-title">
+                                <span>
+                                    Psd Boss
+                                </span>
+                            </div>
+                            <div class="dropdown-price d-flex align-items-center">
+                                <span>
+                                    Vieu Profile
+                                </span>
+                            </div>
+                        </div>   
+                      <!-- добавить контейнер под иконки -->
+                    </div>
+                </div>
+                <!-- / aside-section -->
+                <div class="aside-section sail d-flex align-items-center">
+                    <i class="fa fa-shopping-cart fa-sales"></i>
+                    <span class="sales-count">05</span>
+                    <span class="sales">Sales</span>
+                </div>
+                <!-- / aside-section -->
+                <div class="aside-section">
+                    <div class="aside-title">
+                        <span >
+                            Product Information
+                        </span>
+                    </div>
+                    <div class="product-price-wrapp d-flex align-items-start flex-column">
+                        <!-- семантически не правитьо, но эт работает -->   
+                        <div  class="flex-row align-items-stretch"><span>span <p>gegqwogj</p></span> </div>
+                        <span>lorem</span>
+                        <span>lorem</span>
+                        <span>lorem</span>
+                    </div>
+                </div>
         </div>
     </div>
 </section>
