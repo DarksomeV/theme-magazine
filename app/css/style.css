@@ -1058,13 +1058,12 @@ select{
     border: 1px solid #dcdcdc;
     background-color: #f9f9f9;
     height: 40px;
-    font-size: 14px;
-    line-height: 2.1428;
+    font-size: 15px;
+    line-height: 1;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #707070;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 13px 15px;
     border-radius: 0;
 }
 .form-control:focus,
@@ -1073,9 +1072,9 @@ select{
     -webkit-box-shadow: none;
             box-shadow: none;
 }
-.form-control.upload-item {
-    max-width: 900px;
-}
+/*.form-control.upload-item {*/
+    /*max-width: 900px;*/
+/*}*/
 textarea {
     min-height: 150px;
 }
@@ -1109,7 +1108,7 @@ textarea {
     background: #f9f9f9;
 }
 .jq-selectbox__select-text {
-    font-size: 14px;
+    font-size: 15px;
     /*line-height: 2.1428;*/
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -1126,6 +1125,7 @@ textarea {
             transform: translate(-50%, -50%);
     border-top-color: #000000;
 }
+
 /*Search*/
 .form-search {
     max-width: 670px;
@@ -1261,7 +1261,45 @@ form[name="login-form"] {
 .form-control .form-control-search {
     margin: 10px 0;
 }
-
+/*Upload form*/
+.jq-file {
+    width: 100%;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+.jq-file__name {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    padding: 13px 10px 13px 110px;
+    border: 1px solid #dcdcdc;
+    background-color: #f9f9f9;
+    height: 40px;
+    font-size: 12px;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #707070;
+}
+.jq-file__browse {
+    right: auto;
+    font-size: 12px;
+    padding: 6px 13px;
+    border: 1px solid #dedede;
+    background: #ffffff;
+    color: #444;
+    margin: 6px 8px;
+    border-radius: 0;
+    line-height: 1;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.jq-file input {
+    display: none;
+}
 /*FORMS END*/
 /*HEADER START*/
 .top-header{
@@ -1775,4 +1813,7 @@ th{
     font-size: 15px;
     line-height: 1;
     margin-top: 10px;
+}
+.content-wrapper-bordered .content-wrapper-body.first-part {
+    padding-bottom: 35px;
 }
