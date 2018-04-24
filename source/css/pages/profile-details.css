@@ -36,3 +36,7 @@
 .profile-details-wrap .default-sprites-social{
     margin-bottom: 25px;
 }
+
+.profile-details-wrap .btn-block + .btn-block{
+    margin-top: 15px;
+}

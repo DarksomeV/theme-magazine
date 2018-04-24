@@ -247,6 +247,11 @@
     color: #fff;
 }
 
+.btn.btn-block{
+    display: block;
+    width: 100%;
+}
+
 .btn.btn-default i {
     padding-right: 10px;
 }
