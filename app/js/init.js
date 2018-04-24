@@ -10,6 +10,11 @@ $('.trending-carousel').slick({
     slidesToScroll: 1
 });
 
+//init tabs
+$( function() {
+    $("#tabs").tabs();
+});
+
 // Switch product items view
 $('.grid-thumbs').on('click', function(){
     // Find cards and remove class row-card

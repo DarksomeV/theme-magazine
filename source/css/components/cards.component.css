@@ -63,18 +63,18 @@
     font-size: 12px;
 }
 
-.card.large-card .card-author .card-roduct-rating{
-    margin-right: 10px;
+.card-roduct-rating{
     font-size: 12px;
     font-weight: 400;
     color:#ffa726;
 }
 
+.card.large-card .card-author .card-roduct-rating{
+    margin-right: 10px;
+}
+
 .card.medium-card .card-author .card-roduct-rating{
     margin-right: 10px;
-    font-size: 12px;
-    font-weight: 400;
-    color:#ffa726;
 }
 
 .card.large-card .card-item-title{
