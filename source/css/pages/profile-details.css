@@ -1,0 +1,38 @@
+.profile-details-wrap .aside-section{
+    margin-bottom: 24px;
+}
+
+.profile-details-wrap .aside-author-info{
+    margin: 25px 0 44px;
+}
+.profile-details-wrap .aside-author-info .aside-author-details{
+    margin-left: 15px;
+}
+
+.profile-details-wrap .aside-author-info .aside-author-details h3{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
+.profile-details-wrap .aside-author-info .online-status{
+    border: 1px solid #d3d3d3;
+    color: #707070;
+    font-size: 13px;
+    display: flex;
+    padding: 5px 10px;
+}
+
+.profile-details-wrap .aside-author-info .online-status:hover{
+    background: #8bc34a;
+    border: 1px solid #8bc34a;
+    color: #ffffff;
+}
+
+.profile-details-wrap .aside-author-info .online-status i{
+    color: #8bc34a;
+    margin-right: 5px;
+}
+
+.profile-details-wrap .default-sprites-social{
+    margin-bottom: 25px;
+}
