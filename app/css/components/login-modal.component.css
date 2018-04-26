@@ -107,7 +107,7 @@
 .dropdown-toggle.dropdown-notification .count.basket-green-count{
     background-color:#8bc34a;
 }
-.go-checkout .btn{
+#loginModal .go-checkout .btn{
     margin-right: 28px;
 }
 .header .navigation{

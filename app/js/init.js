@@ -1,5 +1,5 @@
 //Select init
-$('select').styler();
+$('select, input[type="file"]').styler();
 
 // Slick carousel init
 $('.trending-carousel').slick({

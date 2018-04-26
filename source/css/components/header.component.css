@@ -42,6 +42,10 @@
 .top-header .header-user-info .user-cash{
     color: #8bc34a;
 }
+.top-header .go-checkout a {
+    font-size: 12px;
+    line-height: 1;
+}
 
 .bottom-header {
     padding: 15px 0;

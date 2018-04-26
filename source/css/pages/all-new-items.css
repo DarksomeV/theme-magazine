@@ -2,19 +2,19 @@
      background-color: #f4f6f5;
      padding-bottom: 110px;
  }
- /*Price Ranger*/
+ /*PRICE RANGER START*/
  .ui-widget.ui-widget-content {
      height: 5px;
      border: none;
      background-color: #f2f5f8;
      border-radius: 5px;
-     margin-bottom: 62px;
+     margin-bottom: 60px;
+     margin-top: 35px;
  }
 
  .ui-slider .ui-slider-range {
      background-color: #37474f;
  }
-
  .ui-slider .min-value,
  .ui-slider .max-value{
      position: absolute;
@@ -32,10 +32,64 @@
      border: 3px solid #8bc34a;
      background-color: #fff;
  }
-
+ /*SORT-CONTROL START*/
  .sort-controls {
      border: 1px solid #dcdcdc;
      background-color: #fff;
      padding: 20px;
-     margin-bottom: 30px;
+     /*margin-bottom: 30px;*/
  }
+ .sort-controls button {
+     background: none;
+ }
+ .sort-controls .sort-order {
+     font-size: 14px;
+     color: #455a64;
+ }
+ .sort-controls .product-dropdown {
+     padding: 0 13px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     font-size: 14px;
+     color: #707070;
+ }
+ .sort-controls .sort-direction {
+     font-size: 18px;
+     color: #707070;
+ }
+ .sort-controls .change-view-items button{
+     font-size: 16px;
+     color: #90a4ae;
+ }
+ .sort-controls .change-view-items button:focus {
+     color: #8bc34a;
+     outline: none;
+ }
+ .sort-controls .change-view-items button + button {
+     margin-left: 13px;
+ }
+ .sort-controls .change-view-items + .sort-controls.change-view-items {
+     margin-right: 13px;
+ }
+ /*SORT-CONTROL END*/
+ /*DROPDOWN START*/
+ .product-dropdown .dropdown-toggle {
+     padding: 0 0 0 5px;
+     position: relative;
+ }
+ .product-dropdown .dropdown-menu.dropdown-product {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     font-size: 14px;
+     min-width: fit-content;
+ }
+ /*DROPDOWN END*/
+ /*ALL-ITEMS-CONTAINER START*/
+ .all-items-container .card {
+     margin-top: 30px;
+ }
+ .all-products-wrapper .pagination {
+     margin-top: 60px;
+ }
+ /*ALL-ITEMS-CONTAINER END*/

@@ -1,0 +1,36 @@
+.aside-section.perdonal-info {
+    padding: 0;
+}
+.aside-section.perdonal-info .personal-info-chapter {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 17px 22px;
+    color: #707070;
+    border-bottom: 1px solid #d7d7d7;
+}
+.aside-section.perdonal-info .personal-info-chapter:last-child {
+    border-bottom: none;
+}
+.aside-section.perdonal-info .personal-info-chapter i {
+    font-weight: 400;
+    margin-right: 22px;
+    font-size: 9px;
+}
+.aside-section.perdonal-info .personal-info-chapter:active {
+    border-bottom: 2px solid #86bc44;
+    color: #37474f;
+}
+.aside-section.perdonal-info .personal-info-chapter i:active {
+    color: #86bc44;
+}
+.form-group.row {
+    margin-bottom: 20px;
+}
+.content-wrapper-body form .btn.btn-default {
+    padding: 15px 30px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+    margin-top: 10px;
+}
