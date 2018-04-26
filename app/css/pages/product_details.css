@@ -48,22 +48,25 @@
 .tabs-section .tab-content {
     padding: 35px 35px 65px;
 }
-.tab-content .list-arrows {
+.list-arrows {
     font-size: 16px;
 }
-.tab-content .list-arrows + .list-arrows {
+ .list-arrows + .list-arrows {
     margin-left: 37px;
+}
+.list-arrows li{
+    margin: 25px 0;
+}
+.list-arrows li i{
+    color:  #8bc34a;
+    padding-right: 15px;
 }
 
 .aside-section {
     margin-top: 40px; 
 }
 .aside-section + .aside-section{
-    margin: 40px 0;
-}
-.product-price-wrapp{
-    margin-top: 30px;
-    margin-bottom: 30px;  
+    margin: 32px 0;
 }
 .dropdown-price {
     padding: 0 10px;
@@ -116,7 +119,7 @@
     line-height: 1.43;
 }
 .product-info li{
-    padding: 20px 0;
+    margin: 20px 0;
 }
 .product-info-item {
     font-weight: 400;
