@@ -401,7 +401,6 @@ blockquote {
     width: 72px;
     height: 32px;
 }
-=======
 /* Buttons */
 .btn {
     font-family: 'Roboto', sans-serif  !important ;
@@ -1238,7 +1237,7 @@ form[name="login-form"] {
 
 #loginModal .modal-dialog{
     max-width: 730px;
-}
+    font-family: Roboto, serif;}
 
 #loginModal .modal-content{
     background-color: #8bc34a;
@@ -1258,7 +1257,10 @@ form[name="login-form"] {
     max-width: 400px;
     margin: 40px auto 0;
 }
-
+.btn.focus, .btn:focus{
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
 .login-form-control::-webkit-input-placeholder {color:#ffffff;}
 .login-form-control::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
 .login-form-control:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
@@ -1290,8 +1292,114 @@ form[name="login-form"] {
     left:18px;
     color: #ffffff;
 }
-
+#loginModal .login-btn-group {
+    margin-top: 19px;
+    font-family: Roboto, serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+#loginModal .submit-btn{
+    font-size: 14px;
+    font-weight: bold;
+    padding:19px 44px;
+    background-color: #ffffff;
+    -webkit-box-shadow: inset hoff voff blur color;
+    box-shadow: 0 2px 2px 0 rgba(118,174,54, .75);
+}
+#loginModal .btn-green{
+    background-color: #76ae36;
+    color: #ffffff;
+}
+#loginModal .custom-btn{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 18px 48px 19px 37px;
+    margin-left: 10px;
+}
+#loginModal .lost-password{
+    color: #ffffff;
+}
+#loginModal .fa{
+    margin-right: 5px;
+}
+#loginModal .close{
+    position: absolute;
+    right: 28px;
+    top: 21px;
+    color: #ffffff;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    opacity: 1;
+}
 /*LOGIN-MODAL END*/
+
+/*HEADER START*/
+.dropdown-toggle.dropdown-notification .count.basket-green-count{
+    background-color:#8bc34a;
+}
+.go-checkout .btn{
+    margin-right: 28px;
+}
+.header .navigation{
+    padding: 15px 0;
+}
+.navigation .header-nav a + a{
+    margin-left: 43px;
+}
+.navigation .header-nav{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.navigation{
+    margin-left: 64px;
+    margin-right: 155px;
+}
+
+.bottom-header .header-nav a + a{
+    margin-left: 43px;
+}
+
+#loginModal .go-checkout .btn.btn-default{
+    padding: 6px 20px;
+    border-radius: 3px !important;
+}
+#loginModal .search-section-login{
+    background: url(../img/search-section-login.jpg) no-repeat center / cover;
+    padding-top: 155px;
+    padding-bottom: 175px;
+}
+#loginModal .search-section-login .search-section-title{
+    text-transform: uppercase;
+    font-family: Roboto, serif;
+    font-size: 48px;
+    font-weight: bold;
+
+}
+#loginModal .text-green{
+    color: #8bc34a;
+}
+
+#loginModal .search-section-title{
+    margin-bottom: 108px;
+}
+
+#loginModal .search-section-login .form-control-search input{
+    width: 220px;
+    color: #90a4ae;
+}
+#loginModal .search-section-login .form-control-search i{
+    font-size: 20px;
+    color: #263238;
+}
+#loginModal .search-section-login .form-search{
+    max-width: 760px;
+}
 /*PAGINATION START*/
 
 .pagination .page-item{
@@ -1548,16 +1656,29 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 
 /*YOUR SALES STATEMENT START*/
-
-.title{
+.your-sales-statement{
+    overflow: hidden;
+}
+.table-section{
+    padding:35px ;
+    border-left:1px solid #dedede;
+    border-right:1px solid #dedede;
+    border-bottom:1px solid #dedede;
+    background-color: #ffffff;
+    margin-bottom: 82px;
+}
+.your-sales-statement .title{
     font-family: Roboto;
     font-size: 24px;
     font-weight: 500;
     vertical-align: middle;
     line-height: 65px;
 }
-.title-section{
+.your-sales-statement .title-section{
     height:65px;
+    border:1px solid #dedede;
+    background-color: #fff;
+    padding:0 35px;
 }
 .table thead{
     background-color: #455a64;
@@ -1595,7 +1716,10 @@ th{
     text-align: right;
     padding: .75rem 11px;
 }
-
+.your-sales-statement .btn.btn-default{
+    padding: 11px 18px 9px 17px;
+    font-size: 12px;
+}
 /*YOUR-SALESSTATEMENT END*/
  .all-products-wrapper {
      background-color: #f4f6f5;
