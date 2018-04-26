@@ -11,7 +11,7 @@
 
 body{
     margin: 0;
-    background-color: #fff;
+    background-color: #f4f6f5;
     color: #263238;
     font: 400 14px/1 'Roboto', sans-serif;
 }
@@ -57,6 +57,10 @@ blockquote {
     margin: 0;
 }
 /* RESET END */
+
+.icon {
+    display: inline-block;
+}
 /*ASIDE SECTION START*/
 .aside-section {
     padding: 5px 30px 28px 30px;
@@ -132,7 +136,43 @@ blockquote {
 .aside-section + .aside-section {
     margin-top: 30px;
 }
-
+@media (max-width: 991px) {
+    .mobile-aside {
+        position: fixed;
+        top: 15px;
+        left: 0;
+        z-index: 999;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    .mobile-aside.left {
+        -webkit-transform: translateX(-110%);
+                transform: translateX(-110%);
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+        opacity: 0;
+        z-index: -1;
+        background-color: rgba(0,0,0,0.4);
+    }
+    #main.show-aside .mobile-aside.left,
+    #main.show-aside .mobile-aside.right {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    #main.show-aside .overlay {
+        z-index: 998;
+        opacity: 1;
+    }
+}
 /*ASIDE SECTION END*/
 /*BREADCRUMBS START*/
 .breadcrumbs {
@@ -411,6 +451,11 @@ blockquote {
     font-size: 14px;
     padding: 10px 15px;
     color: #fff;
+}
+
+.btn.btn-block{
+    display: block;
+    width: 100%;
 }
 
 .btn.btn-default i {
@@ -1448,12 +1493,12 @@ form[name="login-form"] {
 }
 
 .pagination .page-item .page-link:hover{
-    background-color: #b24a42;
+    background-color: #e74c3c;
     color: #ffffff;
 }
 
 .pagination .page-item.selected .page-link{
-    background-color: #b24a42;
+    background-color: #e74c3c;
     color: #ffffff;
 }
 
@@ -1462,6 +1507,55 @@ form[name="login-form"] {
 }
 
 /*pagination end*/
+
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-fb {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 28px;
+  height: 28px;
+}
+.icon-linkedin {
+  background-image: url(../img/sprite.png);
+  background-position: -28px 0px;
+  width: 28px;
+  height: 28px;
+}
+.icon-pinterest {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -28px;
+  width: 28px;
+  height: 28px;
+}
+.icon-tw {
+  background-image: url(../img/sprite.png);
+  background-position: -28px -28px;
+  width: 28px;
+  height: 28px;
+}
+.icon-youtube {
+  background-image: url(../img/sprite.png);
+  background-position: -56px 0px;
+  width: 28px;
+  height: 28px;
+}
 
 
 /*TAGS START*/
@@ -1735,9 +1829,6 @@ th{
      top: 100%;
      left: 0;
      font-size: 14px;
-     min-width: -webkit-fit-content;
-     min-width: -moz-fit-content;
-     min-width: fit-content;
  }
  /*DROPDOWN END*/
  /*ALL-ITEMS-CONTAINER START*/
@@ -1752,6 +1843,10 @@ th{
     margin-top: 75px;
 }
 
+.trending-products{
+    background-color: #fff;
+}
+
 .trending-products .trending-carousel .slick-slide{
     padding: 0 15px;
 }
@@ -1762,6 +1857,7 @@ th{
 
 .why-choose-foxtar .advantages .advantage .block-title span:hover{
     color:#8bc34a;
+    cursor: pointer;
 }
 
 .why-choose-foxtar .advantages .advantage p{
@@ -1771,6 +1867,7 @@ th{
 .why-choose-foxtar .advantages .advantage img{
     -webkit-filter: brightness(80%);
             filter: brightness(80%);
+    cursor: pointer;
 }
 
 .why-choose-foxtar .advantages .advantage img:hover{
@@ -1778,6 +1875,96 @@ th{
             filter: brightness(100%);
 }
 
+.slick-dots {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.slick-dots li{
+    width: 16px;
+    height: 16px;
+    background-color: #e8e8e8;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 1px 1px #acacac;
+            box-shadow: inset 0 1px 1px #acacac;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active {
+    background-color: #8bc34a;
+    border:none;
+}
+
+.slick-dots li button{
+    display: none;
+}
+
+.slick-dots li + li {
+    margin-left: 5px;
+}
+
+.be-author .be-author-background-wrapper{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.be-author .be-author-background-wrapper img{
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 25.52px 3.48px rgba(0, 0, 0, 0.17);
+            box-shadow: 0px 0px 25.52px 3.48px rgba(0, 0, 0, 0.17);
+}
+
+.be-author .become-author{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 55%;
+    margin: 0 auto;
+    padding: 70px 60px;
+    position: absolute;
+    z-index: 10;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    right: 0;
+    background-color: rgba(139, 195, 74, 0.95);
+}
+
+.be-author .become-author p{
+    font-size: 30px;
+}
+
+.be-author .become-author p span{
+    font-weight: 700;
+}
+
+.be-author .become-author button{
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.tutorials{
+    background: #fff;
+}
+
+.tutorials .tutorial .tutorial-title{
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f8f8f8;
+    padding: 40px 0;
+
+}
 .aside-section.perdonal-info {
     padding: 0;
 }
