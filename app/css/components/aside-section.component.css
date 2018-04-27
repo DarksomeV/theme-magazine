@@ -73,7 +73,14 @@
 .aside-section + .aside-section {
     margin-top: 30px;
 }
+.mobile-aside-toggle {
+    display: none;
+}
 @media (max-width: 991px) {
+    .mobile-aside-toggle {
+        display: block;
+        margin-right: 10px;
+    }
     .mobile-aside {
         position: fixed;
         top: 15px;
@@ -87,6 +94,12 @@
     .mobile-aside.left {
         -webkit-transform: translateX(-110%);
                 transform: translateX(-110%);
+    }
+    .mobile-aside.right {
+        -webkit-transform: translateX(110);
+                transform: translateX(110);
+        left: auto;
+        right: 30px;
     }
     .overlay {
         position: fixed;

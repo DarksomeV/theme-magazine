@@ -196,20 +196,23 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-left: 1px solid #aeb4bb;
-    padding: 0 0 0 18px;
     font-size: 12px;
-    margin-left: 30px;
 }
 .card.row-card .feed-back i {
     color: #8bc34a;
     font-size: 16px;
     margin-right: 15px;
+    border-left: 1px solid #aeb4bb;
+    padding: 0 0 0 18px;
+    margin-left: 30px;
 }
 .card.row-card .feed-back-count::before {
     content:'( ';
 }
 .card.row-card .feed-back-count::after {
     content:' )';
+}
+.card {
+    margin-top: 30px;
 }
 /*CARD ROW END*/

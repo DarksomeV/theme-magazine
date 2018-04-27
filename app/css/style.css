@@ -15,6 +15,9 @@ body{
     color: #263238;
     font: 400 14px/1 'Roboto', sans-serif;
 }
+body.overflow {
+    overflow: hidden;
+}
 h1, h2, h3, h4, h5, h6{
     margin: 0;
     font-weight: normal;
@@ -55,6 +58,9 @@ input[type="submit"]{
 }
 blockquote {
     margin: 0;
+}
+main {
+    overflow: hidden;
 }
 /* RESET END */
 
@@ -136,7 +142,14 @@ blockquote {
 .aside-section + .aside-section {
     margin-top: 30px;
 }
+.mobile-aside-toggle {
+    display: none;
+}
 @media (max-width: 991px) {
+    .mobile-aside-toggle {
+        display: block;
+        margin-right: 10px;
+    }
     .mobile-aside {
         position: fixed;
         top: 15px;
@@ -150,6 +163,12 @@ blockquote {
     .mobile-aside.left {
         -webkit-transform: translateX(-110%);
                 transform: translateX(-110%);
+    }
+    .mobile-aside.right {
+        -webkit-transform: translateX(110);
+                transform: translateX(110);
+        left: auto;
+        right: 30px;
     }
     .overlay {
         position: fixed;
@@ -764,21 +783,24 @@ blockquote {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-left: 1px solid #aeb4bb;
-    padding: 0 0 0 18px;
     font-size: 12px;
-    margin-left: 30px;
 }
 .card.row-card .feed-back i {
     color: #8bc34a;
     font-size: 16px;
     margin-right: 15px;
+    border-left: 1px solid #aeb4bb;
+    padding: 0 0 0 18px;
+    margin-left: 30px;
 }
 .card.row-card .feed-back-count::before {
     content:'( ';
 }
 .card.row-card .feed-back-count::after {
     content:' )';
+}
+.card {
+    margin-top: 30px;
 }
 /*CARD ROW END*/
 
@@ -823,7 +845,7 @@ blockquote {
     padding-bottom: 175px;
 }
 .search-section {
-    padding: 60px 0;
+    padding: 60px 15px;
     background: url('../img/search-section-background.jpg') no-repeat center/cover;
     height: 228px;
 }
@@ -1808,7 +1830,7 @@ th{
      font-size: 16px;
      color: #90a4ae;
  }
- .sort-controls .change-view-items button:focus {
+ .sort-controls .change-view-items .active {
      color: #8bc34a;
      outline: none;
  }
@@ -1832,12 +1854,54 @@ th{
  }
  /*DROPDOWN END*/
  /*ALL-ITEMS-CONTAINER START*/
- .all-items-container .card {
-     margin-top: 30px;
+
+ .all-items-container .card.medium-card .card-author .card-roduct-rating{
+     margin: 5px 10px 5px 0;
+ }
+ .all-items-container .card .card-author .rating-count {
+     margin: 5px 0;
  }
  .all-products-wrapper .pagination {
      margin-top: 60px;
  }
+ @media (max-width: 767px) {
+     .card.row-card .card-author {
+         padding: 10px 15px;
+     }
+
+     .card .card-description .card-text-info span {
+         width: 100%;
+         margin-bottom: 10px;
+     }
+
+     .card .card-description .card-author .feed-back {
+         margin: 4px 0;
+         font-size: 10px;
+         width: 100%;
+         -webkit-box-pack: center;
+             -ms-flex-pack: center;
+                 justify-content: center;
+     }
+
+     .card.row-card .card-text-info {
+         font-size: 12px;
+     }
+
+     .card.row-card {
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+     }
+ }
+     @media (max-width: 575px) {
+     .card.row-card .card-author {
+         padding: 10px 15px;
+     }
+     .card.row-card .feed-back i {
+         margin-left: 15px;
+     }
+  }
  /*ALL-ITEMS-CONTAINER END*/
 .new-products .items-update-buttons{
     margin-top: 75px;

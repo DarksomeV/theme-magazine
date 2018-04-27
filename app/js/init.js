@@ -15,11 +15,16 @@ $('.trending-carousel').slick({
 $('.grid-thumbs').on('click', function(){
     // Find cards and remove class row-card
     $('.all-items-container .card').removeClass('row-card');
-    $('.all-items-container .col-4').removeClass('col-12');
+    $('.all-items-container .col-lg-4').removeClass('col-lg-12');
+    $('.grid-list').removeClass('active');
+    $('.grid-thumbs').addClass('active');
 });
 
 $('.grid-list').on('click', function(){
     // Find cards and add class row-card
     $('.all-items-container .card').addClass('row-card');
-    $('.all-items-container .col-4').addClass('col-12');
+    $('.all-items-container .col-lg-4').addClass('col-lg-12 col-md-12');
+    $('.grid-list').addClass('active');
+    $('.grid-thumbs').removeClass('active');
+
 });

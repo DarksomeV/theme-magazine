@@ -14,7 +14,7 @@
     padding-bottom: 175px;
 }
 .search-section {
-    padding: 60px 0;
+    padding: 60px 15px;
     background: url('../img/search-section-background.jpg') no-repeat center/cover;
     height: 228px;
 }
