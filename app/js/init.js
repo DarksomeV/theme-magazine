@@ -3,17 +3,16 @@ $('select').styler();
 
 // Slick carousel init
 $('.trending-carousel').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1
-});
-// Slick carousel init
-$('.trending-carousel').slick({
     arrows:false,
     dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1
+});
+
+//init tabs
+$( function() {
+    $("#tabs").tabs();
 });
 
 // Switch product items view

@@ -17,12 +17,12 @@
 }
 
 .pagination .page-item .page-link:hover{
-    background-color: #b24a42;
+    background-color: #e74c3c;
     color: #ffffff;
 }
 
 .pagination .page-item.selected .page-link{
-    background-color: #b24a42;
+    background-color: #e74c3c;
     color: #ffffff;
 }
 

@@ -11,7 +11,7 @@
 
 body{
     margin: 0;
-    background-color: #fff;
+    background-color: #f4f6f5;
     color: #263238;
     font: 400 14px/1 'Roboto', sans-serif;
 }
@@ -57,6 +57,10 @@ blockquote {
     margin: 0;
 }
 /* RESET END */
+
+.icon {
+    display: inline-block;
+}
 /*ASIDE SECTION START*/
 .aside-section {
     padding: 5px 30px 30px 30px;
@@ -409,6 +413,11 @@ blockquote {
     color: #fff;
 }
 
+.btn.btn-block{
+    display: block;
+    width: 100%;
+}
+
 .btn.btn-default i {
     padding-right: 10px;
 }
@@ -587,18 +596,18 @@ blockquote {
     font-size: 12px;
 }
 
-.card.large-card .card-author .card-roduct-rating{
-    margin-right: 10px;
+.card-roduct-rating{
     font-size: 12px;
     font-weight: 400;
     color:#ffa726;
 }
 
+.card.large-card .card-author .card-roduct-rating{
+    margin-right: 10px;
+}
+
 .card.medium-card .card-author .card-roduct-rating{
     margin-right: 10px;
-    font-size: 12px;
-    font-weight: 400;
-    color:#ffa726;
 }
 
 .card.large-card .card-item-title{
@@ -682,6 +691,10 @@ blockquote {
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 28px;
+}
+
+.breadcrumbs-section{
+    padding: 47px 0 40px;
 }
 
 
@@ -1220,6 +1233,9 @@ form[name="login-form"] {
 /*HEADER END*/
 
 
+Body{
+    background-color: #ffffff;
+}
 /*LOGIN-MODAL START*/
 
 #loginModal .modal-dialog{
@@ -1329,7 +1345,7 @@ form[name="login-form"] {
 .dropdown-toggle.dropdown-notification .count.basket-green-count{
     background-color:#8bc34a;
 }
-.go-checkout .btn{
+.login-btn .btn{
     margin-right: 28px;
 }
 .header .navigation{
@@ -1345,47 +1361,38 @@ form[name="login-form"] {
 }
 .navigation{
     margin-left: 64px;
-    margin-right: 155px;
+    margin-right: 150px;
 }
 
 .bottom-header .header-nav a + a{
     margin-left: 43px;
 }
 
-.mr-auto, .mx-auto{
-    margin-right: 0 !important;
-}
-.go-checkout .btn.btn-default{
+.login-btn .btn.btn-default{
     padding: 6px 20px;
     border-radius: 3px !important;
 }
-.search-section-login{
+#search-section-login.search-section-login{
     background: url(../img/search-section-login.jpg) no-repeat center / cover;
     padding-top: 155px;
     padding-bottom: 175px;
 }
-.search-section-login .search-section-title{
+#search-section-login.search-section-login .search-section-title{
     text-transform: uppercase;
     font-family: Roboto, serif;
     font-size: 48px;
     font-weight: bold;
-
-}
-.text-green{
-    color: #8bc34a;
-}
-.search-section-title{
     margin-bottom: 108px;
 }
-.search-section-login .form-control-search input{
+#search-section-login.search-section-login .form-control-search input{
     width: 220px;
     color: #90a4ae;
 }
-.search-section-login .form-control-search i{
+#search-section-login.search-section-login .form-control-search i{
     font-size: 20px;
     color: #263238;
 }
-.search-section-login .form-search{
+#search-section-login.search-section-login .form-search{
     max-width: 760px;
 }
 /*PAGINATION START*/
@@ -1409,12 +1416,12 @@ form[name="login-form"] {
 }
 
 .pagination .page-item .page-link:hover{
-    background-color: #b24a42;
+    background-color: #e74c3c;
     color: #ffffff;
 }
 
 .pagination .page-item.selected .page-link{
-    background-color: #b24a42;
+    background-color: #e74c3c;
     color: #ffffff;
 }
 
@@ -1424,6 +1431,88 @@ form[name="login-form"] {
 
 /*pagination end*/
 
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-badges1 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 34px;
+  height: 37px;
+}
+.icon-badges2 {
+  background-image: url(../img/sprite.png);
+  background-position: -34px 0px;
+  width: 34px;
+  height: 37px;
+}
+.icon-badges3 {
+  background-image: url(../img/sprite.png);
+  background-position: -68px 0px;
+  width: 34px;
+  height: 37px;
+}
+.icon-badges4 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -37px;
+  width: 34px;
+  height: 37px;
+}
+.icon-badges5 {
+  background-image: url(../img/sprite.png);
+  background-position: -34px -37px;
+  width: 34px;
+  height: 37px;
+}
+.icon-fb {
+  background-image: url(../img/sprite.png);
+  background-position: -68px -37px;
+  width: 28px;
+  height: 28px;
+}
+.icon-linkedin {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -74px;
+  width: 28px;
+  height: 28px;
+}
+.icon-pinterest {
+  background-image: url(../img/sprite.png);
+  background-position: -28px -74px;
+  width: 28px;
+  height: 28px;
+}
+.icon-tw {
+  background-image: url(../img/sprite.png);
+  background-position: -56px -74px;
+  width: 28px;
+  height: 28px;
+}
+.icon-youtube {
+  background-image: url(../img/sprite.png);
+  background-position: -102px 0px;
+  width: 28px;
+  height: 28px;
+}
+
+.default-sprites-social i + i{
+    margin-left: 7px;
+}
 
 /*TAGS START*/
 
@@ -1573,14 +1662,14 @@ form[name="login-form"] {
     background-color: #ffffff;
     margin-bottom: 82px;
 }
-.title{
+.your-sales-statement .title{
     font-family: Roboto;
     font-size: 24px;
     font-weight: 500;
     vertical-align: middle;
     line-height: 65px;
 }
-.title-section{
+.your-sales-statement .title-section{
     height:65px;
     border:1px solid #dedede;
     background-color: #fff;
@@ -1622,7 +1711,7 @@ th{
     text-align: right;
     padding: .75rem 11px;
 }
-.btn.btn-default{
+.your-sales-statement .btn.btn-default{
     padding: 11px 18px 9px 17px;
     font-size: 12px;
 }
@@ -1673,6 +1762,10 @@ th{
     margin-top: 75px;
 }
 
+.trending-products{
+    background-color: #fff;
+}
+
 .trending-products .trending-carousel .slick-slide{
     padding: 0 15px;
 }
@@ -1683,6 +1776,7 @@ th{
 
 .why-choose-foxtar .advantages .advantage .block-title span:hover{
     color:#8bc34a;
+    cursor: pointer;
 }
 
 .why-choose-foxtar .advantages .advantage p{
@@ -1692,9 +1786,297 @@ th{
 .why-choose-foxtar .advantages .advantage img{
     -webkit-filter: brightness(80%);
             filter: brightness(80%);
+    cursor: pointer;
 }
 
 .why-choose-foxtar .advantages .advantage img:hover{
     -webkit-filter: brightness(100%);
             filter: brightness(100%);
+}
+
+.slick-dots {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.slick-dots li{
+    width: 16px;
+    height: 16px;
+    background-color: #e8e8e8;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 1px 1px #acacac;
+            box-shadow: inset 0 1px 1px #acacac;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active {
+    background-color: #8bc34a;
+    border:none;
+}
+
+.slick-dots li button{
+    display: none;
+}
+
+.slick-dots li + li {
+    margin-left: 5px;
+}
+
+.be-author .be-author-background-wrapper{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.be-author .be-author-background-wrapper img{
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 25.52px 3.48px rgba(0, 0, 0, 0.17);
+            box-shadow: 0px 0px 25.52px 3.48px rgba(0, 0, 0, 0.17);
+}
+
+.be-author .become-author{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 55%;
+    margin: 0 auto;
+    padding: 70px 60px;
+    position: absolute;
+    z-index: 10;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    right: 0;
+    background-color: rgba(139, 195, 74, 0.95);
+}
+
+.be-author .become-author p{
+    font-size: 30px;
+}
+
+.be-author .become-author p span{
+    font-weight: 700;
+}
+
+.be-author .become-author button{
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.tutorials{
+    background: #fff;
+}
+
+.tutorials .tutorial .tutorial-title{
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f8f8f8;
+    padding: 40px 0;
+
+}
+.profile-details-wrap .aside-section{
+    margin-bottom: 24px;
+}
+
+.profile-details-wrap .aside-author-info{
+    margin: 25px 0 44px;
+}
+.profile-details-wrap .aside-author-info .aside-author-details{
+    margin-left: 15px;
+}
+
+.profile-details-wrap .aside-author-info .aside-author-details h3{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
+.profile-details-wrap .aside-author-info .online-status{
+    border: 1px solid #d3d3d3;
+    color: #707070;
+    font-size: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px 10px;
+}
+
+.profile-details-wrap .aside-author-info .online-status:hover{
+    background: #8bc34a;
+    border: 1px solid #8bc34a;
+    color: #ffffff;
+}
+
+.profile-details-wrap .aside-author-info .online-status i{
+    color: #8bc34a;
+    margin-right: 5px;
+}
+
+.profile-details-wrap .aside-badges div + div{
+    margin-left: 8px;
+}
+
+.profile-details-wrap .default-sprites-social{
+    margin-bottom: 25px;
+}
+
+.profile-details-wrap .btn-block + .btn-block{
+    margin-top: 15px;
+}
+
+.profile-details-nav{
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+}
+
+.profile-details-nav li{
+    padding: 15px 15px 15px 20px;
+    border-bottom: 1px solid #d7d7d7;
+    color: #707070;
+}
+
+.profile-details-nav li a:hover {
+    color: #bebcbc;
+}
+
+ .profile-details-nav li.active{
+    border-bottom: 2px solid #8bc34a;
+    color: #263238;
+}
+
+.profile-details-nav li i{
+    margin-right: 12px;
+    color:#d0d0d0;
+}
+
+.profile-details-nav li.active i{
+    color: #8bc34a;
+}
+
+.profile-details-wrap .banner{
+    padding: 20px;
+    border: 1px solid #dfdfdf;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+.profile-details-wrap .author-summary {
+    background: #ffffff;
+    border: 1px solid #d7d7d7;
+    margin-bottom: 30px;
+}
+
+.profile-details-wrap .author-summary .single-item{
+    padding: 25px 0;
+    text-align: center;
+    margin: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 1px solid #d7d7d7;
+}
+
+.profile-details-wrap .author-summary .single-item .item-title{
+    color: #263238;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.profile-details-wrap .author-summary .single-item .item-details{
+    color:#707070;
+}
+
+.profile-details-wrap .item-details ul li{
+}
+
+.profile-details-wrap .item-details ul .rating-count{
+    color: #263238;
+    margin-left: 8px;
+}
+
+.tabs-wrapper-content{
+    background: #ffffff;
+    padding: 30px 35px;
+    border: 1px solid #d7d7d7;
+}
+
+/*title tab*/
+.profile-tab-title{
+    margin-bottom: 30px;
+}
+
+.profile-tab-title span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #263238;
+    line-height: 24px;
+}
+/*все*/
+
+.tabs-wrapper-content .tab-item .tab-content p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.tabs-wrapper-content .skills{
+    margin-top: 45px;
+}
+
+.tabs-wrapper-content .skill-area + .skill-area{
+    margin-top: 22px;
+}
+
+.tabs-wrapper-content .skill-area .lead{
+    font-size: 16px;
+}
+
+.tabs-wrapper-content .skill-area .lead span:first-child{
+    font-weight: 500;
+}
+
+.tabs-wrapper-content .skill-progress .progress-wrap{
+    width: 100%;
+    height: 15px;
+    background-color: rgba(0,0,0, .05);
+    margin-top: 17px;
+    border-radius: 4px;
+}
+
+.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar{
+    background-color: rgba(181,181,181, 1);
+    width: 0%;
+    height: 15px;
+    border-radius: 4px;
+}
+.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar.design{
+    width: 80%;
+}
+
+.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar.wordpress{
+    width: 90%;
+}
+
+.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar.joomla{
+    width: 70%;
+}
+
+#tabs{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#tabs.ui-widget.ui-widget-content{
+    height: 100%;
 }

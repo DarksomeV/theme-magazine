@@ -1,3 +1,6 @@
+Body{
+    background-color: #ffffff;
+}
 /*LOGIN-MODAL START*/
 
 #loginModal .modal-dialog{
@@ -107,7 +110,7 @@
 .dropdown-toggle.dropdown-notification .count.basket-green-count{
     background-color:#8bc34a;
 }
-.go-checkout .btn{
+.login-btn .btn{
     margin-right: 28px;
 }
 .header .navigation{
@@ -123,46 +126,37 @@
 }
 .navigation{
     margin-left: 64px;
-    margin-right: 155px;
+    margin-right: 150px;
 }
 
 .bottom-header .header-nav a + a{
     margin-left: 43px;
 }
 
-.mr-auto, .mx-auto{
-    margin-right: 0 !important;
-}
-.go-checkout .btn.btn-default{
+.login-btn .btn.btn-default{
     padding: 6px 20px;
     border-radius: 3px !important;
 }
-.search-section-login{
+#search-section-login.search-section-login{
     background: url(../img/search-section-login.jpg) no-repeat center / cover;
     padding-top: 155px;
     padding-bottom: 175px;
 }
-.search-section-login .search-section-title{
+#search-section-login.search-section-login .search-section-title{
     text-transform: uppercase;
     font-family: Roboto, serif;
     font-size: 48px;
     font-weight: bold;
-
-}
-.text-green{
-    color: #8bc34a;
-}
-.search-section-title{
     margin-bottom: 108px;
 }
-.search-section-login .form-control-search input{
+#search-section-login.search-section-login .form-control-search input{
     width: 220px;
     color: #90a4ae;
 }
-.search-section-login .form-control-search i{
+#search-section-login.search-section-login .form-control-search i{
     font-size: 20px;
     color: #263238;
 }
-.search-section-login .form-search{
+#search-section-login.search-section-login .form-search{
     max-width: 760px;
 }

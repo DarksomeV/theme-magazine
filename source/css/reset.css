@@ -9,7 +9,7 @@
 
 body{
     margin: 0;
-    background-color: #fff;
+    background-color: #f4f6f5;
     color: #263238;
     font: 400 14px/1 'Roboto', sans-serif;
 }
@@ -55,3 +55,7 @@ blockquote {
     margin: 0;
 }
 /* RESET END */
+
+.icon {
+    display: inline-block;
+}
