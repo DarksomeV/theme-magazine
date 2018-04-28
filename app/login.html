@@ -25,7 +25,8 @@
 
     <!-- Slick style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-
+    <!-- slick nav-->
+    <link rel="stylesheet" href="css/slicknav.css">
     <!-- jQuery UI Style -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
@@ -42,8 +43,11 @@
                 <img src="img/header-logo.png" alt="">
             </div>
             <!-- /.header-logo mr-auto -->
-            <div class="navigation">
-                <nav class="header-nav ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navigation login-page-nav">
+                <nav class="header-nav id="navbarToggleExternalContent"">
                     <a href="#">Home</a>
                     <a href="#">Pages</a>
                     <a href="#">WordPress</a>
@@ -146,7 +150,7 @@
                     <!--/ login-btn-group-->
                     <a href="#" class="lost-password">Lost Password?</a>
                 </form>
-                <!--/ form-->
+                <!--/ login-form-->
             </div>
             <!--/ modal body-->
         </div>
@@ -162,14 +166,17 @@
         <div class="search-section-title text-white text-center">
             <span>Creat A <span class="text-green"> Digital Market </span> Place</span>
         </div>
+        <!--/ search-section-login -->
         <form class="form-search">
             <div class="form-control-search">
                 <input type="text" name="search" placeholder="Search Your Keywords . . .">
                 <i class="fa fa-search"></i>
             </div>
+            <!--/ form-control-search -->
         </form>
+        <!--/ form-search -->
     </section>
-    <!--/search section-->
+    <!--/ search section -->
 </main>
 <!--/ MAIN-->
 <!-- Optionpfhfal JavaScript -->
@@ -184,6 +191,8 @@
 <script src="js/range.js"></script>
 <!--Init plugins-->
 <script src="js/init.js"></script>
+<!-- slick nav -->
+<script src="js/jquery.slicknav.min.js"></script>
 </body>
 </html>
 

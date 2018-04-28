@@ -1338,6 +1338,7 @@ Body{
     -webkit-box-shadow: none;
             box-shadow: none;
     opacity: 1;
+    z-index: 1;
 }
 /*LOGIN-MODAL END*/
 
@@ -1351,23 +1352,18 @@ Body{
 .header .navigation{
     padding: 15px 0;
 }
-.navigation .header-nav a + a{
+.login-page-nav .header-nav a + a{
     margin-left: 43px;
 }
-.navigation .header-nav{
+.login-page-nav .header-nav{
     font-size: 14px;
     line-height: 30px;
     font-weight: 500;
 }
-.navigation{
+.login-page-nav{
     margin-left: 64px;
     margin-right: 150px;
 }
-
-.bottom-header .header-nav a + a{
-    margin-left: 43px;
-}
-
 .login-btn .btn.btn-default{
     padding: 6px 20px;
     border-radius: 3px !important;
@@ -1395,6 +1391,96 @@ Body{
 #search-section-login.search-section-login .form-search{
     max-width: 760px;
 }
+
+@media (max-width: 991px) {
+    .login-page-nav{
+        margin-left: 40px;
+        margin-right: 120px;
+    }
+    .login-page-nav .header-nav a + a{
+        margin-left: 20px;
+    }
+    #loginModal .modal-content{
+        padding: 35px 30px 90px;
+    }
+    #loginModal .modal-dialog{
+        max-width: 650px;
+    }
+    #search-section-login.search-section-login .form-search {
+        max-width: 650px;
+    }
+    #search-section-login.search-section-login .search-section-title{
+        font-size: 40px;
+    }
+    #search-section-login.search-section-login{
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    #search-section-login.search-section-login .search-section-title{
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+    #search-section-login.search-section-login .form-search{
+        max-width: 530px;
+    }
+    #loginModal .modal-content{
+        padding: 25px 15px 50px;
+    }
+    #loginModal .modal-dialog{
+        max-width: 520px;
+    }
+    .login-page-nav .header-nav a + a{
+        margin-left: 10px;
+    }
+    .login-page-nav{
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+    .login-page-nav .header-nav{
+        font-size: 11px;
+    }
+}
+@media (max-width: 576px) {
+    .login-btn-group button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #loginModal .custom-btn{
+        width: 100%;
+        margin-left: 0;
+    }
+    #loginModal .modal-dialog{
+        max-width: 350px;
+    }
+    #loginModal .login-title{
+        font-size: 35px;
+    }
+    #loginModal form[name="login-form"]{
+        margin-top: 15px;
+    }
+    #loginModal .modal-content{
+        padding: 20px 15px 20px;
+    }
+    #search-section-login.search-section-login .search-section-title{
+        font-size: 25px;
+        margin-bottom: 45px;
+    }
+    #search-section-login.search-section-login .form-search {
+        max-width: 400px;
+    }
+}
+@media (min-width: 320px){
+    .modal-dialog-centered {
+        min-height: calc(100% - (1.75rem * 2));
+    }
+    .modal-dialog {
+        margin: 1.75rem auto;
+    }
+}
+
 /*PAGINATION START*/
 
 .pagination .page-item{
@@ -1716,6 +1802,34 @@ th{
     font-size: 12px;
 }
 /*YOUR-SALESSTATEMENT END*/
+@media (max-width: 991px) {
+    .bottom-header .header-nav a + a {
+        margin-left: 25px;
+    }
+    .footer-content{
+        padding: 60px 0 60px;
+    }
+    .top-header .header-help-text{
+        display: none;
+    }
+    .total-sales{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-section{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .breadcrumbs{
+        padding: 25px 0 20px 0;
+    }
+    .bottom-header .header-nav a + a {
+        margin-left: 10px;
+    }
+}
  .all-products-wrapper {
      background-color: #f4f6f5;
      padding-bottom: 110px;

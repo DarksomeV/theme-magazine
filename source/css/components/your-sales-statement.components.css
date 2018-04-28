@@ -64,3 +64,31 @@ th{
     font-size: 12px;
 }
 /*YOUR-SALESSTATEMENT END*/
+@media (max-width: 991px) {
+    .bottom-header .header-nav a + a {
+        margin-left: 25px;
+    }
+    .footer-content{
+        padding: 60px 0 60px;
+    }
+    .top-header .header-help-text{
+        display: none;
+    }
+    .total-sales{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-section{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .breadcrumbs{
+        padding: 25px 0 20px 0;
+    }
+    .bottom-header .header-nav a + a {
+        margin-left: 10px;
+    }
+}
