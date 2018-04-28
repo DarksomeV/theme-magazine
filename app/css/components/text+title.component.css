@@ -51,6 +51,10 @@
 .text-left{
     text-align:left; 
 }
+.default-text{
+    font-size: 16px;
+    font-weight: 500;
+}
 /* --- Туайтлы расположены с убывание размера шрифта --- */
 /* --- Title end --- */
 
