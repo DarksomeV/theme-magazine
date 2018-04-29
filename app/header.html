@@ -19,76 +19,81 @@
 </head>
 <body>
 <!--HEADER1 START-->
-<header id="header">
-    <div class="top-header">
-        <div class="container d-flex align-items-center">
+<header id="header-main" class="navbar-expand-lg">
+    <div class="top-header navbar-expand-lg navbar-light">
+        <div class="container d-flex align-items-center flex-wrap">
             <div class="header-logo mr-auto">
                 <img src="img/header-logo.png" alt="">
             </div>
             <!-- /.header-logo mr-auto -->
-            <div class="header-help-text">
-                <span>Need help?</span>
-                <span>Talk to an expert:</span>
-                <span>+61 3 8376 6284</span>
-            </div>
-            <!--help-text-->
-            <!--list drop-->
-            <ul class="header-dropdown-list">
-                <li class="dropdown show d-flex m-auto">
-                    <a class="dropdown-toggle dropdown-notification" href="#" role="button" id="dropdownMenuLinkBasket"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-shopping-cart"></i>
-                        <div class="count basket-color-count d-flex">
-                            <span>8</span>
-                        </div>
-                    </a>
+            <div class="order-1 header-controls d-flex align-items-center">
+                <div class="header-help-text mr-auto">
+                    <span>Need help?</span>
+                    <span>Talk to an expert:</span>
+                    <span>+61 3 8376 6284</span>
+                </div>
+                <!--help-text-->
+                <!--list drop-->
+                <ul class="header-dropdown-list">
+                    <li class="dropdown show d-flex m-auto">
+                        <a class="dropdown-toggle dropdown-notification" href="#" role="button" id="dropdownMenuLinkBasket"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-shopping-cart"></i>
+                            <div class="count basket-color-count d-flex">
+                                <span>8</span>
+                            </div>
+                        </a>
 
-                    <div class="dropdown-menu dropdown-notification dropdown-basket dropdown-menu-right"
-                         aria-labelledby="dropdownMenuLinkBasket">
-                        <div class="dropdown-item d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
-                            <div class="item-content">
-                                <h6>Grand Ballet</h6>
-                                <span class="item-category">Wordpress</span>
-                                <span class="item-price">$59</span>
+                        <div class="dropdown-menu dropdown-notification dropdown-basket dropdown-menu-right"
+                             aria-labelledby="dropdownMenuLinkBasket">
+                            <div class="dropdown-item d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <h6>Grand Ballet</h6>
+                                    <span class="item-category">Wordpress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-item d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <h6>Grand Ballet</h6>
+                                    <span class="item-category">Wordpress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-item d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <h6>Grand Ballet</h6>
+                                    <span class="item-category">Wordpress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <div class="total-price d-flex justify-content-between">
+                                <span>Total</span>
+                                <span>$118</span>
+                            </div>
+                            <div class="checkout-buttons d-flex justify-content-center">
+                                <a href="#">Go to Cart</a>
+                                <a href="#">Go to Checkout</a>
                             </div>
                         </div>
-                        <div class="dropdown-item d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
-                            <div class="item-content">
-                                <h6>Grand Ballet</h6>
-                                <span class="item-category">Wordpress</span>
-                                <span class="item-price">$59</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-item d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
-                            <div class="item-content">
-                                <h6>Grand Ballet</h6>
-                                <span class="item-category">Wordpress</span>
-                                <span class="item-price">$59</span>
-                            </div>
-                        </div>
-                        <div class="total-price d-flex justify-content-between">
-                            <span>Total</span>
-                            <span>$118</span>
-                        </div>
-                        <div class="checkout-buttons d-flex justify-content-center">
-                            <a href="#">Go to Cart</a>
-                            <a href="#">Go to Checkout</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <!-- /.header-dropdown-list -->
-            <div class="go-checkout">
-                <a href="#">Login</a>
-                <a href="#">Register</a>
+                    </li>
+                </ul>
+                <!-- /.header-dropdown-list -->
+                <div class="go-checkout">
+                    <a href="#" class="btn btn-default btn-green btn-round">Login</a>
+                    <a href="#" class="btn btn-default btn-red btn-round">Register</a>
+                </div>
             </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </div>
     <!-- /.top-heder -->
-    <div class="bottom-header">
+    <div class="bottom-header collapse navbar-collapse" id="header-nav">
         <div class="container">
             <nav class="header-nav d-flex">
                 <a href="#">Home</a>
@@ -109,14 +114,15 @@
 <!--HEADER1 END-->
 <div class="block" style="margin: 40px 0">Next header</div>
 <!--HEADER START-->
-<header id="header">
-    <div class="top-header">
-        <div class="container d-flex align-items-center">
+<header id="header" class="navbar-expand-lg">
+    <div class="top-header  navbar-expand-lg navbar-light">
+        <div class="container d-flex align-items-center flex-wrap">
             <div class="header-logo mr-auto">
                 <img src="img/header-logo.png" alt="">
             </div>
             <!-- /.header-logo mr-auto -->
-            <div class="header-help-text">
+            <div class="order-1 header-controls d-flex align-items-center">
+            <div class="d-none d-sm-block header-help-text mr-auto">
                 <span>Need help?</span>
                 <span>Talk to an expert:</span>
                 <span>+61 3 8376 6284</span>
@@ -261,15 +267,19 @@
             </ul>
             <!-- /.header-dropdown-list -->
             <div class="header-user dropdown d-flex align-items-center">
-                <a href="#"><img src="img/header-user-img.png" alt=""></a>
+                <div  class="user-info-control dropdown-toggle dropdown-user align-items-center" href="#" role="button" id="dropdownMenuLinkUser"
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="account-img"><a href="#"><img src="img/header-user-img.png" alt=""></a>
+                </div>
+                    <div class="hide-user-info">
                 <div class="header-user-info">
                     <span class="user-name">Mike Hussy</span>
                     <span class="user-cash">$171.00</span>
                 </div>
-                <a class="dropdown-toggle dropdown-user" href="#" role="button" id="dropdownMenuLinkUser"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a href="#" class="dropdown-toggle">
                     <i class="fa fa-chevron-down"></i>
                 </a>
+                    </div>
                 <div class="dropdown-menu dropdown-user dropdown-menu-right" aria-labelledby="dropdownMenuLinkUser">
                     <a href="#"><i class="fa fa-chevron-right"></i><span>Profile Page</span></a>
                     <a href="#"><i class="fa fa-chevron-right"></i><span>Downloads</span></a>
@@ -278,16 +288,21 @@
                     <a href="#"><i class="fa fa-chevron-right"></i><span>Statement</span></a>
                     <a href="#"><i class="fa fa-chevron-right"></i><span>Withdraws</span></a>
                 </div>
+                </div>
             </div>
             <!-- /.header-user -->
             <div class="go-checkout">
-                <a href="#">Logout</a>
+                <a href="#" class="btn btn-default btn-red btn-round">Logout</a>
             </div>
             <!--./go-checkout-->
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </div>
     <!-- /.top-heder -->
-    <div class="bottom-header">
+    <div class="bottom-header collapse navbar-collapse" id="header-nav">
         <div class="container">
             <nav class="header-nav d-flex">
                 <a href="#">Home</a>

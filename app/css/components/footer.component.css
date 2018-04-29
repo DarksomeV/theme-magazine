@@ -8,9 +8,30 @@ footer{
     border-bottom: 1px solid #424d53;
 }
 
+@media (max-width: 1999px) {
+    .footer-content{
+    padding: 110px 5% 55px 15%;
+    }
+    .footer-content .row > *{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-content{
+        padding-left:10%;
+    }
+}
+
 .footer-content .footer-col-wrapper.links{
     margin: 0 auto;
     width: 80%;
+}
+
+@media (max-width: 1999px) {
+    .footer-content .footer-col-wrapper.links{
+        width: auto;
+    }
 }
 
 footer .company-adress{

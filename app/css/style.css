@@ -877,9 +877,30 @@ footer{
     border-bottom: 1px solid #424d53;
 }
 
+@media (max-width: 1999px) {
+    .footer-content{
+    padding: 110px 5% 55px 15%;
+    }
+    .footer-content .row > *{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-content{
+        padding-left:10%;
+    }
+}
+
 .footer-content .footer-col-wrapper.links{
     margin: 0 auto;
     width: 80%;
+}
+
+@media (max-width: 1999px) {
+    .footer-content .footer-col-wrapper.links{
+        width: auto;
+    }
 }
 
 footer .company-adress{
@@ -1178,6 +1199,16 @@ form[name="login-form"] {
     margin-left: 7px;
 }
 
+@media (max-width: 576px) {
+    .top-header .go-checkout{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+}
+
 .top-header .go-checkout{
     margin-left: 25px;
 }
@@ -1187,6 +1218,41 @@ form[name="login-form"] {
     font-size: 15px;
     line-height: 20px;
     margin-right: 25px;
+}
+
+.hide-user-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+@media (max-width: 479px) {
+    .top-header .go-checkout{
+        margin-left: 0;
+    }
+    #header-main .top-header .go-checkout{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+    }
+    #header-main .top-header .go-checkout a{
+        width: 100%;
+    }
+    #header-main .top-header .go-checkout a + a{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    #header-main .top-header .header-help-text{
+        display: none;
+    }
+    .hide-user-info{
+        display: none;
+    }
 }
 
 .top-header .header-help-text span:first-child{
@@ -1213,6 +1279,31 @@ form[name="login-form"] {
 .top-header .header-user-info .user-cash{
     color: #8bc34a;
 }
+.top-header .go-checkout a {
+    font-size: 12px;
+    line-height: 1;
+}
+
+.user-info-control{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 145px;
+}
+
+@media (max-width: 576px) {
+    .user-info-control{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+
+@media (max-width: 479px){
+    .user-info-control{
+        width: unset;
+    }
+}
 
 .bottom-header {
     padding: 15px 0;
@@ -1224,13 +1315,49 @@ form[name="login-form"] {
     font-size: 14px;
     line-height: 30px;
     font-weight: 500;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
-.bottom-header .header-nav a + a{
+.bottom-header .header-nav a+a{
     margin-left: 43px;
 }
 
+@media (max-width: 991px) {
+    .bottom-header .header-nav{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+    .bottom-header .header-nav a+a{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .header-controls{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .navbar-expand-lg>.container{
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 576px){
+    .header-controls{
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+}
+
+@media(max-width: 479px){
+    .top-header .header-user{
+        margin-left: 0;
+    }
+}
 /*HEADER END*/
+
 
 
 Body{
@@ -1343,17 +1470,25 @@ Body{
 /*LOGIN-MODAL END*/
 
 /*HEADER START*/
+.login-header{
+    padding:15px 0;
+    margin-left: 64px;
+}
+.login-header .header-nav a+a {
+    margin-left: 43px;
+}
+.login-header .header-nav{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
 .dropdown-toggle.dropdown-notification .count.basket-green-count{
     background-color:#8bc34a;
 }
 .login-btn .btn{
     margin-right: 28px;
-}
-.header .navigation{
-    padding: 15px 0;
-}
-.login-page-nav .header-nav a + a{
-    margin-left: 43px;
 }
 .login-page-nav .header-nav{
     font-size: 14px;
@@ -1393,13 +1528,7 @@ Body{
 }
 
 @media (max-width: 991px) {
-    .login-page-nav{
-        margin-left: 40px;
-        margin-right: 120px;
-    }
-    .login-page-nav .header-nav a + a{
-        margin-left: 20px;
-    }
+
     #loginModal .modal-content{
         padding: 35px 30px 90px;
     }
@@ -1432,16 +1561,6 @@ Body{
     #loginModal .modal-dialog{
         max-width: 520px;
     }
-    .login-page-nav .header-nav a + a{
-        margin-left: 10px;
-    }
-    .login-page-nav{
-        margin-left: 20px;
-        margin-right: 30px;
-    }
-    .login-page-nav .header-nav{
-        font-size: 11px;
-    }
 }
 @media (max-width: 576px) {
     .login-btn-group button {
@@ -1467,9 +1586,6 @@ Body{
     #search-section-login.search-section-login .search-section-title{
         font-size: 25px;
         margin-bottom: 45px;
-    }
-    #search-section-login.search-section-login .form-search {
-        max-width: 400px;
     }
 }
 @media (min-width: 320px){
