@@ -79,6 +79,7 @@
     .mobile-aside-toggle {
         display: block;
         margin-right: 10px;
+        background: none;
     }
     .mobile-aside {
         position: fixed;

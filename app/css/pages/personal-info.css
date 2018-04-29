@@ -1,36 +1,115 @@
-.aside-section.perdonal-info {
+#tabs-pers-info.ui-widget.ui-widget-content {
+    height: auto;
+    width: 100%;
     padding: 0;
 }
-.aside-section.perdonal-info .personal-info-chapter {
+
+.ui-widget.ui-widget-content {
+    height: auto;
+    border: none;
+    background-color: #f2f5f8;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#tabs-pers-info .aside-section.personal-info {
+    padding: 0;
+    border-bottom: 0;
+}
+/*#tabs .aside-section.personal-info .personal-info-chapter.ui-state-active {*/
+/*font-family: 'Roboto', sans-serif;*/
+/*font-weight: 500;*/
+/*font-size: 14px;*/
+/*padding: 17px 22px;*/
+/*color: #707070;*/
+/*border-bottom: 1px solid #d7d7d7;*/
+/*background: none;*/
+/*}*/
+#tabs-pers-info .ui-tabs-nav {
+    padding: 0;
+    /*width: 100%;*/
+}
+#tabs-pers-info .ui-tabs-nav.ui-widget-header {
+    border: 0;
+    background: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+#tabs-pers-info .ui-tabs-nav .ui-state-default {
+    border: 0;
+    background: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    padding: 17px 22px;
-    color: #707070;
+
     border-bottom: 1px solid #d7d7d7;
+    margin: 0;
+    line-height: 1;
 }
-.aside-section.perdonal-info .personal-info-chapter:last-child {
-    border-bottom: none;
+.ui-tabs .ui-tabs-nav li {
+    margin: 0;
+    width: 100%;
 }
-.aside-section.perdonal-info .personal-info-chapter i {
+/*.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {*/
+    /*cursor: default;*/
+/*}*/
+
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited{
+    color: #707070;
+}
+#tabs-pers-info .aside-section.personal-info .personal-info-chapter i {
     font-weight: 400;
     margin-right: 22px;
     font-size: 9px;
 }
-.aside-section.perdonal-info .personal-info-chapter:active {
+
+ .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+     padding: 17px 22px;
+     width: 100%;
+}
+#tabs-pers-info .aside-section.personal-info .ui-state-active {
     border-bottom: 2px solid #86bc44;
     color: #37474f;
 }
-.aside-section.perdonal-info .personal-info-chapter i:active {
+/*a:-webkit-any-link {*/
+    /*cursor: default;*/
+/*}*/
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #37474f;
+    margin: 0;
+    /*width: 223px;*/
+}
+.ui-state-active a i, .ui-state-active a i:link {
     color: #86bc44;
 }
-.form-group.row {
+/*#tabs .aside-section.personal-info .personal-info-chapter i:active {*/
+    /**/
+/*}*/
+
+#tabs-pers-info .form-group.row {
     margin-bottom: 20px;
 }
-.content-wrapper-body form .btn.btn-default {
+
+.ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 1px;
+    padding: 0 0;
+    background: #fff;
+}
+
+#tabs-pers-info .content-wrapper-body form .btn.btn-default {
     padding: 15px 30px;
     font-weight: 500;
     font-size: 15px;
     line-height: 1;
     margin-top: 10px;
+}
+.ui-widget {
+    /* font-family: Arial,Helvetica,sans-serif; */
+    /* font-size: 1em; */
 }

@@ -14,6 +14,7 @@ $('.trending-carousel').slick({
 //init tabs
 $( function() {
     $("#tabs").tabs();
+    $("#tabs-pers-info").tabs();
 });
 
 // Switch product items view

@@ -174,28 +174,34 @@ form[name="login-form"] {
     max-width: 260px;
     margin: auto;
     background: #2f3c43;
+    position: relative;
     border: 1px solid #000;
     -o-border-image: linear-gradient(#000, #263238)1;
        border-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#263238))1;
        border-image: linear-gradient(#000, #263238)1;
+    border-bottom: 0;
 }
-/*Footer form*/
+
 .form-control-sign-up {
     height: 38px;
     color: #697378;
     font-size: 14px;
     line-height: 1;
     font-weight: 400;
-    padding: 0 0 0 15px;
+    padding: 0 50px 0 15px;
     background-color: transparent;
-    width: 211px;
+    width: 100%;
+
 }
 .footer-form button {
     width: 43px;
     background-color: #729e4c;
     color: #fff;
     font-size: 20px;
-    height: 38px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 /*Special buttons*/
 .form-control.disabled,
