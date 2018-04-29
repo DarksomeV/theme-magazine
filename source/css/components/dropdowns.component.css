@@ -4,6 +4,12 @@
     margin-left: 15px !important;
 }
 
+@media (max-width: 479px) {
+    #header-main .header-dropdown-list{
+        display: none !important;
+    }
+}
+
 .dropdown-menu{
     margin:0;
     top: 85% !important; /*Костыль */

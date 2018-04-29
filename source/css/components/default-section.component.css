@@ -13,6 +13,14 @@
     padding-top: 155px;
     padding-bottom: 175px;
 }
+
+@media (max-width: 767px){
+    .search-section-main{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
 .search-section {
     padding: 60px 0;
     background: url('../img/search-section-background.jpg') no-repeat center/cover;

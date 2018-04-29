@@ -65,6 +65,8 @@
 
 .card .card-author .rating-count{
     font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .card-roduct-rating{

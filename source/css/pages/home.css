@@ -1,5 +1,15 @@
 .new-products .items-update-buttons{
-    margin-top: 75px;
+    margin-top: 45px;
+}
+
+@media (max-width: 479px) {
+    .new-products .items-update-buttons a{
+        margin-top: 5px;
+    }
+}
+
+.new-products .cards .card{
+    margin-bottom: 30px;
 }
 
 .trending-products{
@@ -12,6 +22,15 @@
 
 .why-choose-foxtar .advantages .advantage .block-title{
     margin: 30px 0;
+}
+
+@media (max-width: 991px) {
+    .why-choose-foxtar .advantages .advantage{
+        margin-bottom: 30px;
+    }
+    .why-choose-foxtar .advantages .last-col .advantage{
+        margin-bottom: 0px;
+    }
 }
 
 .why-choose-foxtar .advantages .advantage .block-title span:hover{
@@ -75,6 +94,8 @@
 
 .be-author .become-author{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 55%;
     margin: 0 auto;
     padding: 70px 60px;
@@ -87,8 +108,47 @@
     background-color: rgba(139, 195, 74, 0.95);
 }
 
+@media (max-width: 1199px){
+    .be-author .become-author {
+        width: 72%;
+        padding: 32px 60px;
+    }
+}
+
+@media (max-width: 991px){
+    .be-author .become-author {
+        width: 100%;
+        padding: 41px 60px;
+    }
+}
+
+@media (max-width: 767px){
+    .be-author .become-author {
+        width: 100%;
+        padding: 0;
+        height: 100%;
+    }
+}
+
 .be-author .become-author p{
     font-size: 30px;
+}
+
+@media (max-width: 767px){
+    .be-author .become-author p{
+        margin-bottom: 20px;
+    }
+}
+
+.be-author .become-author .become-author-content{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px){
+    .be-author .become-author .become-author-content{
+        flex-direction: column;
+    }
 }
 
 .be-author .become-author p span{
@@ -98,6 +158,13 @@
 .be-author .become-author button{
     margin-left: 40px;
     font-size: 18px;
+    padding: 25px 40px;
+}
+
+@media (max-width: 767px){
+    .be-author .become-author button{
+        margin-left: 0;
+    }
 }
 
 .tutorials{
@@ -109,5 +176,22 @@
     font-weight: 700;
     background-color: #f8f8f8;
     padding: 40px 0;
-
 }
+
+@media (max-width: 991px){
+    .tutorials .tutorial .tutorial-title{
+        font-size: 18px;
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .tutorials .tutorial .tutorial-title{
+        font-size: 24px;
+    }
+}
+
+.tutorials .tutorial img{
+    width: 100%;
+}
+

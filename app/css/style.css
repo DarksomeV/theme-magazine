@@ -364,6 +364,11 @@ blockquote {
 
 .card .card-author .rating-count{
     font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
 }
 
 .card-roduct-rating{
@@ -551,6 +556,14 @@ blockquote {
     padding-top: 155px;
     padding-bottom: 175px;
 }
+
+@media (max-width: 767px){
+    .search-section-main{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
 .search-section {
     padding: 60px 0;
     background: url('../img/search-section-background.jpg') no-repeat center/cover;
@@ -574,6 +587,12 @@ blockquote {
 
 .header-dropdown-list .dropdown + .dropdown{
     margin-left: 15px !important;
+}
+
+@media (max-width: 479px) {
+    #header-main .header-dropdown-list{
+        display: none !important;
+    }
 }
 
 .dropdown-menu{
@@ -747,9 +766,30 @@ footer{
     border-bottom: 1px solid #424d53;
 }
 
+@media (max-width: 1999px) {
+    .footer-content{
+    padding: 110px 5% 55px 15%;
+    }
+    .footer-content .row > *{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-content{
+        padding-left:10%;
+    }
+}
+
 .footer-content .footer-col-wrapper.links{
     margin: 0 auto;
     width: 80%;
+}
+
+@media (max-width: 1999px) {
+    .footer-content .footer-col-wrapper.links{
+        width: auto;
+    }
 }
 
 footer .company-adress{
@@ -1088,6 +1128,16 @@ form[name="login-form"] {
     margin-left: 7px;
 }
 
+@media (max-width: 576px) {
+    .top-header .go-checkout{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+}
+
 .top-header .go-checkout{
     margin-left: 25px;
 }
@@ -1097,6 +1147,41 @@ form[name="login-form"] {
     font-size: 15px;
     line-height: 20px;
     margin-right: 25px;
+}
+
+.hide-user-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+@media (max-width: 479px) {
+    .top-header .go-checkout{
+        margin-left: 0;
+    }
+    #header-main .top-header .go-checkout{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+    }
+    #header-main .top-header .go-checkout a{
+        width: 100%;
+    }
+    #header-main .top-header .go-checkout a + a{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    #header-main .top-header .header-help-text{
+        display: none;
+    }
+    .hide-user-info{
+        display: none;
+    }
 }
 
 .top-header .header-help-text span:first-child{
@@ -1128,6 +1213,27 @@ form[name="login-form"] {
     line-height: 1;
 }
 
+.user-info-control{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 145px;
+}
+
+@media (max-width: 576px) {
+    .user-info-control{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+
+@media (max-width: 479px){
+    .user-info-control{
+        width: unset;
+    }
+}
+
 .bottom-header {
     padding: 15px 0;
     color: #ffffff;
@@ -1138,12 +1244,47 @@ form[name="login-form"] {
     font-size: 14px;
     line-height: 30px;
     font-weight: 500;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
-.bottom-header .header-nav a + a{
+.bottom-header .header-nav a+a{
     margin-left: 43px;
 }
 
+@media (max-width: 991px) {
+    .bottom-header .header-nav{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+    .bottom-header .header-nav a+a{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .header-controls{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .navbar-expand-lg>.container{
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 576px){
+    .header-controls{
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+}
+
+@media(max-width: 479px){
+    .top-header .header-user{
+        margin-left: 0;
+    }
+}
 /*HEADER END*/
 
 
@@ -1273,10 +1414,6 @@ form[name="login-form"] {
 .navigation{
     margin-left: 64px;
     margin-right: 155px;
-}
-
-.bottom-header .header-nav a + a{
-    margin-left: 43px;
 }
 
 #loginModal .go-checkout .btn.btn-default{
@@ -1443,7 +1580,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     text-align: center;
 }
 .tag-list-item{
-    display: inline-table;
     font-family: Roboto;
     font-size: 14px;
     color: #000;
@@ -1451,17 +1587,74 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     padding:11px 22px;
     font-weight: 400;
 }
+.tag-list li+li {
+    margin-left: 5px;
+}
 .tag-list .active{
     background-color: #e74c3c;
     color: #ffffff;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
             box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
 }
-.tag-list a:hover{
+.tag-list li:hover{
     background-color: #e74c3c;
     color: #ffffff;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
             box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
+}
+
+.tag-list a:hover{
+    color: #ffffff;
+}
+
+.mobile-list-wrap{
+     display: none;
+ }
+
+.mobile-list{
+    color: #263238;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+}
+.mobile-list .current{
+    padding: 15px 30px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+@media(max-width: 767px){
+    .mobile-list-wrap{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .mobile-list .current .fa-close{
+        display: none;
+    }
+    .mobile-list .current.selected .fa-close{
+        display: block;
+    }
+    .mobile-list .current .fa-chevron-down{
+        display: block;
+    }
+    .mobile-list .current.selected .fa-chevron-down{
+        display: none;
+    }
+    .mobile-list .dropdown-list{
+        display: none;
+        background-color: #fff;
+        padding: 15px 30px;
+    }
+    .tag-list-item{
+        padding: 11px 30px;
+    }
 }
 
 /*TAGS END*/
@@ -1503,10 +1696,22 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     margin-bottom: 15px;
 }
 
+@media (max-width: 767px){
+    .search-section-main-title span:first-child{
+        font-size: 36px;
+    }
+}
+
 .search-section-main-title span:nth-child(2){
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
+}
+
+@media (max-width: 767px){
+    .search-section-main-title span:nth-child(2){
+        font-size: 15px;
+    }
 }
 
 .text-center{
@@ -1738,7 +1943,17 @@ th{
  }
  /*ALL-ITEMS-CONTAINER END*/
 .new-products .items-update-buttons{
-    margin-top: 75px;
+    margin-top: 45px;
+}
+
+@media (max-width: 479px) {
+    .new-products .items-update-buttons a{
+        margin-top: 5px;
+    }
+}
+
+.new-products .cards .card{
+    margin-bottom: 30px;
 }
 
 .trending-products{
@@ -1751,6 +1966,15 @@ th{
 
 .why-choose-foxtar .advantages .advantage .block-title{
     margin: 30px 0;
+}
+
+@media (max-width: 991px) {
+    .why-choose-foxtar .advantages .advantage{
+        margin-bottom: 30px;
+    }
+    .why-choose-foxtar .advantages .last-col .advantage{
+        margin-bottom: 0px;
+    }
 }
 
 .why-choose-foxtar .advantages .advantage .block-title span:hover{
@@ -1826,6 +2050,12 @@ th{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 55%;
     margin: 0 auto;
     padding: 70px 60px;
@@ -1839,8 +2069,54 @@ th{
     background-color: rgba(139, 195, 74, 0.95);
 }
 
+@media (max-width: 1199px){
+    .be-author .become-author {
+        width: 72%;
+        padding: 32px 60px;
+    }
+}
+
+@media (max-width: 991px){
+    .be-author .become-author {
+        width: 100%;
+        padding: 41px 60px;
+    }
+}
+
+@media (max-width: 767px){
+    .be-author .become-author {
+        width: 100%;
+        padding: 0;
+        height: 100%;
+    }
+}
+
 .be-author .become-author p{
     font-size: 30px;
+}
+
+@media (max-width: 767px){
+    .be-author .become-author p{
+        margin-bottom: 20px;
+    }
+}
+
+.be-author .become-author .become-author-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+@media (max-width: 767px){
+    .be-author .become-author .become-author-content{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
 }
 
 .be-author .become-author p span{
@@ -1850,6 +2126,13 @@ th{
 .be-author .become-author button{
     margin-left: 40px;
     font-size: 18px;
+    padding: 25px 40px;
+}
+
+@media (max-width: 767px){
+    .be-author .become-author button{
+        margin-left: 0;
+    }
 }
 
 .tutorials{
@@ -1861,8 +2144,26 @@ th{
     font-weight: 700;
     background-color: #f8f8f8;
     padding: 40px 0;
-
 }
+
+@media (max-width: 991px){
+    .tutorials .tutorial .tutorial-title{
+        font-size: 18px;
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 767px){
+    .tutorials .tutorial .tutorial-title{
+        font-size: 24px;
+    }
+}
+
+.tutorials .tutorial img{
+    width: 100%;
+}
+
+
 .aside-section.perdonal-info {
     padding: 0;
 }

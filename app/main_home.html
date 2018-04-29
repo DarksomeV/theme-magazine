@@ -23,76 +23,81 @@
 </head>
 <body>
 <!--HEADER START-->
-<header id="header">
-    <div class="top-header">
-        <div class="container d-flex align-items-center">
+<header id="header-main" class="navbar-expand-lg">
+    <div class="top-header navbar-expand-lg navbar-light">
+        <div class="container d-flex align-items-center flex-wrap">
             <div class="header-logo mr-auto">
                 <img src="img/header-logo.png" alt="">
             </div>
             <!-- /.header-logo mr-auto -->
-            <div class="header-help-text">
-                <span>Need help?</span>
-                <span>Talk to an expert:</span>
-                <span>+61 3 8376 6284</span>
-            </div>
-            <!--help-text-->
-            <!--list drop-->
-            <ul class="header-dropdown-list">
-                <li class="dropdown show d-flex m-auto">
-                    <a class="dropdown-toggle dropdown-notification" href="#" role="button" id="dropdownMenuLinkBasket"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-shopping-cart"></i>
-                        <div class="count basket-color-count d-flex">
-                            <span>8</span>
-                        </div>
-                    </a>
+            <div class="order-1 header-controls d-flex align-items-center">
+                <div class="header-help-text mr-auto">
+                    <span>Need help?</span>
+                    <span>Talk to an expert:</span>
+                    <span>+61 3 8376 6284</span>
+                </div>
+                <!--help-text-->
+                <!--list drop-->
+                <ul class="header-dropdown-list">
+                    <li class="dropdown show d-flex m-auto">
+                        <a class="dropdown-toggle dropdown-notification" href="#" role="button" id="dropdownMenuLinkBasket"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-shopping-cart"></i>
+                            <div class="count basket-color-count d-flex">
+                                <span>8</span>
+                            </div>
+                        </a>
 
-                    <div class="dropdown-menu dropdown-notification dropdown-basket dropdown-menu-right"
-                         aria-labelledby="dropdownMenuLinkBasket">
-                        <div class="dropdown-item d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
-                            <div class="item-content">
-                                <h6>Grand Ballet</h6>
-                                <span class="item-category">Wordpress</span>
-                                <span class="item-price">$59</span>
+                        <div class="dropdown-menu dropdown-notification dropdown-basket dropdown-menu-right"
+                             aria-labelledby="dropdownMenuLinkBasket">
+                            <div class="dropdown-item d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <h6>Grand Ballet</h6>
+                                    <span class="item-category">Wordpress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-item d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <h6>Grand Ballet</h6>
+                                    <span class="item-category">Wordpress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-item d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <h6>Grand Ballet</h6>
+                                    <span class="item-category">Wordpress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <div class="total-price d-flex justify-content-between">
+                                <span>Total</span>
+                                <span>$118</span>
+                            </div>
+                            <div class="checkout-buttons d-flex justify-content-center">
+                                <a href="#">Go to Cart</a>
+                                <a href="#">Go to Checkout</a>
                             </div>
                         </div>
-                        <div class="dropdown-item d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
-                            <div class="item-content">
-                                <h6>Grand Ballet</h6>
-                                <span class="item-category">Wordpress</span>
-                                <span class="item-price">$59</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-item d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
-                            <div class="item-content">
-                                <h6>Grand Ballet</h6>
-                                <span class="item-category">Wordpress</span>
-                                <span class="item-price">$59</span>
-                            </div>
-                        </div>
-                        <div class="total-price d-flex justify-content-between">
-                            <span>Total</span>
-                            <span>$118</span>
-                        </div>
-                        <div class="checkout-buttons d-flex justify-content-center">
-                            <a href="#">Go to Cart</a>
-                            <a href="#">Go to Checkout</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <!-- /.header-dropdown-list -->
-            <div class="go-checkout">
-                <a href="#" class="btn btn-default btn-green btn-round">Login</a>
-                <a href="#" class="btn btn-default btn-red btn-round">Register</a>
+                    </li>
+                </ul>
+                <!-- /.header-dropdown-list -->
+                <div class="go-checkout">
+                    <a href="#" class="btn btn-default btn-green btn-round">Login</a>
+                    <a href="#" class="btn btn-default btn-red btn-round">Register</a>
+                </div>
             </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </div>
     <!-- /.top-heder -->
-    <div class="bottom-header">
+    <div class="bottom-header collapse navbar-collapse" id="header-nav">
         <div class="container">
             <nav class="header-nav d-flex">
                 <a href="#">Home</a>
@@ -133,18 +138,18 @@
         <div class="section-title text-center">
             <span>Let’s Check Out Our Newest Release Prodcuts</span>
         </div>
-            <nav class="tag-list text-center ">
-                <a href="#" class="tag-list-item active"> All</a>
-                <a href="#" class="tag-list-item">WordPress</a>
-                <a href="#" class="tag-list-item">Joomla</a>
-                <a href="#" class="tag-list-item">Plugins</a>
-                <a href="#" class="tag-list-item">Component</a>
-                <a href="#" class="tag-list-item">PSD</a>
-            </nav>
+        <ul class="tag-list text-center d-none d-sm-none d-md-flex justify-content-center">
+            <li  class="tag-list-item active"><a href="#"> All</a></li>
+            <li  class="tag-list-item"><a href="#">WordPress</a></li>
+            <li  class="tag-list-item"><a href="#">Joomla</a></li>
+            <li  class="tag-list-item"><a href="#">Plugins</a></li>
+            <li  class="tag-list-item"><a href="#">Component</a></li>
+            <li  class="tag-list-item"><a href="#">PSD</a></li>
+        </ul>
             <!--/ tag list-->
             <div class="cards cards-section">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="card large-card">
                             <div class="card-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
@@ -181,7 +186,7 @@
                         <!--./large-card-->
                     </div>
                     <!--/.col-->
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="card large-card">
                             <div class="card-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
@@ -218,7 +223,7 @@
                         <!--./large-card-->
                     </div>
                     <!--/.col-->
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="card large-card">
                             <div class="card-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
@@ -255,7 +260,7 @@
                         <!--./large-card-->
                     </div>
                     <!--/.col-->
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="card large-card">
                             <div class="card-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
@@ -292,9 +297,7 @@
                         <!--./large-card-->
                     </div>
                     <!--/.col-->
-                </div>
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="card large-card">
                             <div class="card-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
@@ -331,7 +334,7 @@
                         <!--./large-card-->
                     </div>
                     <!--/.col-->
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="card large-card">
                             <div class="card-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
@@ -368,7 +371,7 @@
                         <!--./large-card-->
                     </div>
                     <!--/.col-->
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="card large-card">
                             <div class="card-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
@@ -405,7 +408,7 @@
                         <!--./large-card-->
                     </div>
                     <!--/.col-->
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                         <div class="card large-card">
                             <div class="card-img">
                                 <a href="#"><img src="img/large-card-img.jpg" alt=""></a>
@@ -721,7 +724,7 @@
                 </div>
                 <div class="advantages">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="advantage text-white text-center">
                                 <img src="img/advantage-image.png" alt="">
                                 <div class="block-title text-white">
@@ -730,7 +733,7 @@
                                 <p>Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="advantage text-white text-center">
                                 <img src="img/advantage-image.png" alt="">
                                 <div class="block-title text-white">
@@ -739,7 +742,7 @@
                                 <p>Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="last-col col-12 col-lg-4">
                             <div class="advantage text-white text-center">
                                 <img src="img/advantage-image.png" alt="">
                                 <div class="block-title text-white">
@@ -760,9 +763,11 @@
         <div class="be-author-background-wrapper">
             <img src="img/be-author-img.jpg" alt="">
             <div class="become-author">
+                <div class="become-author-content text-center">
                 <p class="text-white">Over <span class="num-of-authors">20,000</span> Author
                     Are Involved Here!</p>
                 <button class="btn btn-default btn-white">Become A Author</button>
+                </div>
             </div>
         </div>
     </section>
@@ -775,7 +780,7 @@
                 <span class="">Free Monthly Tutorials To Help You With Your Project </span>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="tutorial">
                         <img src="img/tutorial-img.jpg" alt="">
                         <div class="tutorial-title text-light-dark text-center">
@@ -783,7 +788,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="tutorial">
                         <img src="img/tutorial-img.jpg" alt="">
                         <div class="tutorial-title text-light-dark text-center">
@@ -791,7 +796,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="tutorial">
                         <img src="img/tutorial-img.jpg" alt="">
                         <div class="tutorial-title text-light-dark text-center">
@@ -807,7 +812,7 @@
     <div class="footer-content">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-col-wrapper">
                         <div class="title footer-title">
                             <span>About Company</span>
@@ -834,7 +839,7 @@
                     <!-- /.footer-col-wrapper -->
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-col-wrapper links">
                         <div class="title footer-title">
                             <span>Join Our Community</span>
@@ -875,7 +880,7 @@
                     <!-- /.footer-col-wrapper -->
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-col-wrapper links">
                         <div class="title footer-title">
                             <span>Need Help?</span>
@@ -915,7 +920,7 @@
                     </div>
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-xl-3">
                     <div class="footer-col-wrapper">
                         <div class="title footer-title">
                             <span>Follow Us On</span>
@@ -952,6 +957,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/tags.js"></script>
 
 <!--Init plugins-->
 <script src="js/init.js"></script>

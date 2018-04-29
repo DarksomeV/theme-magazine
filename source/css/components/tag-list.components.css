@@ -8,7 +8,6 @@
     text-align: center;
 }
 .tag-list-item{
-    display: inline-table;
     font-family: Roboto;
     font-size: 14px;
     color: #000;
@@ -16,15 +15,66 @@
     padding:11px 22px;
     font-weight: 400;
 }
+.tag-list li+li {
+    margin-left: 5px;
+}
 .tag-list .active{
     background-color: #e74c3c;
     color: #ffffff;
     box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
 }
-.tag-list a:hover{
+.tag-list li:hover{
     background-color: #e74c3c;
     color: #ffffff;
     box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
+}
+
+.tag-list a:hover{
+    color: #ffffff;
+}
+
+.mobile-list-wrap{
+     display: none;
+ }
+
+.mobile-list{
+    color: #263238;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+}
+.mobile-list .current{
+    padding: 15px 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 767px){
+    .mobile-list-wrap{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .mobile-list .current .fa-close{
+        display: none;
+    }
+    .mobile-list .current.selected .fa-close{
+        display: block;
+    }
+    .mobile-list .current .fa-chevron-down{
+        display: block;
+    }
+    .mobile-list .current.selected .fa-chevron-down{
+        display: none;
+    }
+    .mobile-list .dropdown-list{
+        display: none;
+        background-color: #fff;
+        padding: 15px 30px;
+    }
+    .tag-list-item{
+        padding: 11px 30px;
+    }
 }
 
 /*TAGS END*/

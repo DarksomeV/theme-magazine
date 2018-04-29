@@ -126,10 +126,6 @@
     margin-right: 155px;
 }
 
-.bottom-header .header-nav a + a{
-    margin-left: 43px;
-}
-
 #loginModal .go-checkout .btn.btn-default{
     padding: 6px 20px;
     border-radius: 3px !important;
