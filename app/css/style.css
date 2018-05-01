@@ -1487,7 +1487,7 @@ Body{
 .dropdown-toggle.dropdown-notification .count.basket-green-count{
     background-color:#8bc34a;
 }
-.login-btn .btn{
+.login-btn{
     margin-right: 28px;
 }
 .login-page-nav .header-nav{
@@ -1545,6 +1545,21 @@ Body{
         padding-top: 100px;
         padding-bottom: 90px;
     }
+    .login-header .header-nav  a{
+        margin:auto !important;
+    }
+    .login-header .header-nav{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .login-header{
+        margin-left: 0px;
+        background-color: #263238;
+        color: #ffffff;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -1584,8 +1599,11 @@ Body{
         padding: 20px 15px 20px;
     }
     #search-section-login.search-section-login .search-section-title{
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 45px;
+    }
+    #search-section-login.search-section-login .form-search{
+        max-width: 350px;
     }
 }
 @media (min-width: 320px){
@@ -1595,6 +1613,7 @@ Body{
     .modal-dialog {
         margin: 1.75rem auto;
     }
+
 }
 
 /*PAGINATION START*/
