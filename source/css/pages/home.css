@@ -1,53 +1,54 @@
-.new-products .items-update-buttons{
+.new-products .items-update-buttons {
     margin-top: 45px;
 }
 
 @media (max-width: 479px) {
-    .new-products .items-update-buttons a{
+    .new-products .items-update-buttons a {
         margin-top: 5px;
     }
 }
 
-.new-products .cards .card{
+.new-products .cards .card {
     margin-bottom: 30px;
 }
 
-.trending-products{
+.trending-products {
     background-color: #fff;
 }
 
-.trending-products .trending-carousel .slick-slide{
+.trending-products .trending-carousel .slick-slide {
     padding: 0 15px;
 }
 
-.why-choose-foxtar .advantages .advantage .block-title{
+.why-choose-foxtar .advantages .advantage .block-title {
     margin: 30px 0;
 }
 
 @media (max-width: 991px) {
-    .why-choose-foxtar .advantages .advantage{
+    .why-choose-foxtar .advantages .advantage {
         margin-bottom: 30px;
     }
-    .why-choose-foxtar .advantages .last-col .advantage{
+
+    .why-choose-foxtar .advantages .last-col .advantage {
         margin-bottom: 0px;
     }
 }
 
-.why-choose-foxtar .advantages .advantage .block-title span:hover{
-    color:#8bc34a;
+.why-choose-foxtar .advantages .advantage .block-title span:hover {
+    color: #8bc34a;
     cursor: pointer;
 }
 
-.why-choose-foxtar .advantages .advantage p{
-    color:#b0bec5;
+.why-choose-foxtar .advantages .advantage p {
+    color: #b0bec5;
 }
 
-.why-choose-foxtar .advantages .advantage img{
+.why-choose-foxtar .advantages .advantage img {
     filter: brightness(80%);
     cursor: pointer;
 }
 
-.why-choose-foxtar .advantages .advantage img:hover{
+.why-choose-foxtar .advantages .advantage img:hover {
     filter: brightness(100%);
 }
 
@@ -58,7 +59,7 @@
     display: flex;
 }
 
-.slick-dots li{
+.slick-dots li {
     width: 16px;
     height: 16px;
     background-color: #e8e8e8;
@@ -69,10 +70,10 @@
 
 .slick-dots li.slick-active {
     background-color: #8bc34a;
-    border:none;
+    border: none;
 }
 
-.slick-dots li button{
+.slick-dots li button {
     display: none;
 }
 
@@ -80,19 +81,19 @@
     margin-left: 5px;
 }
 
-.be-author .be-author-background-wrapper{
+.be-author .be-author-background-wrapper {
     position: relative;
     display: flex;
 }
 
-.be-author .be-author-background-wrapper img{
+.be-author .be-author-background-wrapper img {
     position: relative;
     height: auto;
     margin: 0 auto;
     box-shadow: 0px 0px 25.52px 3.48px rgba(0, 0, 0, 0.17);
 }
 
-.be-author .become-author{
+.be-author .become-author {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,21 +109,21 @@
     background-color: rgba(139, 195, 74, 0.95);
 }
 
-@media (max-width: 1199px){
+@media (max-width: 1199px) {
     .be-author .become-author {
         width: 72%;
         padding: 32px 60px;
     }
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
     .be-author .become-author {
         width: 100%;
         padding: 41px 60px;
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
     .be-author .become-author {
         width: 100%;
         padding: 0;
@@ -130,68 +131,68 @@
     }
 }
 
-.be-author .become-author p{
+.be-author .become-author p {
     font-size: 30px;
 }
 
-@media (max-width: 767px){
-    .be-author .become-author p{
+@media (max-width: 767px) {
+    .be-author .become-author p {
         margin-bottom: 20px;
     }
 }
 
-.be-author .become-author .become-author-content{
+.be-author .become-author .become-author-content {
     display: flex;
     align-items: center;
 }
 
-@media (max-width: 767px){
-    .be-author .become-author .become-author-content{
+@media (max-width: 767px) {
+    .be-author .become-author .become-author-content {
         flex-direction: column;
     }
 }
 
-.be-author .become-author p span{
+.be-author .become-author p span {
     font-weight: 700;
 }
 
-.be-author .become-author button{
+.be-author .become-author button {
     margin-left: 40px;
     font-size: 18px;
     padding: 25px 40px;
 }
 
-@media (max-width: 767px){
-    .be-author .become-author button{
+@media (max-width: 767px) {
+    .be-author .become-author button {
         margin-left: 0;
     }
 }
 
-.tutorials{
+.tutorials {
     background: #fff;
 }
 
-.tutorials .tutorial .tutorial-title{
+.tutorials .tutorial .tutorial-title {
     font-size: 24px;
     font-weight: 700;
     background-color: #f8f8f8;
     padding: 40px 0;
 }
 
-@media (max-width: 991px){
-    .tutorials .tutorial .tutorial-title{
+@media (max-width: 991px) {
+    .tutorials .tutorial .tutorial-title {
         font-size: 18px;
         padding: 25px 15px;
     }
 }
 
-@media (max-width: 767px){
-    .tutorials .tutorial .tutorial-title{
+@media (max-width: 767px) {
+    .tutorials .tutorial .tutorial-title {
         font-size: 24px;
     }
 }
 
-.tutorials .tutorial img{
+.tutorials .tutorial img {
     width: 100%;
 }
 

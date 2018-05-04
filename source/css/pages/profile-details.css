@@ -1,20 +1,22 @@
-.profile-details-wrap .aside-section{
+.profile-details-wrap .aside-section {
     margin-bottom: 24px;
 }
 
-.profile-details-wrap .aside-author-info{
+.profile-details-wrap .aside-author-info {
     margin: 25px 0 44px;
 }
-.profile-details-wrap .aside-author-info .aside-author-details{
+
+.profile-details-wrap .aside-author-info .aside-author-details {
     margin-left: 15px;
 }
 
-.profile-details-wrap .aside-author-info .aside-author-details h3{
+.profile-details-wrap .aside-author-info .aside-author-details h3 {
     font-size: 18px;
     font-weight: 400;
     line-height: 1;
 }
-.profile-details-wrap .aside-author-info .online-status{
+
+.profile-details-wrap .aside-author-info .online-status {
     border: 1px solid #d3d3d3;
     color: #707070;
     font-size: 13px;
@@ -22,35 +24,35 @@
     padding: 5px 10px;
 }
 
-.profile-details-wrap .aside-author-info .online-status:hover{
+.profile-details-wrap .aside-author-info .online-status:hover {
     background: #8bc34a;
     border: 1px solid #8bc34a;
     color: #ffffff;
 }
 
-.profile-details-wrap .aside-author-info .online-status i{
+.profile-details-wrap .aside-author-info .online-status i {
     color: #8bc34a;
     margin-right: 5px;
 }
 
-.profile-details-wrap .aside-badges div + div{
+.profile-details-wrap .aside-badges div + div {
     margin-left: 8px;
 }
 
-.profile-details-wrap .default-sprites-social{
+.profile-details-wrap .default-sprites-social {
     margin-bottom: 25px;
 }
 
-.profile-details-wrap .btn-block + .btn-block{
+.profile-details-wrap .btn-block + .btn-block {
     margin-top: 15px;
 }
 
-.profile-details-nav{
+.profile-details-nav {
     border: 1px solid #d7d7d7;
     background-color: #fff;
 }
 
-.profile-details-nav li{
+.profile-details-nav li {
     padding: 15px 15px 15px 20px;
     border-bottom: 1px solid #d7d7d7;
     color: #707070;
@@ -60,21 +62,21 @@
     color: #bebcbc;
 }
 
- .profile-details-nav li.active{
+.profile-details-nav li.active {
     border-bottom: 2px solid #8bc34a;
     color: #263238;
 }
 
-.profile-details-nav li i{
+.profile-details-nav li i {
     margin-right: 12px;
-    color:#d0d0d0;
+    color: #d0d0d0;
 }
 
-.profile-details-nav li.active i{
+.profile-details-nav li.active i {
     color: #8bc34a;
 }
 
-.profile-details-wrap .banner{
+.profile-details-wrap .banner {
     padding: 20px;
     border: 1px solid #dfdfdf;
     background: #ffffff;
@@ -87,7 +89,7 @@
     margin-bottom: 30px;
 }
 
-.profile-details-wrap .author-summary .single-item{
+.profile-details-wrap .author-summary .single-item {
     padding: 25px 0;
     text-align: center;
     margin: auto;
@@ -95,98 +97,100 @@
     border-right: 1px solid #d7d7d7;
 }
 
-.profile-details-wrap .author-summary .single-item .item-title{
+.profile-details-wrap .author-summary .single-item .item-title {
     color: #263238;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.profile-details-wrap .author-summary .single-item .item-details{
-    color:#707070;
+.profile-details-wrap .author-summary .single-item .item-details {
+    color: #707070;
 }
 
-.profile-details-wrap .item-details ul li{
+.profile-details-wrap .item-details ul li {
 }
 
-.profile-details-wrap .item-details ul .rating-count{
+.profile-details-wrap .item-details ul .rating-count {
     color: #263238;
     margin-left: 8px;
 }
 
-.tabs-wrapper-content{
+.tabs-wrapper-content {
     background: #ffffff;
     padding: 30px 35px;
     border: 1px solid #d7d7d7;
 }
 
 /*title tab*/
-.profile-tab-title{
+.profile-tab-title {
     margin-bottom: 30px;
 }
 
-.profile-tab-title span{
+.profile-tab-title span {
     font-size: 20px;
     font-weight: 700;
     color: #263238;
     line-height: 24px;
 }
+
 /*все*/
 
-.tabs-wrapper-content .tab-item .tab-content p{
+.tabs-wrapper-content .tab-item .tab-content p {
     font-size: 15px;
     font-weight: 400;
     color: #707070;
 }
 
-.tabs-wrapper-content .skills{
+.tabs-wrapper-content .skills {
     margin-top: 45px;
 }
 
-.tabs-wrapper-content .skill-area + .skill-area{
+.tabs-wrapper-content .skill-area + .skill-area {
     margin-top: 22px;
 }
 
-.tabs-wrapper-content .skill-area .lead{
+.tabs-wrapper-content .skill-area .lead {
     font-size: 16px;
 }
 
-.tabs-wrapper-content .skill-area .lead span:first-child{
+.tabs-wrapper-content .skill-area .lead span:first-child {
     font-weight: 500;
 }
 
-.tabs-wrapper-content .skill-progress .progress-wrap{
+.tabs-wrapper-content .skill-progress .progress-wrap {
     width: 100%;
     height: 15px;
-    background-color: rgba(0,0,0, .05);
+    background-color: rgba(0, 0, 0, .05);
     margin-top: 17px;
     border-radius: 4px;
 }
 
-.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar{
-    background-color: rgba(181,181,181, 1);
+.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar {
+    background-color: rgba(181, 181, 181, 1);
     width: 0%;
     height: 15px;
     border-radius: 4px;
 }
-.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar.design{
+
+.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar.design {
     width: 80%;
 }
 
-.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar.wordpress{
+.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar.wordpress {
     width: 90%;
 }
 
-.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar.joomla{
+.tabs-wrapper-content .skill-progress .progress-wrap .progress-bar.joomla {
     width: 70%;
 }
 
-#tabs{
+#tabs {
     content: '';
     clear: both;
     display: block;
 }
 
-#tabs.ui-widget.ui-widget-content{
+#tabs.ui-widget.ui-widget-content {
     height: 100%;
 }

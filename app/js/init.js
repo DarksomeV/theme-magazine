@@ -35,9 +35,11 @@ $('.trending-carousel').slick({
 
 //init tabs
 $( function() {
-    $("#tabs").tabs();
+    var tab = $("#tabs");
+    if (tab.length) {
+        tab.tabs();
+    }
 });
-
 // Switch product items view
 $('.grid-thumbs').on('click', function(){
     // Find cards and remove class row-card

@@ -1,75 +1,76 @@
 /*FOOTER START*/
-footer{
+footer {
     background-color: #263238;
 }
 
-.footer-content{
+.footer-content {
     padding: 110px 0 95px;
     border-bottom: 1px solid #424d53;
 }
 
 @media (max-width: 1999px) {
-    .footer-content{
-    padding: 110px 5% 55px 15%;
+    .footer-content {
+        padding: 110px 5% 55px 15%;
     }
-    .footer-content .row > *{
+
+    .footer-content .row > * {
         margin-bottom: 40px;
     }
 }
 
 @media (max-width: 767px) {
-    .footer-content{
-        padding-left:10%;
+    .footer-content {
+        padding-left: 10%;
     }
 }
 
-.footer-content .footer-col-wrapper.links{
+.footer-content .footer-col-wrapper.links {
     margin: 0 auto;
     width: 80%;
 }
 
 @media (max-width: 1999px) {
-    .footer-content .footer-col-wrapper.links{
+    .footer-content .footer-col-wrapper.links {
         width: auto;
     }
 }
 
-footer .company-adress{
+footer .company-adress {
     margin-top: 30px;
 }
 
-.footer-content .company-adress li{
+.footer-content .company-adress li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.footer-content .company-adress li i{
+.footer-content .company-adress li i {
     color: #8bc34a;
     font-size: 18px;
 }
 
-.footer-content .company-adress li span{
+.footer-content .company-adress li span {
     display: block;
     color: #ffffff;
     font-size: 14px;
     line-height: 24px;
 }
 
-.footer-col-wrapper.links li +li, .company-adress li+li{
+.footer-col-wrapper.links li + li, .company-adress li + li {
     margin-top: 20px;
 }
 
-.footer-col-wrapper .footer-description{
+.footer-col-wrapper .footer-description {
     font-size: 15px;
     line-height: 24px;
 }
 
-footer .categories-item .categories-name, .footer-description{
-    color:#b7c3c8;
+footer .categories-item .categories-name, .footer-description {
+    color: #b7c3c8;
 }
 
-.title.footer-title{
+.title.footer-title {
     margin-bottom: 55px;
     font-family: Raleway;
     font-weight: 700;
@@ -79,32 +80,32 @@ footer .categories-item .categories-name, .footer-description{
     position: relative;
 }
 
-.title.footer-title:after{
+.title.footer-title:after {
     content: "";
     height: 3px;
     width: 50px;
     background: #8bc34a;
     position: absolute;
     left: 0;
-     bottom: -28px;
+    bottom: -28px;
     z-index: 1;
 }
 
-.form-for-footer .footer-form-title{
+.form-for-footer .footer-form-title {
     font-size: 20px;
     line-height: 36px;
     color: #ffffff;
     font-weight: 400;
 }
 
-.copyright{
+.copyright {
     padding: 25px 0 30px;
 }
 
-.copyright p{
+.copyright p {
     font-size: 15px;
     line-height: 36px;
-    color:#919699;
+    color: #919699;
 }
 
 /*FOOTER END*/

@@ -3,21 +3,24 @@
 /* --- Title start --- */
 .section-title {
     font-weight: 700;
-	font-size: 36px;
+    font-size: 36px;
     margin-bottom: 60px;
     color: #263238;
 }
+
 .text-title {
     font-weight: 500;
     font-size: 30px;
     margin-bottom: 32px;
     color: #263238;
 }
+
 .block-title {
     font-weight: 500;
     font-size: 24px;
     color: #263238;
 }
+
 .title-md {
     font-weight: 700;
     font-size: 20px;
@@ -25,94 +28,111 @@
     margin-bottom: 25px;
 }
 
-.search-section-main-title{
+.search-section-main-title {
     margin-bottom: 50px;
 }
 
-.search-section-main-title span:first-child{
+.search-section-main-title span:first-child {
     display: block;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
-@media (max-width: 767px){
-    .search-section-main-title span:first-child{
+@media (max-width: 767px) {
+    .search-section-main-title span:first-child {
         font-size: 36px;
     }
 }
 
-.search-section-main-title span:nth-child(2){
+.search-section-main-title span:nth-child(2) {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
 }
 
-@media (max-width: 767px){
-    .search-section-main-title span:nth-child(2){
+@media (max-width: 767px) {
+    .search-section-main-title span:nth-child(2) {
         font-size: 15px;
     }
 }
 
-.text-center{
-    text-align:center; 
+.text-center {
+    text-align: center;
 }
-.text-right{
-    text-align:right; 
+
+.text-right {
+    text-align: right;
 }
-.text-left{
-    text-align:left; 
+
+.text-left {
+    text-align: left;
 }
-.default-text{
+
+.default-text {
     font-size: 16px;
     font-weight: 500;
 }
+
 /* --- Туайтлы расположены с убывание размера шрифта --- */
 /* --- Title end --- */
 
 /* --- Background color start--- */
 .bg-dark-grey {
-    background-color: #263238; 
+    background-color: #263238;
 }
+
 .bg-grey {
     background-color: #d4d4d4;
 }
+
 .bg-light-grey {
     background-color: #f4f6f5;
 }
+
 .bg-green {
     background-color: #8bc34a;
 }
+
 /* --- Background color end--- */
 
 /* --- Text color start--- */
 .text-d-grey {
-    color:rgba(38,50, 56, 0.22);
+    color: rgba(38, 50, 56, 0.22);
 }
+
 .text-l-gray {
-    color:rgba(122,122,122,0.48);
+    color: rgba(122, 122, 122, 0.48);
 }
+
 .text-green {
     color: #8bc34a;
 }
+
 .text-cadet-blue {
     color: #546e7a;
 }
+
 .text-l-blue {
     color: #70838d;
 }
+
 .text-l-cyan {
-    color: rgba(183,195,200,0.78)
+    color: rgba(183, 195, 200, 0.78)
 }
-.text-wite{
+
+.text-wite {
     color: #fff;
 }
-.text-main_serch{
+
+.text-main_serch {
     color: rgba(144, 164, 174, 0.68)
 }
-.text-need-help{
+
+.text-need-help {
     color: rgba(231, 76, 60, 0.91);
 }
+
 /* --- l = light  d = dark --- */
 /* --- Text color end--- */
 

@@ -1,51 +1,57 @@
 /*TAGS START*/
 
-.tag-list{
+.tag-list {
     margin-bottom: 60px;
     margin-top: 60px;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.tag-list-item{
+
+.tag-list-item {
     font-family: Roboto;
     font-size: 14px;
     color: #000;
     background-color: #fff;
-    padding:11px 22px;
+    padding: 11px 22px;
     font-weight: 400;
 }
-.tag-list li+li {
+
+.tag-list li + li {
     margin-left: 5px;
 }
-.tag-list .active{
+
+.tag-list .active {
     background-color: #e74c3c;
     color: #ffffff;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
             box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
 }
-.tag-list li:hover{
+
+.tag-list li:hover {
     background-color: #e74c3c;
     color: #ffffff;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
             box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
 }
 
-.tag-list a:hover{
+.tag-list a:hover {
     color: #ffffff;
 }
 
-.mobile-list-wrap{
-     display: none;
- }
+.mobile-list-wrap {
+    display: none;
+}
 
-.mobile-list{
+.mobile-list {
     color: #263238;
     font-weight: 500;
     font-size: 14px;
     width: 100%;
 }
-.mobile-list .current{
+
+.mobile-list .current {
     padding: 15px 30px;
     background-color: #fff;
     display: -webkit-box;
@@ -56,31 +62,37 @@
             justify-content: space-between;
 }
 
-@media(max-width: 767px){
-    .mobile-list-wrap{
+@media (max-width: 767px) {
+    .mobile-list-wrap {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         margin-bottom: 50px;
     }
-    .mobile-list .current .fa-close{
+
+    .mobile-list .current .fa-close {
         display: none;
     }
-    .mobile-list .current.selected .fa-close{
+
+    .mobile-list .current.selected .fa-close {
         display: block;
     }
-    .mobile-list .current .fa-chevron-down{
+
+    .mobile-list .current .fa-chevron-down {
         display: block;
     }
-    .mobile-list .current.selected .fa-chevron-down{
+
+    .mobile-list .current.selected .fa-chevron-down {
         display: none;
     }
-    .mobile-list .dropdown-list{
+
+    .mobile-list .dropdown-list {
         display: none;
         background-color: #fff;
         padding: 15px 30px;
     }
-    .tag-list-item{
+
+    .tag-list-item {
         padding: 11px 30px;
     }
 }
