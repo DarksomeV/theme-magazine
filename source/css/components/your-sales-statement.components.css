@@ -1,79 +1,94 @@
 /*YOUR SALES STATEMENT START*/
-.your-sales-statement {
+.your-sales-statement{
     overflow: hidden;
 }
-
-.table-section {
-    padding: 35px;
-    border-left: 1px solid #dedede;
-    border-right: 1px solid #dedede;
-    border-bottom: 1px solid #dedede;
+.table-section{
+    padding:35px ;
+    border-left:1px solid #dedede;
+    border-right:1px solid #dedede;
+    border-bottom:1px solid #dedede;
     background-color: #ffffff;
     margin-bottom: 82px;
 }
-
-.your-sales-statement .title {
+.your-sales-statement .title{
     font-family: Roboto;
     font-size: 24px;
     font-weight: 500;
     vertical-align: middle;
     line-height: 65px;
 }
-
-.your-sales-statement .title-section {
-    height: 65px;
-    border: 1px solid #dedede;
+.your-sales-statement .title-section{
+    height:65px;
+    border:1px solid #dedede;
     background-color: #fff;
-    padding: 0 35px;
+    padding:0 35px;
 }
-
-.table thead {
+.table thead{
     background-color: #455a64;
     color: #ffffff;
     font-family: 'Roboto';
     font-size: 14px;
     font-weight: 300 !important;
 }
-
-.table-striped tbody tr:nth-of-type(odd) {
+.table-striped tbody tr:nth-of-type(odd){
     background-color: #fbfbfb;
 }
-
-.table .id {
+.table .id{
     font-weight: 700;
 }
-
-.total-sales {
+.total-sales{
     margin-top: 90px;
     margin-bottom: 77px;
     color: #263238;
     font-size: 30px;
     font-family: Roboto;
 }
-
-.total-sales span {
+.total-sales span{
     font-weight: 700;
     color: #8bc34a;
 }
-
-th {
+th{
     font-weight: 400;
     line-height: 32px;
 }
-
-.table td, .table th {
+.table td, .table th{
     vertical-align: middle;
 }
-
-.table th.position-count {
+.table th.position-count{
     width: 45px;
     text-align: right;
     padding: .75rem 11px;
 }
-
-.your-sales-statement .btn.btn-default {
+.your-sales-statement .btn.btn-default{
     padding: 11px 18px 9px 17px;
     font-size: 12px;
 }
-
 /*YOUR-SALESSTATEMENT END*/
+@media (max-width: 991px) {
+    .bottom-header .header-nav a + a {
+        margin-left: 25px;
+    }
+    .footer-content{
+        padding: 60px 0 60px;
+    }
+    .top-header .header-help-text{
+        display: none;
+    }
+    .total-sales{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-section{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .breadcrumbs{
+        padding: 25px 0 20px 0;
+    }
+    .bottom-header .header-nav a + a {
+        margin-left: 10px;
+    }
+}

@@ -34,91 +34,102 @@
     <title>Foxtar</title>
 </head>
 <body>
-<!--HEADER START-->
-<header id="header">
-    <div class="top-header">
-        <div class="container d-flex align-items-center">
+<!-- HEADER START -->
+<header id="header-main" class="navbar-expand-lg">
+    <div class="top-header navbar-expand-lg navbar-light">
+        <div class="container d-flex align-items-center flex-wrap">
             <div class="header-logo mr-auto">
                 <img src="img/header-logo.png" alt="">
             </div>
             <!-- /.header-logo mr-auto -->
-            <div class="navigation">
-                <nav class="header-nav ">
-                    <a href="#">Home</a>
-                    <a href="#">Pages</a>
-                    <a href="#">WordPress</a>
-                    <a href="#">Joomla</a>
-                    <a href="#">PSD</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Help</a>
-                </nav>
-                <!--/header-nav-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--/ navbar-toogler-->
+            <div class="login-header collapse navbar-collapse" id="header-nav">
+                <div class="navbar-container">
+                    <nav class="header-nav d-flex">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">WordPress</a>
+                        <a href="#">Joomla</a>
+                        <a href="#">PSD</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Help</a>
+                    </nav>
+                    <!--/header-nav-->
+                </div>
             </div>
-            <div class="go-checkout">
-                <a href="#" class="btn btn-default btn-red btn-round" data-toggle="modal" data-target="#loginModal">Login</a>
+            <!--/ login-header -->
+            <div class="order-1 header-controls d-flex align-items-center">
+                <div class="go-checkout login-btn">
+                    <a href="#" class="btn btn-default btn-red btn-round" data-toggle="modal" data-target="#loginModal">Login</a>
+                </div>
+                <!--list drop-->
+                <ul class="header-dropdown-list">
+                    <li class="dropdown show d-flex m-auto">
+                        <a class="dropdown-toggle dropdown-notification" href="#" role="button" id="dropdownMenuLinkBasket"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-shopping-cart"></i>
+                            <div class="count basket-green-count d-flex">
+                                <span>0</span>
+                            </div>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-notification dropdown-basket dropdown-menu-right"
+                             aria-labelledby="dropdownMenuLinkBasket">
+                            <div class="dropdown-item d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <h6>Grand Ballet</h6>
+                                    <span class="item-category">Wordpress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-item d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <h6>Grand Ballet</h6>
+                                    <span class="item-category">Wordpress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-item d-flex align-items-center">
+                                <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
+                                <div class="item-content">
+                                    <h6>Grand Ballet</h6>
+                                    <span class="item-category">Wordpress</span>
+                                    <span class="item-price">$59</span>
+                                </div>
+                            </div>
+                            <div class="total-price d-flex justify-content-between">
+                                <span>Total</span>
+                                <span>$118</span>
+                            </div>
+                            <div class="checkout-buttons d-flex justify-content-center">
+                                <a href="#">Go to Cart</a>
+                                <a href="#">Go to Checkout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- /.header-dropdown-list -->
             </div>
-            <!--./go-checkout-->
-
-            <!--list drop-->
-            <ul class="header-dropdown-list d-flex">
-                <li class="dropdown show d-flex">
-                    <a class="dropdown-toggle dropdown-notification" href="#" role="button" id="dropdownMenuLinkBasket"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-shopping-cart"></i>
-                        <div class="count basket-green-count d-flex">
-                            <span>0</span>
-                        </div>
-                    </a>
-
-                    <div class="dropdown-menu dropdown-notification dropdown-basket dropdown-menu-right"
-                         aria-labelledby="dropdownMenuLinkBasket">
-                        <div class="dropdown-item d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
-                            <div class="item-content">
-                                <h6>Grand Ballet</h6>
-                                <span class="item-category">Wordpress</span>
-                                <span class="item-price">$59</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-item d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
-                            <div class="item-content">
-                                <h6>Grand Ballet</h6>
-                                <span class="item-category">Wordpress</span>
-                                <span class="item-price">$59</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-item d-flex align-items-center">
-                            <a href="#"><img src="img/dropdown-basket-img.jpg" alt=""></a>
-                            <div class="item-content">
-                                <h6>Grand Ballet</h6>
-                                <span class="item-category">Wordpress</span>
-                                <span class="item-price">$59</span>
-                            </div>
-                        </div>
-                        <div class="total-price d-flex justify-content-between">
-                            <span>Total</span>
-                            <span>$118</span>
-                        </div>
-                        <div class="checkout-buttons d-flex justify-content-center">
-                            <a href="#">Go to Cart</a>
-                            <a href="#">Go to Checkout</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <!-- /.header-dropdown-list -->
+            <!--/ header-controls-->
         </div>
     </div>
-    <!-- /.top-heder -->
-</header>
-<!--HEADER END-->
 
+</header>
+<!--HEADER1 END-->
+<!--HEADER END-->
 <!-- MODAL START -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
             <!--/ button close-->
             <div class="modal-body">
                 <h4 class="login-title text-center "> Login </h4>
@@ -143,7 +154,7 @@
                     <!--/ login-btn-group-->
                     <a href="#" class="lost-password">Lost Password?</a>
                 </form>
-                <!--/ form-->
+                <!--/ login-form-->
             </div>
             <!--/ modal body-->
         </div>
@@ -155,18 +166,21 @@
 <!--MAIN START-->
 <main id="main">
     <!-- search section-->
-    <section class="search-section-login">
+    <section id="search-section-login" class="search-section-login">
         <div class="search-section-title text-white text-center">
             <span>Creat A <span class="text-green"> Digital Market </span> Place</span>
         </div>
+        <!--/ search-section-login -->
         <form class="form-search">
             <div class="form-control-search">
                 <input type="text" name="search" placeholder="Search Your Keywords . . .">
                 <i class="fa fa-search"></i>
             </div>
+            <!--/ form-control-search -->
         </form>
+        <!--/ form-search -->
     </section>
-    <!--/search section-->
+    <!--/ search section -->
 </main>
 <!--/ MAIN-->
 <!-- Optionpfhfal JavaScript -->
@@ -181,6 +195,8 @@
 <script src="js/range.js"></script>
 <!--Init plugins-->
 <script src="js/init.js"></script>
+<!-- slick nav -->
+<script src="js/jquery.slicknav.min.js"></script>
 </body>
 </html>
 

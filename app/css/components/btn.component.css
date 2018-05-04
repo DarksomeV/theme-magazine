@@ -1,10 +1,6 @@
 <<<<<<< HEAD
 /* BUTTONS START*/
-=======
-
-/* Buttons */
->>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
-.btn {
+btn {
     font-family: 'Roboto', sans-serif;
     border-radius: 0;
 }

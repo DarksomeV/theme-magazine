@@ -59,9 +59,6 @@ input[type="submit"]{
 blockquote {
     margin: 0;
 }
-main {
-    overflow: hidden;
-}
 /* RESET END */
 
 .icon {
@@ -227,11 +224,7 @@ main {
 /*BREADCRUMBS END*/
 <<<<<<< HEAD
 /* BUTTONS START*/
-=======
-
-/* Buttons */
->>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
-.btn {
+btn {
     font-family: 'Roboto', sans-serif;
     border-radius: 0;
 }
@@ -677,9 +670,12 @@ main {
     margin-bottom: 28px;
 }
 
-.breadcrumbs-section {
+
+.breadcrumbs-section{
     padding: 47px 0 40px;
 }
+
+
 
 /*DEFAULT SECTION END*/
 
@@ -854,7 +850,7 @@ main {
 /*DROPDOWNS END*/
 
 
-/*FOOTER START*/
+/**FOOTER START*/
 footer {
     background-color: #263238;
 }
@@ -963,8 +959,6 @@ footer .categories-item .categories-name, .footer-description {
     line-height: 36px;
     color: #919699;
 }
-
-/*FOOTER END*/
 /*FORMS START*/
 select {
     outline: none;
@@ -1463,83 +1457,63 @@ form[name="login-form"] {
 
 /*HEADER END*/
 
-
-/*LOGIN-MODAL START*/
-
-#loginModal .modal-dialog {
+#loginModal .modal-dialog{
     max-width: 730px;
-    font-family: Roboto, serif;
-}
+    font-family: Roboto, serif;}
 
-#loginModal .modal-content {
+#loginModal .modal-content{
     background-color: #8bc34a;
-    border-radius: 0;
+    border-radius:0 ;
     border: none;
     padding: 90px 30px 110px;
 }
 
-#loginModal .login-title {
+#loginModal .login-title{
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 700;
     color: #ffffff;
 }
 
-#loginModal form[name="login-form"] {
+#loginModal form[name="login-form"]{
     max-width: 400px;
     margin: 40px auto 0;
 }
-
-.btn.focus, .btn:focus {
+.btn.focus, .btn:focus{
     -webkit-box-shadow: none;
             box-shadow: none;
 }
+.login-form-control::-webkit-input-placeholder {color:#ffffff;}
+.login-form-control::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+.login-form-control:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+.login-form-control:-ms-input-placeholder      {color:#ffffff;}
 
-.login-form-control::-webkit-input-placeholder {
-    color: #ffffff;
-}
-
-.login-form-control::-moz-placeholder {
-    color: #ffffff;
-}
-
-/* Firefox 19+ */
-.login-form-control:-moz-placeholder {
-    color: #ffffff;
-}
-
-/* Firefox 18- */
-.login-form-control:-ms-input-placeholder {
-    color: #ffffff;
-}
-
-#loginModal .login-form-control {
+#loginModal .login-form-control{
     background-color: #76ae36;
     height: 43px;
-    color: #ffffff;
+    color:#ffffff;
     font-size: 14px;
     padding-left: 40px;
     font-weight: 400;
     width: 100%;
 }
 
-#loginModal .login-form-group {
+#loginModal .login-form-group{
     position: relative;
 }
 
-#loginModal .login-form-group + .login-form-group {
+#loginModal .login-form-group + .login-form-group{
     margin-top: 8px;
 }
 
-#loginModal .login-form-group i {
+#loginModal .login-form-group i{
     position: absolute;
-    top: 50%;
+    top:50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    left: 18px;
+    left:18px;
     color: #ffffff;
 }
-
 #loginModal .login-btn-group {
     margin-top: 19px;
     font-family: Roboto, serif;
@@ -1550,37 +1524,31 @@ form[name="login-form"] {
         flex-wrap: wrap;
     margin-bottom: 28px;
 }
-
-#loginModal .submit-btn {
+#loginModal .submit-btn{
     font-size: 14px;
     font-weight: bold;
-    padding: 19px 44px;
+    padding:19px 44px;
     background-color: #ffffff;
     -webkit-box-shadow: inset hoff voff blur color;
-    box-shadow: 0 2px 2px 0 rgba(118, 174, 54, .75);
+    box-shadow: 0 2px 2px 0 rgba(118,174,54, .75);
 }
-
-#loginModal .btn-green {
+#loginModal .btn-green{
     background-color: #76ae36;
     color: #ffffff;
 }
-
-#loginModal .custom-btn {
+#loginModal .custom-btn{
     font-size: 14px;
     font-weight: 400;
     padding: 18px 48px 19px 37px;
     margin-left: 10px;
 }
-
-#loginModal .lost-password {
+#loginModal .lost-password{
     color: #ffffff;
 }
-
-#loginModal .fa {
+#loginModal .fa{
     margin-right: 5px;
 }
-
-#loginModal .close {
+#loginModal .close{
     position: absolute;
     right: 28px;
     top: 21px;
@@ -1589,77 +1557,151 @@ form[name="login-form"] {
     -webkit-box-shadow: none;
             box-shadow: none;
     opacity: 1;
+    z-index: 1;
 }
-
 /*LOGIN-MODAL END*/
 
 /*HEADER START*/
-.dropdown-toggle.dropdown-notification .count.basket-green-count {
-    background-color: #8bc34a;
+.login-header{
+    padding:15px 0;
+    margin-left: 64px;
 }
-
-#loginModal .go-checkout .btn {
-    margin-right: 28px;
-}
-
-.header .navigation {
-    padding: 15px 0;
-}
-
-.navigation .header-nav a + a {
+.login-header .header-nav a+a {
     margin-left: 43px;
 }
-
-.navigation .header-nav {
+.login-header .header-nav{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.dropdown-toggle.dropdown-notification .count.basket-green-count{
+    background-color:#8bc34a;
+}
+.login-btn{
+    margin-right: 28px;
+}
+.login-page-nav .header-nav{
     font-size: 14px;
     line-height: 30px;
     font-weight: 500;
 }
-
-.navigation {
+.login-page-nav{
     margin-left: 64px;
-    margin-right: 155px;
+    margin-right: 150px;
 }
-
-#loginModal .go-checkout .btn.btn-default {
+.login-btn .btn.btn-default{
     padding: 6px 20px;
     border-radius: 3px !important;
 }
-
-#loginModal .search-section-login {
+#search-section-login.search-section-login{
     background: url(../img/search-section-login.jpg) no-repeat center / cover;
     padding-top: 155px;
     padding-bottom: 175px;
 }
-
-#loginModal .search-section-login .search-section-title {
+#search-section-login.search-section-login .search-section-title{
     text-transform: uppercase;
     font-family: Roboto, serif;
     font-size: 48px;
     font-weight: bold;
-
-}
-
-#loginModal .text-green {
-    color: #8bc34a;
-}
-
-#loginModal .search-section-title {
     margin-bottom: 108px;
 }
-
-#loginModal .search-section-login .form-control-search input {
+#search-section-login.search-section-login .form-control-search input{
     width: 220px;
     color: #90a4ae;
 }
-
-#loginModal .search-section-login .form-control-search i {
+#search-section-login.search-section-login .form-control-search i{
     font-size: 20px;
     color: #263238;
 }
-
-#loginModal .search-section-login .form-search {
+#search-section-login.search-section-login .form-search{
     max-width: 760px;
+}
+
+@media (max-width: 991px) {
+
+    #loginModal .modal-content{
+        padding: 35px 30px 90px;
+    }
+    #loginModal .modal-dialog{
+        max-width: 650px;
+    }
+    #search-section-login.search-section-login .form-search {
+        max-width: 650px;
+    }
+    #search-section-login.search-section-login .search-section-title{
+        font-size: 40px;
+    }
+    #search-section-login.search-section-login{
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+    /*.login-header .header-nav  a{*/
+        /*margin:auto !important;*/
+    /*}*/
+    /*.login-header .header-nav{*/
+        /*flex-direction: column;*/
+    /*}*/
+    /*.login-header{*/
+        /*margin-left: 0px;*/
+        /*background-color: #263238;*/
+        /*color: #ffffff;*/
+    /*}*/
+
+}
+
+@media (max-width: 768px) {
+    #search-section-login.search-section-login .search-section-title{
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+    #search-section-login.search-section-login .form-search{
+        max-width: 530px;
+    }
+    #loginModal .modal-content{
+        padding: 25px 15px 50px;
+    }
+    #loginModal .modal-dialog{
+        max-width: 520px;
+    }
+}
+@media (max-width: 576px) {
+    .login-btn-group button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #loginModal .custom-btn{
+        width: 100%;
+        margin-left: 0;
+    }
+    #loginModal .modal-dialog{
+        max-width: 350px;
+    }
+    #loginModal .login-title{
+        font-size: 35px;
+    }
+    #loginModal form[name="login-form"]{
+        margin-top: 15px;
+    }
+    #loginModal .modal-content{
+        padding: 20px 15px 20px;
+    }
+    #search-section-login.search-section-login .search-section-title{
+        font-size: 20px;
+        margin-bottom: 45px;
+    }
+    #search-section-login.search-section-login .form-search{
+        max-width: 350px;
+    }
+}
+@media (min-width: 320px){
+    .modal-dialog-centered {
+        min-height: calc(100% - (1.75rem * 2));
+    }
+    .modal-dialog {
+        margin: 1.75rem auto;
+    }
 }
 /*PAGINATION START*/
 
@@ -1707,14 +1749,17 @@ Example usage in HTML:
 
 To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
 
-// CSS
-.icon {
-  display: inline-block;
-}
+
+
 
 // HTML
 <i class="icon icon-home"></i>
 */
+
+.icon {
+  display: inline-block;
+}
+
 .icon-FB-product-details {
   background-image: url(../img/sprite.png);
   background-position: -54px 0px;
@@ -2045,84 +2090,99 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 
 /*YOUR SALES STATEMENT START*/
-.your-sales-statement {
+.your-sales-statement{
     overflow: hidden;
 }
-
-.table-section {
-    padding: 35px;
-    border-left: 1px solid #dedede;
-    border-right: 1px solid #dedede;
-    border-bottom: 1px solid #dedede;
+.table-section{
+    padding:35px ;
+    border-left:1px solid #dedede;
+    border-right:1px solid #dedede;
+    border-bottom:1px solid #dedede;
     background-color: #ffffff;
     margin-bottom: 82px;
 }
-
-.your-sales-statement .title {
+.your-sales-statement .title{
     font-family: Roboto;
     font-size: 24px;
     font-weight: 500;
     vertical-align: middle;
     line-height: 65px;
 }
-
-.your-sales-statement .title-section {
-    height: 65px;
-    border: 1px solid #dedede;
+.your-sales-statement .title-section{
+    height:65px;
+    border:1px solid #dedede;
     background-color: #fff;
-    padding: 0 35px;
+    padding:0 35px;
 }
-
-.table thead {
+.table thead{
     background-color: #455a64;
     color: #ffffff;
     font-family: 'Roboto';
     font-size: 14px;
     font-weight: 300 !important;
 }
-
-.table-striped tbody tr:nth-of-type(odd) {
+.table-striped tbody tr:nth-of-type(odd){
     background-color: #fbfbfb;
 }
-
-.table .id {
+.table .id{
     font-weight: 700;
 }
-
-.total-sales {
+.total-sales{
     margin-top: 90px;
     margin-bottom: 77px;
     color: #263238;
     font-size: 30px;
     font-family: Roboto;
 }
-
-.total-sales span {
+.total-sales span{
     font-weight: 700;
     color: #8bc34a;
 }
-
-th {
+th{
     font-weight: 400;
     line-height: 32px;
 }
-
-.table td, .table th {
+.table td, .table th{
     vertical-align: middle;
 }
-
-.table th.position-count {
+.table th.position-count{
     width: 45px;
     text-align: right;
     padding: .75rem 11px;
 }
-
-.your-sales-statement .btn.btn-default {
+.your-sales-statement .btn.btn-default{
     padding: 11px 18px 9px 17px;
     font-size: 12px;
 }
-
 /*YOUR-SALESSTATEMENT END*/
+@media (max-width: 991px) {
+    .bottom-header .header-nav a + a {
+        margin-left: 25px;
+    }
+    .footer-content{
+        padding: 60px 0 60px;
+    }
+    .top-header .header-help-text{
+        display: none;
+    }
+    .total-sales{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-section{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .breadcrumbs{
+        padding: 25px 0 20px 0;
+    }
+    .bottom-header .header-nav a + a {
+        margin-left: 10px;
+    }
+}
 .all-products-wrapper {
     background-color: #f4f6f5;
     padding-bottom: 110px;
@@ -2514,8 +2574,6 @@ th {
 .tutorials .tutorial img {
     width: 100%;
 }
-
-
 /*Aside tabs start*/
 #tabs-pers-info.ui-widget.ui-widget-content {
     height: auto;
@@ -3074,7 +3132,6 @@ th {
 #tabs.ui-widget.ui-widget-content {
     height: 100%;
 }
-
 /*Upload form padding*/
 .content-wrapper-bordered .content-wrapper-body.first-part {
     padding-bottom: 35px;

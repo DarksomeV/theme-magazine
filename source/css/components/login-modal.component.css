@@ -1,77 +1,58 @@
-/*LOGIN-MODAL START*/
-
-#loginModal .modal-dialog {
+#loginModal .modal-dialog{
     max-width: 730px;
-    font-family: Roboto, serif;
-}
+    font-family: Roboto, serif;}
 
-#loginModal .modal-content {
+#loginModal .modal-content{
     background-color: #8bc34a;
-    border-radius: 0;
+    border-radius:0 ;
     border: none;
     padding: 90px 30px 110px;
 }
 
-#loginModal .login-title {
+#loginModal .login-title{
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 700;
     color: #ffffff;
 }
 
-#loginModal form[name="login-form"] {
+#loginModal form[name="login-form"]{
     max-width: 400px;
     margin: 40px auto 0;
 }
-
-.btn.focus, .btn:focus {
+.btn.focus, .btn:focus{
     box-shadow: none;
 }
+.login-form-control::-webkit-input-placeholder {color:#ffffff;}
+.login-form-control::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+.login-form-control:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+.login-form-control:-ms-input-placeholder      {color:#ffffff;}
 
-.login-form-control::-webkit-input-placeholder {
-    color: #ffffff;
-}
-
-.login-form-control::-moz-placeholder {
-    color: #ffffff;
-}
-
-/* Firefox 19+ */
-.login-form-control:-moz-placeholder {
-    color: #ffffff;
-}
-
-/* Firefox 18- */
-.login-form-control:-ms-input-placeholder {
-    color: #ffffff;
-}
-
-#loginModal .login-form-control {
+#loginModal .login-form-control{
     background-color: #76ae36;
     height: 43px;
-    color: #ffffff;
+    color:#ffffff;
     font-size: 14px;
     padding-left: 40px;
     font-weight: 400;
     width: 100%;
 }
 
-#loginModal .login-form-group {
+#loginModal .login-form-group{
     position: relative;
 }
 
-#loginModal .login-form-group + .login-form-group {
+#loginModal .login-form-group + .login-form-group{
     margin-top: 8px;
 }
 
-#loginModal .login-form-group i {
+#loginModal .login-form-group i{
     position: absolute;
-    top: 50%;
+    top:50%;
     transform: translateY(-50%);
-    left: 18px;
+    left:18px;
     color: #ffffff;
 }
-
 #loginModal .login-btn-group {
     margin-top: 19px;
     font-family: Roboto, serif;
@@ -79,38 +60,32 @@
     flex-wrap: wrap;
     margin-bottom: 28px;
 }
-
-#loginModal .submit-btn {
+#loginModal .submit-btn{
     font-size: 14px;
     font-weight: bold;
-    padding: 19px 44px;
+    padding:19px 44px;
     background-color: #ffffff;
     -webkit-box-shadow: inset hoff voff blur color;
     -moz-box-shadow: inset hoff voff blur color;
-    box-shadow: 0 2px 2px 0 rgba(118, 174, 54, .75);
+    box-shadow: 0 2px 2px 0 rgba(118,174,54, .75);
 }
-
-#loginModal .btn-green {
+#loginModal .btn-green{
     background-color: #76ae36;
     color: #ffffff;
 }
-
-#loginModal .custom-btn {
+#loginModal .custom-btn{
     font-size: 14px;
     font-weight: 400;
     padding: 18px 48px 19px 37px;
     margin-left: 10px;
 }
-
-#loginModal .lost-password {
+#loginModal .lost-password{
     color: #ffffff;
 }
-
-#loginModal .fa {
+#loginModal .fa{
     margin-right: 5px;
 }
-
-#loginModal .close {
+#loginModal .close{
     position: absolute;
     right: 28px;
     top: 21px;
@@ -118,75 +93,149 @@
     border: none;
     box-shadow: none;
     opacity: 1;
+    z-index: 1;
 }
-
 /*LOGIN-MODAL END*/
 
 /*HEADER START*/
-.dropdown-toggle.dropdown-notification .count.basket-green-count {
-    background-color: #8bc34a;
+.login-header{
+    padding:15px 0;
+    margin-left: 64px;
 }
-
-#loginModal .go-checkout .btn {
-    margin-right: 28px;
-}
-
-.header .navigation {
-    padding: 15px 0;
-}
-
-.navigation .header-nav a + a {
+.login-header .header-nav a+a {
     margin-left: 43px;
 }
-
-.navigation .header-nav {
+.login-header .header-nav{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.dropdown-toggle.dropdown-notification .count.basket-green-count{
+    background-color:#8bc34a;
+}
+.login-btn{
+    margin-right: 28px;
+}
+.login-page-nav .header-nav{
     font-size: 14px;
     line-height: 30px;
     font-weight: 500;
 }
-
-.navigation {
+.login-page-nav{
     margin-left: 64px;
-    margin-right: 155px;
+    margin-right: 150px;
 }
-
-#loginModal .go-checkout .btn.btn-default {
+.login-btn .btn.btn-default{
     padding: 6px 20px;
     border-radius: 3px !important;
 }
-
-#loginModal .search-section-login {
+#search-section-login.search-section-login{
     background: url(../img/search-section-login.jpg) no-repeat center / cover;
     padding-top: 155px;
     padding-bottom: 175px;
 }
-
-#loginModal .search-section-login .search-section-title {
+#search-section-login.search-section-login .search-section-title{
     text-transform: uppercase;
     font-family: Roboto, serif;
     font-size: 48px;
     font-weight: bold;
-
-}
-
-#loginModal .text-green {
-    color: #8bc34a;
-}
-
-#loginModal .search-section-title {
     margin-bottom: 108px;
 }
-
-#loginModal .search-section-login .form-control-search input {
+#search-section-login.search-section-login .form-control-search input{
     width: 220px;
     color: #90a4ae;
 }
-
-#loginModal .search-section-login .form-control-search i {
+#search-section-login.search-section-login .form-control-search i{
     font-size: 20px;
     color: #263238;
 }
-
-#loginModal .search-section-login .form-search {
+#search-section-login.search-section-login .form-search{
     max-width: 760px;
+}
+
+@media (max-width: 991px) {
+
+    #loginModal .modal-content{
+        padding: 35px 30px 90px;
+    }
+    #loginModal .modal-dialog{
+        max-width: 650px;
+    }
+    #search-section-login.search-section-login .form-search {
+        max-width: 650px;
+    }
+    #search-section-login.search-section-login .search-section-title{
+        font-size: 40px;
+    }
+    #search-section-login.search-section-login{
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+    /*.login-header .header-nav  a{*/
+        /*margin:auto !important;*/
+    /*}*/
+    /*.login-header .header-nav{*/
+        /*flex-direction: column;*/
+    /*}*/
+    /*.login-header{*/
+        /*margin-left: 0px;*/
+        /*background-color: #263238;*/
+        /*color: #ffffff;*/
+    /*}*/
+
+}
+
+@media (max-width: 768px) {
+    #search-section-login.search-section-login .search-section-title{
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+    #search-section-login.search-section-login .form-search{
+        max-width: 530px;
+    }
+    #loginModal .modal-content{
+        padding: 25px 15px 50px;
+    }
+    #loginModal .modal-dialog{
+        max-width: 520px;
+    }
+}
+@media (max-width: 576px) {
+    .login-btn-group button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #loginModal .custom-btn{
+        width: 100%;
+        margin-left: 0;
+    }
+    #loginModal .modal-dialog{
+        max-width: 350px;
+    }
+    #loginModal .login-title{
+        font-size: 35px;
+    }
+    #loginModal form[name="login-form"]{
+        margin-top: 15px;
+    }
+    #loginModal .modal-content{
+        padding: 20px 15px 20px;
+    }
+    #search-section-login.search-section-login .search-section-title{
+        font-size: 20px;
+        margin-bottom: 45px;
+    }
+    #search-section-login.search-section-login .form-search{
+        max-width: 350px;
+    }
+}
+@media (min-width: 320px){
+    .modal-dialog-centered {
+        min-height: calc(100% - (1.75rem * 2));
+    }
+    .modal-dialog {
+        margin: 1.75rem auto;
+    }
 }

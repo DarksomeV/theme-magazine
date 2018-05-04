@@ -66,5 +66,4 @@ $('.grid-list').on('click', function(){
     $('.all-items-container .col-lg-4').addClass('col-lg-12 col-md-12');
     $('.grid-list').addClass('active');
     $('.grid-thumbs').removeClass('active');
-
 });
