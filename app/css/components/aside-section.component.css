@@ -97,8 +97,8 @@
                 transform: translateX(-110%);
     }
     .mobile-aside.right {
-        -webkit-transform: translateX(110);
-                transform: translateX(110);
+        -webkit-transform: translateX(110%);
+                transform: translateX(110%);
         left: auto;
         right: 30px;
     }

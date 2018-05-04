@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+
 /* Buttons */
-=======
-/* BUTTONS START */
->>>>>>> 541a8cddf6424705e542f32be524fa858d8f084e
 .btn {
     font-family: 'Roboto', sans-serif;
     border-radius: 0;
@@ -12,10 +9,7 @@
     font-size: 14px;
     padding: 10px 15px;
     color: #fff;
-<<<<<<< HEAD
     text-align: center;
-=======
->>>>>>> 541a8cddf6424705e542f32be524fa858d8f084e
 }
 
 .btn.btn-default i {
@@ -26,10 +20,7 @@
     padding: 15px 30px;
     font-weight: 500;
     font-size: 16px;
-<<<<<<< HEAD
     line-height: 1;
-=======
->>>>>>> 541a8cddf6424705e542f32be524fa858d8f084e
 }
 
 .btn.btn-round {
@@ -122,7 +113,6 @@
     background-color: #eeeeee;
     padding: 30px;
 }
-<<<<<<< HEAD
 .btn.login {
     padding: 10px 14px;
     font-size: 12px;
@@ -135,7 +125,3 @@
         width: 100%;
     }
 }
-=======
-/* BUTTONS END*/
-
->>>>>>> 541a8cddf6424705e542f32be524fa858d8f084e

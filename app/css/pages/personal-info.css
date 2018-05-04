@@ -1,8 +1,10 @@
+/*Aside tabs start*/
 #tabs-pers-info.ui-widget.ui-widget-content {
     height: auto;
     width: 100%;
     padding: 0;
 }
+
 .ui-widget.ui-widget-content {
     height: auto;
     border: none;
@@ -11,20 +13,24 @@
     margin-bottom: 0;
     margin-top: 0;
 }
+
 #tabs-pers-info .aside-section.personal-info {
     padding: 0;
     border-bottom: 0;
 }
+
 #tabs-pers-info .ui-tabs-nav {
     padding: 0;
     /*width: 100%;*/
 }
+
 #tabs-pers-info .ui-tabs-nav.ui-widget-header {
     border: 0;
     background: none;
     color: #333333;
     font-weight: bold;
 }
+
 #tabs-pers-info .ui-tabs-nav .ui-state-default {
     border: 0;
     background: none;
@@ -36,20 +42,24 @@
     margin: 0;
     line-height: 1;
 }
+
 .ui-tabs .ui-tabs-nav li {
     margin: 0;
     width: 100%;
 }
+
 .ui-state-default a,
 .ui-state-default a:link,
 .ui-state-default a:visited {
     color: #707070;
 }
+
 #tabs-pers-info .aside-section.personal-info .personal-info-chapter i {
     font-weight: 400;
     margin-right: 22px;
     font-size: 9px;
 }
+
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
     padding: 17px 22px;
     width: 100%;
@@ -63,7 +73,6 @@
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
     color: #37474f;
     margin: 0;
-    /*width: 223px;*/
 }
 
 .ui-state-active a i, .ui-state-active a i:link {
@@ -88,3 +97,4 @@
     line-height: 1;
     margin-top: 10px;
 }
+/*Aside tabs end*/
