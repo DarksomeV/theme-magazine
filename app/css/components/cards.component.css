@@ -242,11 +242,9 @@
 .card.row-card .feed-back-count::after {
     content: ' )';
 }
-<<<<<<< HEAD
 
-=======
 .card {
     margin-top: 30px;
 }
->>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
+
 /*CARD ROW END*/

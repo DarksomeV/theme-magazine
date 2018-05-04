@@ -64,7 +64,6 @@
 .text-right {
     text-align: right;
 }
-<<<<<<< HEAD
 
 .text-left {
     text-align: left;
@@ -75,12 +74,6 @@
     font-weight: 500;
 }
 
-=======
-.default-text{
-    font-size: 16px;
-    font-weight: 500;
-}
->>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
 /* --- Туайтлы расположены с убывание размера шрифта --- */
 /* --- Title end --- */
 
