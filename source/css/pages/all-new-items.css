@@ -4,7 +4,7 @@
 }
 
 /*PRICE RANGER START*/
-.ui-widget.ui-widget-content {
+#slider-range.ui-widget.ui-widget-content {
     height: 5px;
     border: none;
     background-color: #f2f5f8;
@@ -13,7 +13,8 @@
     margin-top: 35px;
 }
 
-.ui-slider .ui-slider-range {
+
+#slider-range .ui-slider .ui-slider-range {
     background-color: #37474f;
 }
 
@@ -70,7 +71,13 @@
     color: #90a4ae;
 }
 
+
 .sort-controls .change-view-items button:focus {
+    color: #8bc34a;
+    outline: none;
+}
+
+.sort-controls .change-view-items .active {
     color: #8bc34a;
     outline: none;
 }
@@ -99,13 +106,57 @@
 }
 
 /*DROPDOWN END*/
-/*ALL-ITEMS-CONTAINER START*/
+
 .all-items-container .card {
     margin-top: 30px;
 }
 
 .all-products-wrapper .pagination {
     margin-top: 60px;
+}
+
+.all-items-container .card.medium-card .card-author .card-roduct-rating {
+    margin: 5px 10px 5px 0;
+}
+.all-items-container .card .card-author .rating-count {
+    margin: 5px 0;
+}
+.all-products-wrapper .pagination {
+    margin-top: 60px;
+}
+@media (max-width: 767px) {
+    .card.row-card .card-author {
+        padding: 10px 15px;
+    }
+
+    .card .card-description .card-text-info span {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card .card-description .card-author .feed-back {
+        margin: 4px 0;
+        font-size: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card.row-card .card-text-info {
+        font-size: 12px;
+    }
+
+    .card.row-card {
+        flex-direction: column;
+    }
+}
+@media (max-width: 575px) {
+    .card.row-card .card-author {
+        padding: 10px 15px;
+    }
+
+    .card.row-card .feed-back i {
+        margin-left: 15px;
+    }
 }
 
 /*ALL-ITEMS-CONTAINER END*/

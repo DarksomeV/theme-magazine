@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 /* BUTTONS START*/
+=======
+
+/* Buttons */
+>>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
 .btn {
     font-family: 'Roboto', sans-serif;
     border-radius: 0;
@@ -115,7 +120,10 @@
     background-color: #eeeeee;
     padding: 30px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
 .btn.login {
     padding: 10px 14px;
     font-size: 12px;
@@ -123,5 +131,13 @@
     width: 72px;
     height: 32px;
 }
+<<<<<<< HEAD
 
 /*BUTTONS END*/
+=======
+@media (max-width: 575px) {
+    .content-wrapper-body form .btn.btn-default {
+        width: 100%;
+    }
+}
+>>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549

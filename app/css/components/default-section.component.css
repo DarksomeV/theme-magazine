@@ -24,7 +24,7 @@
 }
 
 .search-section {
-    padding: 60px 0;
+    padding: 60px 15px;
     background: url('../img/search-section-background.jpg') no-repeat center/cover;
     height: 228px;
 }
@@ -39,5 +39,8 @@
 .breadcrumbs-section {
     padding: 47px 0 40px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
 /*DEFAULT SECTION END*/

@@ -1,31 +1,92 @@
-.aside-section.perdonal-info {
+/*Aside tabs start*/
+#tabs-pers-info.ui-widget.ui-widget-content {
+    height: auto;
+    width: 100%;
     padding: 0;
 }
 
+<<<<<<< HEAD
 .aside-section.perdonal-info .personal-info-chapter {
+=======
+.ui-widget.ui-widget-content {
+    height: auto;
+    border: none;
+    background-color: #f2f5f8;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#tabs-pers-info .aside-section.personal-info {
+    padding: 0;
+    border-bottom: 0;
+}
+
+#tabs-pers-info .ui-tabs-nav {
+    padding: 0;
+    /*width: 100%;*/
+}
+
+#tabs-pers-info .ui-tabs-nav.ui-widget-header {
+    border: 0;
+    background: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+#tabs-pers-info .ui-tabs-nav .ui-state-default {
+    border: 0;
+    background: none;
+>>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    padding: 17px 22px;
-    color: #707070;
+
     border-bottom: 1px solid #d7d7d7;
+    margin: 0;
+    line-height: 1;
 }
 
+<<<<<<< HEAD
 .aside-section.perdonal-info .personal-info-chapter:last-child {
     border-bottom: none;
 }
 
 .aside-section.perdonal-info .personal-info-chapter i {
+=======
+.ui-tabs .ui-tabs-nav li {
+    margin: 0;
+    width: 100%;
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+    color: #707070;
+}
+
+#tabs-pers-info .aside-section.personal-info .personal-info-chapter i {
+>>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
     font-weight: 400;
     margin-right: 22px;
     font-size: 9px;
 }
 
+<<<<<<< HEAD
 .aside-section.perdonal-info .personal-info-chapter:active {
+=======
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 17px 22px;
+    width: 100%;
+}
+
+#tabs-pers-info .aside-section.personal-info .ui-state-active {
+>>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
     border-bottom: 2px solid #86bc44;
     color: #37474f;
 }
 
+<<<<<<< HEAD
 .aside-section.perdonal-info .personal-info-chapter i:active {
     color: #86bc44;
 }
@@ -35,9 +96,33 @@
 }
 
 .content-wrapper-body form .btn.btn-default {
+=======
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #37474f;
+    margin: 0;
+}
+
+.ui-state-active a i, .ui-state-active a i:link {
+    color: #86bc44;
+}
+
+#tabs-pers-info .form-group.row {
+    margin-bottom: 20px;
+}
+
+.ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 1px;
+    padding: 0 0;
+    background: #fff;
+}
+
+#tabs-pers-info .content-wrapper-body form .btn.btn-default {
+>>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
     padding: 15px 30px;
     font-weight: 500;
     font-size: 15px;
     line-height: 1;
     margin-top: 10px;
 }
+/*Aside tabs end*/

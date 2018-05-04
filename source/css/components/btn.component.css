@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 /* BUTTONS START*/
+=======
+
+/* Buttons */
+>>>>>>> 81aad006c507dd150c28a55cdd7d2c81de0cf549
 .btn {
     font-family: 'Roboto', sans-serif;
     border-radius: 0;
@@ -122,4 +127,9 @@
     height: 32px;
 }
 
-/*BUTTONS END*/
+@media (max-width: 575px) {
+    .content-wrapper-body form .btn.btn-default {
+        width: 100%;
+    }
+}
+
