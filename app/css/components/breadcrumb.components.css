@@ -18,11 +18,15 @@
     list-style: none;
     background-color: transparent;
 }
-.breadcrumb > li + li:before {
+.breadcrumb > li + li:after {
     color: #8bc34a;
     content: "-";
     padding: 0 5px;
     margin: 9px;
+}
+
+.breadcrumb > li + li:last-child:after{
+    content: "";
 }
 .breadcrumb .active {
     color: #263238;
