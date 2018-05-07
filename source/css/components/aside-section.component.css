@@ -118,4 +118,10 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 576px) {
+    .mobile-aside {
+        max-width: 90%;
+    }
+}
 /*ASIDE SECTION END*/

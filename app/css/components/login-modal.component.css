@@ -161,7 +161,6 @@
 }
 
 @media (max-width: 991px) {
-
     #loginModal .modal-content{
         padding: 35px 30px 90px;
     }
@@ -178,6 +177,11 @@
         padding-top: 100px;
         padding-bottom: 90px;
     }
+    .header-controls{
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
     /*.login-header .header-nav  a{*/
         /*margin:auto !important;*/
     /*}*/

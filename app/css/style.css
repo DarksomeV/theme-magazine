@@ -190,6 +190,12 @@ blockquote {
         opacity: 1;
     }
 }
+
+@media (max-width: 576px) {
+    .mobile-aside {
+        max-width: 90%;
+    }
+}
 /*ASIDE SECTION END*/
 /*BREADCRUMBS START*/
 .breadcrumbs {
@@ -211,14 +217,14 @@ blockquote {
     list-style: none;
     background-color: transparent;
 }
-.breadcrumb > li + li:after {
+.breadcrumb > li::after {
     color: #8bc34a;
     content: "-";
     padding: 0 5px;
     margin: 9px;
 }
 
-.breadcrumb > li + li:last-child:after{
+.breadcrumb > li:last-child::after{
     content: "";
 }
 .breadcrumb .active {
@@ -1624,7 +1630,6 @@ form[name="login-form"] {
 }
 
 @media (max-width: 991px) {
-
     #loginModal .modal-content{
         padding: 35px 30px 90px;
     }
@@ -1641,6 +1646,11 @@ form[name="login-form"] {
         padding-top: 100px;
         padding-bottom: 90px;
     }
+    .header-controls{
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
     /*.login-header .header-nav  a{*/
         /*margin:auto !important;*/
     /*}*/
@@ -2776,7 +2786,7 @@ th{
 }
 
 .more-products-row {
-    margin: 30px 0;
+    margin: 30px 0 20px;
 }
 
 .card-autor-name {
@@ -2797,8 +2807,9 @@ th{
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 10px;
 }
 
 .card-img {
@@ -2986,15 +2997,15 @@ th{
     .list-arrows + .list-arrows {
         margin-left: 0;
     }
-    .more-products-row .col-12  {
-        margin-bottom: 10px;
-    }
-    .more-products-row .col-12:last-child {
+    /*.more-products-row .col-12  {*/
+        /*margin-bottom: 10px;*/
+    /*}*/
+    .more-products-row .col-12:last-child .small-card{
         margin-bottom: 0;
     }
     .mobile-aside.right{
         right: 0;
-        width: 90%;
+        max-width: 66.666667%;
     }
 }
 
@@ -3009,6 +3020,9 @@ th{
         -webkit-box-flex: 0;
             -ms-flex: 0;
                 flex: 0;
+    }
+    .mobile-aside.right{
+        max-width: 90%;
     }
 }
 
