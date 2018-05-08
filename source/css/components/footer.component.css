@@ -8,7 +8,7 @@ footer {
     border-bottom: 1px solid #424d53;
 }
 
-@media (max-width: 1999px) {
+@media (max-width: 1199px) {
     .footer-content {
         padding: 110px 5% 55px 15%;
     }
@@ -29,7 +29,7 @@ footer {
     width: 80%;
 }
 
-@media (max-width: 1999px) {
+@media (max-width: 1199px) {
     .footer-content .footer-col-wrapper.links {
         width: auto;
     }
@@ -105,3 +105,5 @@ footer .categories-item .categories-name, .footer-description {
     line-height: 36px;
     color: #919699;
 }
+
+/*FOOTER END*/

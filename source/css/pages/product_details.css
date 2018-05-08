@@ -1,10 +1,11 @@
+/*PRODUCT DETAILS PAGE START*/
+
 .product-details-img {
     padding: 19px;
     border: 1px solid;
     border-color: #dedede;
     margin-bottom: 40px;
     background: #ffffff;
-
 }
 
 .product-details-img img {
@@ -90,6 +91,7 @@
     color: #8bc34a;
     padding-right: 15px;
 }
+
 /* cards */
 .more-products-section {
     margin-bottom: 125px;
@@ -156,16 +158,18 @@
     font-weight: 700;
     padding-top: 20px;
 }
+
 /*ACIDE PART START*/
 .aside-section + .aside-section {
     margin: 32px 0;
 }
-    
+
 .product-price-sum {
     font-size: 22px;
     font-weight: 500;
     color: #e74c3c;
 }
+
 .dropdown-price {
     padding: 10px;
     line-height: 1;
@@ -182,7 +186,7 @@
     color: #8bc34a;
 }
 
-.product-price-wrapp .dropdown-menu{
+.product-price-wrapp .dropdown-menu {
     top: 0 !important;
 }
 
@@ -235,6 +239,7 @@
     font-size: 18px;
     margin-bottom: 14px;
 }
+
 .author-btn {
     padding: 10px;
     line-height: 1;
@@ -245,6 +250,7 @@
     max-width: 92px;
     background: #ffffff;
 }
+
 .author-badges {
     margin-top: 25px;
 }
@@ -276,56 +282,68 @@
     font-weight: 400;
     color: #70838d;
 }
+
 /*ASIDE PART END*/
 /* --- Product details page end --- */
 @media (max-width: 767px) {
     .btn-social-wrapp a.btn {
         width: 100%;
     }
+
     .btn-social-wrapp a + a {
         margin-left: 0;
         margin-top: 15px;
     }
+
     .socials {
         margin-top: 15px;
         margin-right: auto;
     }
-    .tab-description{
+
+    .tab-description {
         flex-direction: column;
     }
+
     .tabs-section .nav-tabs .nav-item {
         width: 100%;
     }
+
     .list-arrows + .list-arrows {
         margin-left: 0;
     }
+
     /*.more-products-row .col-12  {*/
-        /*margin-bottom: 10px;*/
+    /*margin-bottom: 10px;*/
     /*}*/
-    .more-products-row .col-12:last-child .small-card{
+    .more-products-row .col-12:last-child .small-card {
         margin-bottom: 0;
     }
-    .mobile-aside.right{
+
+    .mobile-aside.right {
         right: 0;
         max-width: 66.666667%;
     }
 }
 
 @media (max-width: 576px) {
-    .small-card{
+    .small-card {
         justify-content: flex-start;
     }
-    .card-img{
+
+    .card-img {
         width: auto;
         flex: 0;
     }
-    .mobile-aside.right{
+
+    .mobile-aside.right {
         max-width: 90%;
     }
 }
 
 @media (max-width: 479px) {
-    .list-arrows li{
+    .list-arrows li {
         line-height: 1.4;
     }
 }
+
+/*PRODUCT DETAILS PAGE END*/

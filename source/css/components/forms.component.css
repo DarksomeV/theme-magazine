@@ -204,7 +204,6 @@ form[name="login-form"] {
 /*Footer - form*/
 .footer-form {
     max-width: 260px;
-    margin: auto;
     background: #2f3c43;
 }
 
@@ -212,6 +211,7 @@ form[name="login-form"] {
     position: relative;
     border-top: 2px solid black;
 }
+
 .footer-form:before, .footer-form:after {
     content: "";
     position: absolute;
@@ -224,14 +224,16 @@ form[name="login-form"] {
     bottom: -2px;
     width: 2px;
 }
+
 .footer-form:before {
     left: -2px;
 }
+
 .footer-form:after {
     right: -2px;
 }
 
-.footer-form div{
+.footer-form div {
     display: flex;
 }
 

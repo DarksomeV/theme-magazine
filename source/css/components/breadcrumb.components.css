@@ -2,7 +2,8 @@
 .breadcrumbs {
     padding: 48px 0 42px 0;
 }
-.breadcrumb{
+
+.breadcrumb {
     font-family: Roboto;
     font-size: 15px;
     font-weight: 400;
@@ -15,6 +16,7 @@
     list-style: none;
     background-color: transparent;
 }
+
 .breadcrumb > li::after {
     color: #8bc34a;
     content: "-";
@@ -22,9 +24,10 @@
     margin: 9px;
 }
 
-.breadcrumb > li:last-child::after{
+.breadcrumb > li:last-child::after {
     content: "";
 }
+
 .breadcrumb .active {
     color: #263238;
 }
