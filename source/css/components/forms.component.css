@@ -1,8 +1,4 @@
 /*FORMS START*/
-select {
-    outline: none;
-    border: none;
-}
 
 .form-control {
     width: 100%;
@@ -24,9 +20,6 @@ select {
     box-shadow: none;
 }
 
-/*.form-control.upload-item {*/
-/*max-width: 900px;*/
-/*}*/
 textarea {
     min-height: 150px;
 }
@@ -46,6 +39,10 @@ textarea {
 }
 
 /*Select*/
+select {
+    outline: none;
+    border: none;
+}
 .jq-selectbox {
     width: 100%;
 }
@@ -290,4 +287,5 @@ form[name="login-form"] {
 .jq-file input {
     display: none;
 }
+
 /*FORMS END*/

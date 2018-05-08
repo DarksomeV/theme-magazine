@@ -4,6 +4,7 @@
     border: 1px solid #dde3e8;
     background-color: #fff;
 }
+
 .aside-section .aside-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -12,7 +13,7 @@
     color: #263238;
     border-bottom: 1px solid #dde3e8;
 }
-
+/*Aside section - Categories start*/
 .categories-item {
     margin-top: 28px;
 }
@@ -21,66 +22,83 @@
     font-size: 14px;
     color: #8bc34a;
 }
+
 .categories-name {
     font-size: 15px;
     color: #263238;
     margin-left: 13px;
 }
+
 .categories-quantity {
     font-size: 15px;
     color: #90a4ae;
 }
+
 .categories-quantity::before {
-    content:'('
+    content: '('
 }
+
 .categories-quantity::after {
-    content:')'
+    content: ')'
 }
-/*Aside section - TOP 10 Sellers*/
+/*Aside section - Categories start END*/
+/*Aside section - TOP 10 Sellers START*/
 .aside-section .card.medium-card {
     border: none;
     box-shadow: none;
     margin-top: 27px;
 }
+
 .aside-section .card.medium-card .card-info {
     padding: 20px 0;
     font-weight: 700;
     font-size: 16px;
     color: #263238;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     border-bottom: none;
 }
+
 .aside-section .card.medium-card .card-item-title {
     font-size: 16px;
     font-weight: 700;
 }
+
 .aside-section .card.medium-card .card-item-category {
     font-weight: 500;
     font-size: 14px;
 }
+
 .aside-section .card.medium-card .card-price {
     font-size: 16px;
 }
+
 .aside-section .card.medium-card .card-author {
     padding: 0 0 27px 0;
     border-bottom: 1px solid #dde3e8;
 }
+
 .aside-section .card.medium-card:last-of-type .card-author {
     border-bottom: none;
     margin-bottom: 16px;
 }
+/*Aside section - TOP 10 Sellers END*/
+
+
 .aside-section + .aside-section {
     margin-top: 30px;
 }
+/*aside menu button*/
 .mobile-aside-toggle {
     display: none;
 }
+
 @media (max-width: 991px) {
     .mobile-aside-toggle {
         display: block;
         margin-right: 10px;
         background: none;
     }
+
     .mobile-aside {
         position: fixed;
         top: 15px;
@@ -90,14 +108,17 @@
         height: 100vh;
         overflow-y: auto;
     }
+
     .mobile-aside.left {
         transform: translateX(-110%);
     }
+
     .mobile-aside.right {
         transform: translateX(110%);
         left: auto;
         right: 30px;
     }
+
     .overlay {
         position: fixed;
         top: 0;
@@ -107,12 +128,14 @@
         transition: all .2s ease-in;
         opacity: 0;
         z-index: -1;
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0, 0, 0, 0.4);
     }
+
     #main.show-aside .mobile-aside.left,
     #main.show-aside .mobile-aside.right {
         transform: translateX(0);
     }
+
     #main.show-aside .overlay {
         z-index: 998;
         opacity: 1;
